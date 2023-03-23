@@ -1,3 +1,24 @@
 ﻿@page "/Login"
 
-<h3>Please Login</h3>
+<div>
+
+    <h1>Please Login</h1>
+
+    <h1>@poop</h1>
+
+    <EditForm Model="@loginModel" OnValidSubmit="@HandleLogin">
+        <DataAnnotationsValidator />
+        <div>
+            <ValidationSummary />
+        </div>
+
+        <label for="name">Officer ID:</label>
+        <InputText id="name" @bind-Value="@loginModel.officerId" MaxLength="15"/>
+    
+        <label for="password">Password:</label>
+        <InputText id="password" type="password" @bind-Value="@loginModel.password" MaxLength="15"/>
+    
+        <button type="submit">Login</button>
+    </EditForm>
+   
+</div>
