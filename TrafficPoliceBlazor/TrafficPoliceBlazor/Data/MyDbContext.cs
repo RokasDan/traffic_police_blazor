@@ -10,15 +10,12 @@ namespace TrafficPoliceBlazor.Data
     // A class which stores MySQL connection values.
     public class MyDbContext : DbContext
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public MyDbContext(DbContextOptions<MyDbContext> options)
+            : base(options)
         {
-            optionsBuilder.UseMySql(
-                "server=myserver;" +
-                "port=3306;" +
-                "database=mydatabase;" +
-                "user=myusername;" +
-                "password=mypassword"
-                ,new MySqlServerVersion(new Version(8, 0, 23)));
         }
+
+        // Data sets
+        public DbSet<admins> admins { get; set; }
     }
 }
