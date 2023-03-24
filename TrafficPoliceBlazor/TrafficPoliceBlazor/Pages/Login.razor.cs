@@ -11,11 +11,9 @@ namespace TrafficPoliceBlazor.Pages
         // Instaciating Model class for Edit form object
         private LoginModel loginModel = new LoginModel();
 
-        private string poop;
-
         private void HandleLogin()
         {
-            poop = "poop";
+          
         }
 
         // We create a Model class for the Edit form object.
