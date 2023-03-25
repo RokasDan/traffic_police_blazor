@@ -6,19 +6,16 @@ using TrafficPoliceBlazor.Shared;
 
 namespace TrafficPoliceBlazor.Server.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class carsController : ControllerBase
+    public class offenceController : ControllerBase
     {
-        private readonly ILogger<carsController> _logger;
-        private readonly carsDbContext _ctx;
+        private readonly ILogger<offenceController> _logger;
+        private readonly offenceDbContext _ctx;
 
-        public carsController(ILogger<carsController> logger, carsDbContext ctx)
+        public offenceController(ILogger<offenceController> logger, offenceDbContext ctx)
         {
             _logger = logger;
             _ctx = ctx;
         }
-
-        // CRUD methods
+        // CRUD methods here!
     }
 }

@@ -18,6 +18,12 @@ var connectionString = builder.Configuration.GetConnectionString("Default");
 builder.Services.AddDbContext<adminDbContext>(options =>
     options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 23)), mySqlOptions => { }));
 
+builder.Services.AddDbContext<carsDbContext>(options =>
+    options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 23)), mySqlOptions => { }));
+
+builder.Services.AddDbContext<offenceDbContext>(options =>
+    options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 23)), mySqlOptions => { }));
+
 
 
 
