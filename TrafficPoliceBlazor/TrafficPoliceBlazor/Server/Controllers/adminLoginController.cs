@@ -23,20 +23,25 @@ namespace TrafficPoliceBlazor.Server.Controllers
         [Route("{Username}/{Password}")]
         public async Task<IActionResult> GetPassword(string Username, string Password)
         {
+            // Querying the data base.
             var password = await _ctx.admins.Where(p => p.Username == Username).FirstOrDefaultAsync();
             if (password != null)
             {
+                // Checking if our password is the same the user entered.
                 if(password.Password == Password)
                 {
+                    // If so we send success message
                     return Ok();
                 }
                 else
                 {
+                    // Else we give error
                     return BadRequest("Wrong Password");
                 }
             }
             else
             {
+                // We also give error
                 return BadRequest("No password found for the given username.");
             }
         }
