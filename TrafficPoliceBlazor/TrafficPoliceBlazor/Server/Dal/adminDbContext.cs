@@ -6,7 +6,7 @@ namespace TrafficPoliceBlazor.Server.Dal
     public class adminDbContext : DbContext
     {
 
-        public adminDbContext(DbContextOptions options) : base(options)
+        public adminDbContext(DbContextOptions<adminDbContext> options) : base(options)
         { 
         }
 

@@ -6,7 +6,7 @@ namespace TrafficPoliceBlazor.Server.Dal
     public class carsDbContext : DbContext
     {
 
-        public carsDbContext(DbContextOptions options) : base(options) 
+        public carsDbContext(DbContextOptions<carsDbContext> options) : base(options) 
         { 
         }
 

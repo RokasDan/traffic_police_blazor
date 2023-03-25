@@ -33,6 +33,9 @@ builder.Services.AddDbContext<peopleDbContext>(options =>
 builder.Services.AddDbContext<reportsDbContext>(options =>
     options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 23)), mySqlOptions => { }));
 
+builder.Services.AddDbContext<unknownDbContext>(options =>
+    options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 23)), mySqlOptions => { }));
+
 
 
 

@@ -5,7 +5,7 @@ namespace TrafficPoliceBlazor.Server.Dal
 {
     public class reportsDbContext : DbContext
     {
-        public reportsDbContext(DbContextOptions options) : base(options) 
+        public reportsDbContext(DbContextOptions<reportsDbContext> options) : base(options) 
         {
         }
 
