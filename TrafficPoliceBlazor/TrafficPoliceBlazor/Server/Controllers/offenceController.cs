@@ -19,5 +19,13 @@ namespace TrafficPoliceBlazor.Server.Controllers
             _ctx = ctx;
         }
         // CRUD methods here!
+
+        //Get all the rows from the table.
+        [HttpGet]
+        public async Task<IActionResult> GetOffenses()
+        {
+            var offenses = await _ctx.offence.ToListAsync();
+            return Ok(offenses);
+        }
     }
 }

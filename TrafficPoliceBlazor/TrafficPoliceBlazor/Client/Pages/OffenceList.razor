@@ -1,0 +1,31 @@
+﻿@page "/offenceList"
+@inject NavigationManager NavigationManager
+@inject HttpClient Http
+
+<div>
+    <h1>OffenceList</h1>
+
+    <h2>@test</h2>
+    <div>
+        <div style="display:flex; flex-direction:row;">
+            <h3>Offence ID</h3>
+            <h3>Description</h3>
+            <h3>MaxFine</h3>
+            <h3>MaxPoints</h3>
+        </div>
+        @foreach (var row in offences)
+        {
+            <div style="display:flex; flex-direction:row;">
+                @foreach (var prop in row.GetType().GetProperties())
+                {
+                    <div>@(prop.GetValue(row) ?? "N/A")</div>
+                }
+            </div>
+        }
+    </div>
+
+    <div>
+        <button @onclick="Goback">Go Back</button>
+    </div>
+</div>
+

@@ -1,11 +1,12 @@
 ﻿@page "/Menu"
+@inject NavigationManager NavigationManager
 
 <div>
     <h1>Menu</h1>
-    <h2>Hello OffinceName</h2>
+    <h2>Logged In As @officerName</h2>
 
     <div>
-        <button>Offence List</button>
+        <button @onclick="OffenceList">Offence List</button>
         <button>People Search</button>
         <button>Vehicle Search</button>
         <button>Report Search</button>

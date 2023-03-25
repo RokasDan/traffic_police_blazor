@@ -11,7 +11,7 @@ namespace TrafficPoliceBlazor.Client.Pages
     public partial class Login : ComponentBase
     {
         // Array for our results from our data base.
-        public admins[] login = new admins[0];
+        // public admins[] login = new admins[0];
 
         // Instaciating Model class for Edit form object
         private LoginModel loginModel = new LoginModel();
@@ -36,8 +36,10 @@ namespace TrafficPoliceBlazor.Client.Pages
             var response = await Http.GetAsync($"api/adminLogin/{loginModel.officerId}/{loginModel.password}");
             if (response.IsSuccessStatusCode)
             {
+                var Id = loginModel.officerId;
+
                 //Moving to main menu.
-                NavigationManager.NavigateTo("/Menu");
+                NavigationManager.NavigateTo($"/Menu?id={Id}");
 
             }
             else if (response.StatusCode == HttpStatusCode.BadRequest)

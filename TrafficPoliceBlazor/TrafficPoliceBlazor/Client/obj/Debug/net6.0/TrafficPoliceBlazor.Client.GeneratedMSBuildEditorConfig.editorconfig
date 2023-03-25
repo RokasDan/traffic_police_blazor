@@ -32,6 +32,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Website_Dev/traffic_police_blazor/traffic_police_blazor/TrafficPoliceBlazor/TrafficPoliceBlazor/Client/Pages/OffenceList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT2ZmZW5jZUxpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Website_Dev/traffic_police_blazor/traffic_police_blazor/TrafficPoliceBlazor/TrafficPoliceBlazor/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
