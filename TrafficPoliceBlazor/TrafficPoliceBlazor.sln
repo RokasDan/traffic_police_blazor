@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficPoliceBlazor.Server", "TrafficPoliceBlazor\Server\TrafficPoliceBlazor.Server.csproj", "{84E40308-A256-4AA9-A992-BEF357F5C9EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrafficPoliceBlazor.Server", "TrafficPoliceBlazor\Server\TrafficPoliceBlazor.Server.csproj", "{84E40308-A256-4AA9-A992-BEF357F5C9EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficPoliceBlazor.Client", "TrafficPoliceBlazor\Client\TrafficPoliceBlazor.Client.csproj", "{95DF2543-4581-4ACD-9814-CAF81A60F412}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrafficPoliceBlazor.Client", "TrafficPoliceBlazor\Client\TrafficPoliceBlazor.Client.csproj", "{95DF2543-4581-4ACD-9814-CAF81A60F412}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficPoliceBlazor.Shared", "TrafficPoliceBlazor\Shared\TrafficPoliceBlazor.Shared.csproj", "{F76F410D-E2F4-4AF4-8DBC-00B23F4C654B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrafficPoliceBlazor.Shared", "TrafficPoliceBlazor\Shared\TrafficPoliceBlazor.Shared.csproj", "{F76F410D-E2F4-4AF4-8DBC-00B23F4C654B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

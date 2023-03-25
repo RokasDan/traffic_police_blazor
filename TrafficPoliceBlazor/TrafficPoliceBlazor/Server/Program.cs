@@ -1,4 +1,8 @@
-using Microsoft.AspNetCore.ResponseCompression;
+using TrafficPoliceBlazor.Server.Dal;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Pomelo.EntityFrameworkCore.MySql;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,6 +10,13 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+
+// My custom services.
+var connectionString = builder.Configuration.GetConnectionString("Default");
+
+// Establishing connection to mysql database.
+builder.Services.AddDbContext<adminDbContext>(options =>
+    options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 23)), mySqlOptions => { }));
 
 var app = builder.Build();
 

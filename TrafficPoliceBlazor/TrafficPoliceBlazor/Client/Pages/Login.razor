@@ -1,0 +1,27 @@
+﻿@page "/Login"
+
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<div>
+
+    <h1>Please Login</h1>
+
+    <h1>@test</h1>
+
+    <EditForm Model="@loginModel" OnValidSubmit="@GetLogin">
+        <DataAnnotationsValidator />
+        <div>
+            <ValidationSummary />
+        </div>
+
+        <label for="name">Officer ID:</label>
+        <InputText id="name" @bind-Value="@loginModel.officerId" MaxLength="15" />
+
+        <label for="password">Password:</label>
+        <InputText id="password" type="password" @bind-Value="@loginModel.password" MaxLength="15" />
+
+        <button type="submit">Login</button>
+    </EditForm>
+
+</div>

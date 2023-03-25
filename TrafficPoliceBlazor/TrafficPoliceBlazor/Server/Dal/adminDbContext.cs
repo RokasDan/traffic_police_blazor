@@ -10,7 +10,7 @@ namespace TrafficPoliceBlazor.Server.Dal
         { 
         }
 
-        public DbSet<admins> loginDetails { get; set; }
+        public DbSet<admins> admins { get; set; }
 
     }
 }

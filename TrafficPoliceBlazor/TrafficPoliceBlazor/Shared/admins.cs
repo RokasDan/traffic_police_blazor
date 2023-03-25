@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,11 @@ namespace TrafficPoliceBlazor.Shared
 {
     public class admins
     {
-        public string username { get; set; }
-        public string password { get; set; }
+        [Key]
+        [Column("Username")]
+        public string Username { get; set; }
+
+        [Column("Password")]
+        public string Password { get; set; }
     }
 }
