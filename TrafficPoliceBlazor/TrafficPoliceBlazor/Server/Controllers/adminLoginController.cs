@@ -20,13 +20,20 @@ namespace TrafficPoliceBlazor.Server.Controllers
         }
 
         [HttpGet]
-        [Route("{Username}")]
-        public async Task<IActionResult> GetPassword(string Username)
+        [Route("{Username}/{Password}")]
+        public async Task<IActionResult> GetPassword(string Username, string Password)
         {
             var password = await _ctx.admins.Where(p => p.Username == Username).FirstOrDefaultAsync();
             if (password != null)
             {
-                return Ok(password);
+                if(password.Password == Password)
+                {
+                    return Ok();
+                }
+                else
+                {
+                    return BadRequest("Wrong Password");
+                }
             }
             else
             {

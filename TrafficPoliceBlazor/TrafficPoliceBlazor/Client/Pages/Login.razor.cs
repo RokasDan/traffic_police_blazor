@@ -33,25 +33,12 @@ namespace TrafficPoliceBlazor.Client.Pages
         private async Task GetLogin()
         {
             // Sending the Http get Request
-            var response = await Http.GetAsync($"api/adminLogin/{loginModel.officerId}");
+            var response = await Http.GetAsync($"api/adminLogin/{loginModel.officerId}/{loginModel.password}");
             if (response.IsSuccessStatusCode)
             {
-                //If response sucesfull unpacking json.
-                var result = await response.Content.ReadAsStringAsync();
-                var loginDetails = JsonSerializer.Deserialize<admins>(result, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
-                var password = loginDetails.Password;
+                //Moving to main menu.
+                NavigationManager.NavigateTo("/Menu");
 
-                // Comparing password enteries.
-                if(password == loginModel.password)
-                {
-                    //Moving to main menu.
-                    NavigationManager.NavigateTo("/Menu");
-                }
-                else
-                {
-                    // Passwords did not match.
-                    test = "OfficerID or Password is Wrong!";
-                } 
             }
             else if (response.StatusCode == HttpStatusCode.BadRequest)
             {
@@ -62,6 +49,12 @@ namespace TrafficPoliceBlazor.Client.Pages
             {
                 test = "Connection to database is unsuccessful!";
             }
+
+            // Old JASON repraser code for example purposes.
+            //If response sucesfull unpacking json.
+            /*var result = await response.Content.ReadAsStringAsync();
+            var loginDetails = JsonSerializer.Deserialize<admins>(result, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+            var password = loginDetails.Password;*/
         }
     }
 }
