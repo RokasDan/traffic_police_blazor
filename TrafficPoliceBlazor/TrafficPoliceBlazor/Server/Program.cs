@@ -18,6 +18,11 @@ var connectionString = builder.Configuration.GetConnectionString("Default");
 builder.Services.AddDbContext<adminDbContext>(options =>
     options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 23)), mySqlOptions => { }));
 
+
+
+
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
