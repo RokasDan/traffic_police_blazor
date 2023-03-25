@@ -24,7 +24,8 @@ builder.Services.AddDbContext<carsDbContext>(options =>
 builder.Services.AddDbContext<offenceDbContext>(options =>
     options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 23)), mySqlOptions => { }));
 
-
+builder.Services.AddDbContext<officersDbContext>(options =>
+    options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 23)), mySqlOptions => { }));
 
 
 

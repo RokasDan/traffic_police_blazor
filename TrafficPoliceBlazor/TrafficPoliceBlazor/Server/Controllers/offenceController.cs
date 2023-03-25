@@ -6,6 +6,8 @@ using TrafficPoliceBlazor.Shared;
 
 namespace TrafficPoliceBlazor.Server.Controllers
 {
+    [ApiController]
+    [Route("api/[controller]")]
     public class offenceController : ControllerBase
     {
         private readonly ILogger<offenceController> _logger;
