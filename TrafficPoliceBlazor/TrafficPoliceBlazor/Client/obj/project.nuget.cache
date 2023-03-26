@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lu1q2TJ69bz9bXcoLknOVipbPBZH7um2OOn3m59GDXEsgQJt2y7X2IvQgHWoqYNDXzqUeds3d/yj2AmNLbhA9w==",
+  "dgSpecHash": "Z88li7fbx4Ua9d5SUM3HZFALNnwCYAdky0TTrtTaUHhVpK3TifmgxBktXmMO/8Tm1+oRcwG7RgxGqEuhGE+fYA==",
   "success": true,
   "projectFilePath": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\TrafficPoliceBlazor.Client.csproj",
   "expectedPackageFiles": [
@@ -30,6 +30,7 @@
     "C:\\Users\\Rokas\\.nuget\\packages\\microsoft.jsinterop\\6.0.14\\microsoft.jsinterop.6.0.14.nupkg.sha512",
     "C:\\Users\\Rokas\\.nuget\\packages\\microsoft.jsinterop.webassembly\\6.0.14\\microsoft.jsinterop.webassembly.6.0.14.nupkg.sha512",
     "C:\\Users\\Rokas\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
+    "C:\\Users\\Rokas\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Rokas\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\Rokas\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\Rokas\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",

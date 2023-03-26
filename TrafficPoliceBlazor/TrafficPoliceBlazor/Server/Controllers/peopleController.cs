@@ -114,5 +114,33 @@ namespace TrafficPoliceBlazor.Server.Controllers
                 return BadRequest();
             }
         }
+
+
+        // Method to get specific person details with their ID!
+        [HttpGet("GetPersonReport/{SearchString}")]
+        public async Task<IActionResult> GetPersonReport(long SearchString)
+        {
+ 
+            var searchData = await _ctx.people
+                                    .Where(p => p.people_id == SearchString)
+                                    .Select(p => new {
+                                        people_id = p.people_id,
+                                        first_name = p.first_name ?? "N/A",
+                                        last_name = p.last_name ?? "N/A",
+                                        address = p.address ?? "N/A",
+                                        date_of_birth = p.date_of_birth,
+                                        license_number = p.license_number ?? "N/A"
+                                    })
+                                    .FirstOrDefaultAsync();
+
+            if (searchData != null)
+            {
+                return Ok(searchData);
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
     }
 }

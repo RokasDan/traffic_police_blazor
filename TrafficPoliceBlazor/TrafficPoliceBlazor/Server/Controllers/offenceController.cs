@@ -27,5 +27,28 @@ namespace TrafficPoliceBlazor.Server.Controllers
             var offenses = await _ctx.offence.ToListAsync();
             return Ok(offenses);
         }
+
+        //Get a specific offence with ID.
+        [HttpGet("GetDirectOffence/{SearchId}")]
+        public async Task<IActionResult> GetDirectOffenses(long SearchId)
+        {
+            var offenses = await _ctx.offence.Where(o => o.Offence_ID == SearchId)
+                                             .Select(o => new 
+                                             {
+                                                 Offence_ID = o.Offence_ID,
+                                                 description = o.description,
+                                                 maxFine = o.maxFine,
+                                                 maxPoints = o.maxPoints                                                 
+                                             })
+                                    .FirstOrDefaultAsync();
+            if (offenses != null)
+            {
+                return Ok(offenses);
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
     }
 }

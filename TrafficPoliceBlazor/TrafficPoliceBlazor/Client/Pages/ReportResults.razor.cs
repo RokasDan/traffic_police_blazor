@@ -23,10 +23,10 @@ namespace TrafficPoliceBlazor.Client.Pages
            
         }
 
-        //Method which goes to goes to owner and shows owner of the car. 
-        private void ReportDetails(long reportId ,long ownerId, string car_id)
+        //Method which goes to goes to report details page. 
+        private void ReportDetails(long reportId)
         {
-            NavigationManager.NavigateTo($"/CarOwner?id={ownerId}");
+            NavigationManager.NavigateTo($"/ReportDetails?Search={reportId}");
         }
 
         // Go back one page method.

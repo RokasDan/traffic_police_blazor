@@ -1,0 +1,63 @@
+﻿@page "/ReportDetails"
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<div>
+    <h3>Report Details</h3>
+    <div>
+        <div>
+            <div>
+                <h5>Penalties</h5>
+                <div>
+                    Offence - @description
+                    Day of incident - @report_date.ToString("d")
+                    Max Fine - @maxFine
+                    Issued Fine - @fine_issued
+                    Max Points - @maxPoints
+                    Issued Points - @points_issued
+                </div>
+            </div>
+            <div>
+                <h5>Event Description</h5>
+                <div>@details</div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Person Involved</h5>
+                <div>
+                    First Name - @first_name
+                    Last Name - @last_name
+                    Date Of Birth - @date_of_birth.ToString("d")
+                </div>
+            </div>
+            <div>
+                <h5>Adress</h5>
+                <div>
+                    @address
+                </div>
+            </div>
+            <div>
+                <h5>License Number</h5>
+                <div>
+                    @license_number
+                </div>
+            </div>
+        </div>
+        <div>
+            <h5>Vehicle Involved</h5>
+            <h5>@carTest</h5>
+            <div>
+                Number Plate - @number_plate
+                Vehicle Brand - @brand
+                Vehicle Colour - @colour
+                Vehicle Model - @Model 
+            </div>
+        </div>
+    </div>
+    
+    <div>
+        <button @onclick="EditReport">Edit Report</button>
+        <button @onclick="Goback">Go Back</button>
+    </div>
+</div>

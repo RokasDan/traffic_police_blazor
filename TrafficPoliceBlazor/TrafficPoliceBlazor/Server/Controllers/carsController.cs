@@ -78,5 +78,31 @@ namespace TrafficPoliceBlazor.Server.Controllers
                 return BadRequest();
             }
         }
+
+        //Get single car with its ID
+        [HttpGet("GetCarDirect/{SearchString}")]
+        public async Task<IActionResult> GetCarDirect(string SearchString)
+        {
+            // Looking for cars with a number plate which matches exact numberplate. 
+            var car = await _ctx.cars
+                                    .Where(c => c.number_plate == SearchString)
+                                    .Select(c => new {
+                                        number_plate = c.number_plate ?? "N/A",
+                                        brand = c.brand ?? "N/A",
+                                        model = c.model ?? "N/A",
+                                        colour = c.colour ?? "N/A",
+                                        owner = c.owner
+                                    })
+                                    .FirstOrDefaultAsync();
+
+            if (car != null)
+            {
+                return Ok(car);
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
     }
 }

@@ -31,7 +31,8 @@ namespace TrafficPoliceBlazor.Server.Controllers
 
             var searchData = await _ctx.reports
                                     .Where(r => r.car_id.Equals(SearchString) || (isLong && r.people_id == searchLong))
-                                    .Select(r => new {
+                                    .Select(r => new
+                                    {
                                         report_id = r.report_id,
                                         author = r.author,
                                         car_id = r.car_id ?? "No Car Involved",
@@ -52,6 +53,40 @@ namespace TrafficPoliceBlazor.Server.Controllers
             {
                 return BadRequest();
             }
+
         }
+
+        // Method for getting a report on base on report id.
+        [HttpGet("GetDirectReport/{SearchId}")]
+        public async Task<IActionResult> GetDirectReport(string SearchId)
+        {
+            long searchId = long.Parse(SearchId);
+
+            var reportData = await _ctx.reports
+                                    .Where(r => r.report_id == searchId)
+                                    .Select(r => new
+                                    {
+                                        report_id = r.report_id,
+                                        author = r.author,
+                                        car_id = r.car_id ?? "No Car Involved",
+                                        people_id = r.people_id,
+                                        offence_id = r.offence_id,
+                                        fine_issued = r.fine_issued ?? "None issued",
+                                        points_issued = r.points_issued ?? "None issued",
+                                        report_date = r.report_date,
+                                        details = r.details
+                                    })
+                                    .FirstOrDefaultAsync();
+
+            if (reportData != null)
+            {
+                return Ok(reportData);
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
+
     }
 }
