@@ -1,0 +1,29 @@
+﻿@page "/PeopleSearch"
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+
+<div>
+    <h1>PeopleSearch</h1>
+    <h4>Enter a partial license number or First Name or Last Name.</h4>
+    <h4>@test</h4>
+
+    <div>
+        <EditForm Model="@searchModel" OnValidSubmit="@HandleSeach">
+            <DataAnnotationsValidator />
+            <div>
+                <ValidationSummary />
+            </div>
+
+            <label for="name"></label>
+            <InputText id="name" @bind-Value="@searchModel.searchString" MaxLength="50" />
+
+            
+            <div>
+                <button type="submit">Search</button>
+                <button @onclick="Goback">Go Back</button>
+            </div>
+        </EditForm>
+    </div>
+</div>
+

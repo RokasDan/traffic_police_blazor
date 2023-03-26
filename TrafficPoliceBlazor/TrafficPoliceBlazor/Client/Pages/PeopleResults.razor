@@ -1,0 +1,48 @@
+﻿@page "/PeopleResults"
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<div>
+    <h3>PeopleResults</h3>
+
+    <div>
+        <div style="display:flex; flex-direction:row;">
+            <div>Person ID</div>
+            <div>Address</div>
+            <div>Date Of Birth</div>
+            <div>First Name</div>
+            <div>Last Name</div>
+            <div>License Number</div>
+            <div>Person's Vehicles</div>
+        </div>
+        
+        @foreach (var row in people)
+        {
+            <div style="display:flex; flex-direction:row;">
+                @foreach (var prop in row.GetType().GetProperties())
+                {
+                    <div>
+                        @if (prop.Name == "date_of_birth")
+                        {
+                            DateTime dob = (DateTime)prop.GetValue(row);
+                            <span>@dob.ToString("MM/dd/yyyy")</span>
+                        }
+                        else
+                        {
+                            <span>@(prop.GetValue(row) ?? "N/A")</span>
+                        }
+                    </div>
+                }
+                <div>
+                    <button @onclick="@(() => PersonDetails(row.people_id))">See Vehicles</button>
+                </div>
+            </div>
+        }
+
+        <div>
+            <button @onclick="Goback">Go Back</button>
+        </div>
+    </div>
+</div>
+
+

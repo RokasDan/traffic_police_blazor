@@ -12,7 +12,6 @@ namespace TrafficPoliceBlazor.Client.Pages
     {
 
         private offence[] offences = Array.Empty<offence>();
-        private string test { get; set; }
 
         protected override async Task OnInitializedAsync()
         {

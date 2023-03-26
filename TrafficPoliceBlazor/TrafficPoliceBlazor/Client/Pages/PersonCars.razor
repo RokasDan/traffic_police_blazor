@@ -1,0 +1,43 @@
+﻿@page "/PersonCars"
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<div>
+    <h3>Person's Cars</h3>
+
+
+    <div>
+        <h3>@error</h3>
+    </div>
+
+    <div>
+
+        @if (cars.Length > 0)
+        {
+            <div style="display:flex; flex-direction:row;">
+                <div>Number Plate</div>
+                <div>Brand</div>
+                <div>Model</div>
+                <div>Color</div>
+                <div>Owner ID</div>
+            </div>
+        }
+        
+        @foreach (var row in cars)
+        {
+            <div style="display:flex; flex-direction:row;">
+                @foreach (var prop in row.GetType().GetProperties())
+                {
+                    <div>@(prop.GetValue(row) ?? "N/A")</div>
+                }
+            </div>
+        }
+    </div>
+
+    <div>
+        <button @onclick="Goback">Go Back</button>
+    </div>
+</div>
+
+
+

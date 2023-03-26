@@ -32,6 +32,7 @@ namespace TrafficPoliceBlazor.Client.Pages
         // Handeling login.
         private async Task GetLogin()
         {
+            test = "Checking Credentials!";
             // Sending the Http get Request
             var response = await Http.GetAsync($"api/adminLogin/{loginModel.officerId}/{loginModel.password}");
             if (response.IsSuccessStatusCode)

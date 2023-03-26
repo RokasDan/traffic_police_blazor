@@ -24,6 +24,11 @@ namespace TrafficPoliceBlazor.Client.Pages
             }
         }
 
+        // Go to people search
+        private void PeopleSearch()
+        {
+            NavigationManager.NavigateTo("/PeopleSearch");
+        }
 
         // Go to list of offences
         private void OffenceList()
