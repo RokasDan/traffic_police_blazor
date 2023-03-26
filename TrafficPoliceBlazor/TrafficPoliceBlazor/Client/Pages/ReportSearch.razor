@@ -1,0 +1,30 @@
+﻿@page "/ReportSearch"
+
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<div>
+    <h3>ReportSearch</h3>
+    <h4>Enter an exact vehicle plate or offenders full name or his Id.</h4>
+    <h4>@test</h4>
+
+    <div>
+        <EditForm Model="@searchModel" OnValidSubmit="@HandleSeach">
+            <DataAnnotationsValidator />
+            <div>
+                <ValidationSummary />
+            </div>
+
+            <label for="name"></label>
+            <InputText id="name" @bind-Value="@searchModel.searchString" MaxLength="50" />
+
+
+            <div>
+                <button type="submit">Search</button>
+                <button @onclick="Goback">Go Back</button>
+            </div>
+        </EditForm>
+    </div>
+</div>
+
+

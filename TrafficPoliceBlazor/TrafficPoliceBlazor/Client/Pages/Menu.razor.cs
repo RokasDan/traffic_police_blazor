@@ -40,5 +40,10 @@ namespace TrafficPoliceBlazor.Client.Pages
         {
             NavigationManager.NavigateTo("/CarSearch");
         }
+
+        private void ReportSearch()
+        {
+            NavigationManager.NavigateTo("/ReportSearch");
+        }
     }
 }

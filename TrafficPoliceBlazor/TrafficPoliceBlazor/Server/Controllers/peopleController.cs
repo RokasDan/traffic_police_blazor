@@ -79,5 +79,40 @@ namespace TrafficPoliceBlazor.Server.Controllers
                 return BadRequest();
             }
         }
+
+        // Method to get a persons Id by entering full name!
+        [HttpGet("GetId/{SearchString}")]
+        public async Task<IActionResult> GetId(string SearchString)
+        {
+            string[] words = SearchString.Split(' ');
+
+            if (words.Length != 2)
+            {
+                return BadRequest("Search string must contain exactly two words.");
+            }
+            string word1 = words[0];
+            string word2 = words[1];
+
+            var searchData = await _ctx.people
+                                    .Where(p => p.first_name == word1 && p.last_name == word2)
+                                    .Select(p => new {
+                                        people_id = p.people_id,
+                                        first_name = p.first_name ?? "N/A",
+                                        last_name = p.last_name ?? "N/A",
+                                        address = p.address ?? "N/A",
+                                        date_of_birth = p.date_of_birth,
+                                        license_number = p.license_number ?? "N/A"
+                                    })
+                                    .FirstOrDefaultAsync();
+
+            if (searchData != null)
+            {
+                return Ok(searchData.people_id);
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
     }
 }

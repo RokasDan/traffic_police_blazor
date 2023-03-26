@@ -1,0 +1,50 @@
+﻿@page "/ReportResults"
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<div>
+    <h3>Report Results</h3>
+    <div>
+        <div style="display:flex; flex-direction:row;">
+            <div>Report ID</div>
+            <div>Author</div>
+            <div>Vehicle ID</div>
+            <div>Offenders ID</div>
+            <div>Offence ID</div>
+            <div>Fine Issued</div>
+            <div>Points Issued</div>
+            <div>Report Date</div>
+            <div>Report Details</div>
+            <div>More Info</div>
+        </div>
+
+
+        <!-- reiterating through the cars array and displaying it on page in a table -->
+        @foreach (var row in reports)
+        {
+            <div style="display:flex; flex-direction:row;">
+                @foreach (var prop in row.GetType().GetProperties())
+                {
+                    <div>
+                        @if (prop.Name == "report_date")
+                        {
+                            DateTime dob = (DateTime)prop.GetValue(row);
+                            <span>@dob.ToString("MM/dd/yyyy")</span>
+                        }
+                        else
+                        {
+                            <span>@(prop.GetValue(row) ?? "N/A")</span>
+                        }
+                    </div>
+                }
+                <button @onclick="@(() =>  ReportDetails(row.report_id, row.people_id, row.car_id))">See Report</button>
+            </div>
+        }
+
+    </div>
+
+    <div>
+        <button @onclick="Goback">Go Back</button>
+    </div>
+
+</div>
