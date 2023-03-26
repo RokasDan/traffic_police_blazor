@@ -35,5 +35,10 @@ namespace TrafficPoliceBlazor.Client.Pages
         {
             NavigationManager.NavigateTo("/offenceList");
         }
+
+        private void VehicleSearch()
+        {
+            NavigationManager.NavigateTo("/CarSearch");
+        }
     }
 }

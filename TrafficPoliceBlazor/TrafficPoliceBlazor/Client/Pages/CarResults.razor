@@ -1,0 +1,36 @@
+﻿@page "/CarResults"
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+
+<div>
+    <h3>CarResults</h3>
+    <div> 
+            <div style="display:flex; flex-direction:row;">
+                <div>Number Plate</div>
+                <div>Brand</div>
+                <div>Model</div>
+                <div>Color</div>
+                <div>Owner ID</div>
+            </div>
+        
+
+            <!-- reiterating through the cars array and displaying it on page in a table -->
+            @foreach (var row in cars)
+            {
+                <div style="display:flex; flex-direction:row;">
+                    @foreach (var prop in row.GetType().GetProperties())
+                    {
+                        <div>@(prop.GetValue(row) ?? "N/A")</div>
+                    }
+                <button @onclick="@(() =>  OwnerDetails(row.owner))">See Owner</button>
+                </div>
+            }
+
+    </div>
+
+    <div>
+        <button @onclick="Goback">Go Back</button>
+    </div>
+</div>
+

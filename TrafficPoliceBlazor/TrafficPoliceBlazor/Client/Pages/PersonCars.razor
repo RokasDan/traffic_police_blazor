@@ -12,6 +12,7 @@
 
     <div>
 
+        <!-- rendering headers for person car table if he does have cars -->
         @if (cars.Length > 0)
         {
             <div style="display:flex; flex-direction:row;">
@@ -22,7 +23,8 @@
                 <div>Owner ID</div>
             </div>
         }
-        
+
+        <!-- reiterating through the cars array and displaying it on page in a table -->
         @foreach (var row in cars)
         {
             <div style="display:flex; flex-direction:row;">

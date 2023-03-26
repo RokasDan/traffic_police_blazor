@@ -1,0 +1,30 @@
+﻿@page "/CarSearch"
+
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<div>
+    <h1>Car Search</h1>
+    <h4>Enter a vehicle number plate.</h4>
+    <h4>@test</h4>
+
+    <div>
+        <EditForm Model="@searchModel" OnValidSubmit="@HandleSeach">
+            <DataAnnotationsValidator />
+            <div>
+                <ValidationSummary />
+            </div>
+
+            <label for="name"></label>
+            <InputText id="name" @bind-Value="@searchModel.searchString" MaxLength="50" />
+
+
+            <div>
+                <button type="submit">Search</button>
+                <button @onclick="Goback">Go Back</button>
+            </div>
+        </EditForm>
+    </div>
+</div>
+
+
