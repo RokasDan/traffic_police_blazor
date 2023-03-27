@@ -158,5 +158,13 @@ namespace TrafficPoliceBlazor.Server.Controllers
             }
         }
 
+        [HttpPost]
+        public async Task<IActionResult> Create([FromBody] people person)
+        {
+            _ctx.people.Add(person);
+            await _ctx.SaveChangesAsync();
+            return Ok();
+        }
+
     }
 }
