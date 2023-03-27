@@ -45,5 +45,26 @@ namespace TrafficPoliceBlazor.Server.Controllers
                 return BadRequest("No password found for the given username.");
             }
         }
+
+        [HttpPut]
+        [Route("{id}")]
+        public async Task<IActionResult> UpdatePassword(string id, admins newPassword)
+        {
+            var Update = _ctx.admins.FirstOrDefault(a => a.Username == id);
+
+            if (Update != null)
+            {
+                Update.Password = newPassword.Password;
+                // Update other properties as needed
+
+                _ctx.admins.Update(Update);
+                await _ctx.SaveChangesAsync();
+                return Ok();
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
     }
 }

@@ -40,6 +40,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FyU2VhcmNoLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Website_Dev/traffic_police_blazor/traffic_police_blazor/TrafficPoliceBlazor/TrafficPoliceBlazor/Client/Pages/ChangePassword.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhbmdlUGFzc3dvcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Website_Dev/traffic_police_blazor/traffic_police_blazor/TrafficPoliceBlazor/TrafficPoliceBlazor/Client/Pages/EditReport.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFJlcG9ydC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

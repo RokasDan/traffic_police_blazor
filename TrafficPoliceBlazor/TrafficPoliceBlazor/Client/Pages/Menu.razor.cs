@@ -60,5 +60,15 @@ namespace TrafficPoliceBlazor.Client.Pages
         {
             NavigationManager.NavigateTo($"/AddVehicle");
         }
+
+        private void changePassword()
+        {
+            NavigationManager.NavigateTo($"/ChangePassword?id={officerId}");
+        }
+
+        private void Logout()
+        {
+            NavigationManager.NavigateTo("/");
+        }
     }
 }
