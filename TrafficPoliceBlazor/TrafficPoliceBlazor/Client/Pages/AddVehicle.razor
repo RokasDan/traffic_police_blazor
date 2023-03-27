@@ -1,0 +1,48 @@
+﻿@page "/AddVehicle"
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+
+<div>
+    <h3>AddVehicle</h3>
+    <h1>@testy</h1>
+
+    <div>
+        <EditForm Model="@add" OnValidSubmit="@AddingVehicle">
+            <DataAnnotationsValidator />
+
+            <label for="plate">Number Plate:</label>
+            <InputText id="plate" @bind-Value="@add.numberPlate" MaxLength="20" placeholder="Enter number plate." />
+            <ValidationMessage For="@(() => add.numberPlate)" />
+
+            <label for="brand">Car Brand:</label>
+            <InputText id="brand" @bind-Value="@add.brand" MaxLength="20" placeholder="Enter car brand." />
+            <ValidationMessage For="@(() => add.brand)" />
+
+            <label for="model">Car Model:</label>
+            <InputText id="model" @bind-Value="@add.model" MaxLength="20" placeholder="Enter car model." />
+            <ValidationMessage For="@(() => add.model)" />
+
+            <label for="colour">Car Colour:</label>
+            <InputText id="colour" @bind-Value="@add.colour" MaxLength="20" placeholder="Enter car colour." />
+            <ValidationMessage For="@(() => add.colour)" />
+
+            <div>
+                <label for="person">Choose Person:</label>
+                <select id="person" name="person" @bind="add.owner">
+                    <option value=0>-- Choose A Person --</option>
+                    @foreach (var person in peoples)
+                    {
+                        <option value="@person.people_id">Person ID - @person.people_id    @person.first_name @person.last_name</option>
+                    }
+                </select>
+                <ValidationMessage For="@(() => add.owner)" />
+            </div>
+
+        <div>
+            <button type="submit">Add Person</button>
+            <button @onclick="Goback">Go Back</button>
+        </div>
+        </EditForm>
+    </div>
+</div>

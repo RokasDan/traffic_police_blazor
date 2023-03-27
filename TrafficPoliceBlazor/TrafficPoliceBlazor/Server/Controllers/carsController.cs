@@ -120,6 +120,13 @@ namespace TrafficPoliceBlazor.Server.Controllers
                 return BadRequest();
             }
         }
+        [HttpPost]
+        public async Task<IActionResult> Create([FromBody] cars newCar)
+        {
+            _ctx.cars.Add(newCar);
+            await _ctx.SaveChangesAsync();
+            return Ok();
+        }
 
     }
 }

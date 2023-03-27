@@ -200,14 +200,14 @@
       "netstandard.dll": "sha256-REs1\/xYvAzuX2k2Y5p\/5IaM3O\/zaiYSW62pOQBGMrrA=",
       "System.Private.CoreLib.dll": "sha256-Bz7VnNtt03SzAvIN30yx1e25P6SfMdLYIaKIy7ASEnw=",
       "TrafficPoliceBlazor.Shared.dll": "sha256-J0sIBAG8bYYpFHOT57hJLyavFt+sMp6Hj2ThY6lxs5A=",
-      "TrafficPoliceBlazor.Client.dll": "sha256-\/pWZPoR3\/7jQp9nvlvTV1p3iW2Ey3kKhpeDCQxtChuA="
+      "TrafficPoliceBlazor.Client.dll": "sha256-gi0KIYYvZHq2rFrWBy15UH86kkU5r\/uBhso3qtoLpe0="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "TrafficPoliceBlazor.Shared.pdb": "sha256-e\/Lfoq8FyCF7IJO+xr616NBRIT7kU5SGwTUoTbhZLN8=",
-      "TrafficPoliceBlazor.Client.pdb": "sha256-l4w5iN4wO81A5f1TgmBanivSabxe5grUKiY\/5fgdE1I="
+      "TrafficPoliceBlazor.Client.pdb": "sha256-ZTWUimF+dZiS\/ihmiS3\/z+2XKyXPEsBxquYvPcUc5aM="
     },
     "runtime": {
       "dotnet.6.0.15.oa2acromjh.js": "sha256-fb2wBZaRp096nChMG9nDNEcW0kW1whA\/kfQNyH+5QpQ=",
