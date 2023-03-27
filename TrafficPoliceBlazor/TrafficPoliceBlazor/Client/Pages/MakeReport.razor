@@ -7,21 +7,64 @@
 <div>
     <h1>MakeReport</h1>
 
-    <EditForm Model="@makeReport" OnValidSubmit="@AddReport">
 
+    <EditForm Model="@makeReport" OnValidSubmit="@AddReport">
+        <DataAnnotationsValidator />
         <div>
             <label for="fines">Add Fine:</label>
             <InputText id="fines" @bind-Value="@makeReport.fineIssued" MaxLength="20" placeholder="Enter Fine" />
+            <ValidationMessage For="@(() => makeReport.fineIssued)" />
 
             <label for="points">Add Points:</label>
             <InputText id="points" @bind-Value="@makeReport.pointsIssued" MaxLength="20" placeholder="Enter Penalty Points" />
+            <ValidationMessage For="@(() => makeReport.pointsIssued)" />
         </div>
         <div>
             <label for="date">Add Date:</label>
             <InputDate id="date" @bind-Value="@makeReport.report_date" format="yyyy-MM-dd" placeholder="Select a date" />
+            <ValidationMessage For="@(() => makeReport.report_date)" />
 
             <label for="detail">Add Details:</label>
             <InputText id="detail" @bind-Value="@makeReport.details" MaxLength="130" placeholder="Enter Details Of Incident" />
+            <ValidationMessage For="@(() => makeReport.details)" />
+        </div>
+
+        <div>
+            <div>
+                <label for="offence">Choose Offence:</label>
+                <select id="offence" name="offence" @bind="makeReport.SelectedOffence">
+                    <option value=0>-- Choose An Offence</option>
+                    @foreach (var offence in offences)
+                    {
+                        <option value="@offence.Offence_ID">Offence ID - @offence.Offence_ID    @offence.description</option>
+                    }
+                </select>
+                <ValidationMessage For="@(() => makeReport.SelectedOffence)" />
+            </div>
+
+            <div>
+                <label for="car">Choose Car:</label>
+                <select id="car" name="car" @bind="makeReport.SelectedCar">
+                    <option value="">-- Choose A Vehicle --</option>
+                    @foreach (var car in car)
+                    {
+                        <option value="@car.number_plate">@car.brand @car.model    Number Plate - @car.number_plate   </option>
+                    }
+                </select>
+                <ValidationMessage For="@(() => makeReport.SelectedCar)" />
+            </div>
+
+            <div>
+                <label for="person">Choose Person:</label>
+                <select id="person" name="person" @bind="makeReport.SelectedPeople">
+                    <option value=0>-- Choose A Person --</option>
+                    @foreach (var person in peoples)
+                    {
+                        <option value="@person.people_id">Person ID - @person.people_id    @person.first_name @person.last_name</option>
+                    }
+                </select>
+                <ValidationMessage For="@(() => makeReport.SelectedPeople)" />
+            </div>
         </div>
 
         <div>

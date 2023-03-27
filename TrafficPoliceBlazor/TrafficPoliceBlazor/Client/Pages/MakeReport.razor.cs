@@ -1,11 +1,17 @@
 ﻿using Microsoft.AspNetCore.Components;
 using System.ComponentModel.DataAnnotations;
+using System.Net.Http.Json;
+using TrafficPoliceBlazor.Shared;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace TrafficPoliceBlazor.Client.Pages
 {
     public  partial class MakeReport : ComponentBase
     {
 
+        private offence[] offences = Array.Empty<offence>();
+        private cars[] car = Array.Empty<cars>();
+        private people[] peoples = Array.Empty<people>();
 
         // We create a Model class for the Edit form object.
         private LoginModel makeReport = new LoginModel();
@@ -23,16 +29,35 @@ namespace TrafficPoliceBlazor.Client.Pages
             [Required(ErrorMessage = "Enter Date of event!")]
             public DateTime report_date { get; set; }
 
+            [Range(1, long.MaxValue, ErrorMessage = "Please select an offence.")]
+            public int SelectedOffence { get; set; }
+
+            [Required(ErrorMessage = "Please select a car.")]
+            public string SelectedCar { get; set; }
+
+            [Range(1, long.MaxValue, ErrorMessage = "Please select a person.")]
+            public int SelectedPeople { get; set; }
         }
 
-        private void Goback()
+        protected override async Task OnInitializedAsync()
+        {
+            offences = await Http.GetFromJsonAsync<offence[]>("/api/offence");
+
+            car = await Http.GetFromJsonAsync<cars[]>("/api/cars");
+
+            peoples = await Http.GetFromJsonAsync<people[]>("/api/people");
+
+        }
+
+            private void Goback()
         {
             NavigationManager.NavigateTo("javascript:history.back()");
         }
 
-        private async Task AddReport()
+        private void AddReport()
         {
-            return;
+
+            
         }
 
     }
