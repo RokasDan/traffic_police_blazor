@@ -37,7 +37,11 @@ builder.Services.AddDbContext<unknownDbContext>(options =>
     options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 23)), mySqlOptions => { }));
 
 
-
+// Adding logging middleware
+builder.Services.AddLogging(logging =>
+{
+    logging.AddConsole();
+});
 
 var app = builder.Build();
 

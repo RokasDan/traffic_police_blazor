@@ -21,6 +21,21 @@ namespace TrafficPoliceBlazor.Server.Controllers
         }
 
         // CRUD methods here!
+        //Method to get all people in the database
+        [HttpGet]
+        public async Task<IActionResult> GetOffenses()
+        {
+            var people = await _ctx.people.Select(p => new {
+                                        people_id = p.people_id,
+                                        first_name = p.first_name,
+                                        last_name = p.last_name,
+                                        address = p.address,
+                                        date_of_birth = p.date_of_birth,
+                                        license_number= p.license_number ?? "No Lisence"
+            }).ToListAsync();
+
+            return Ok(people);
+        }
 
         // Method to check if the an entered string returns data.
         [HttpGet("Check/{SearchString}")]
@@ -142,5 +157,6 @@ namespace TrafficPoliceBlazor.Server.Controllers
                 return BadRequest();
             }
         }
+
     }
 }

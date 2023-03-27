@@ -53,11 +53,6 @@ namespace TrafficPoliceBlazor.Client.Pages
                 test = "Connection to database is unsuccessful!";
             }
 
-            // Old JASON repraser code for example purposes.
-            //If response sucesfull unpacking json.
-            /*var result = await response.Content.ReadAsStringAsync();
-            var loginDetails = JsonSerializer.Deserialize<admins>(result, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
-            var password = loginDetails.Password;*/
         }
     }
 }

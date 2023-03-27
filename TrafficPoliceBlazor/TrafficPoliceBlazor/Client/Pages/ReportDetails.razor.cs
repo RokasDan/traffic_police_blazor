@@ -71,6 +71,7 @@ namespace TrafficPoliceBlazor.Client.Pages
             offence_id = report.offence_id; 
             fine_issued = report.fine_issued;
             points_issued = report.points_issued;
+            report_date = report.report_date;
             details = report.details;
 
             // Getting car involved in report.
@@ -116,8 +117,6 @@ namespace TrafficPoliceBlazor.Client.Pages
             description = offenceSearch.description;
             maxFine = offenceSearch.maxFine;
             maxPoints = offenceSearch.maxPoints;
-
-            carTest = colour;
 
         }
 

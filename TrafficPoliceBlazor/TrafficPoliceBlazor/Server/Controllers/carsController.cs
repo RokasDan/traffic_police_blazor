@@ -24,6 +24,22 @@ namespace TrafficPoliceBlazor.Server.Controllers
 
         // CRUD methods here !
 
+        // Method to get all car enteries
+        [HttpGet]
+        public async Task<IActionResult> GetAllCars()
+        {
+            var cars = await _ctx.cars
+                            .Select(c => new {
+                                number_plate = c.number_plate,
+                                Brand = c.brand,
+                                Model = c.model ?? "Uknown Model",
+                                Colour = c.colour,
+                                Owner = c.owner
+                            })
+                            .ToListAsync();
+            return Ok(cars);
+        }
+
         //Get cars for a specific person
         [HttpGet("PersonCars/{Searchlong}")]
         public async Task<IActionResult> PersonCars(long SearchLong)
@@ -104,5 +120,6 @@ namespace TrafficPoliceBlazor.Server.Controllers
                 return BadRequest();
             }
         }
+
     }
 }

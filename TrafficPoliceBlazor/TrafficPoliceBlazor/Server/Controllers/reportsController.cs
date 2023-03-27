@@ -88,5 +88,33 @@ namespace TrafficPoliceBlazor.Server.Controllers
             }
         }
 
+        [HttpPut]
+        [Route("{id}")]
+        public async Task<IActionResult> UpdateReport(long id, reports updatedReport)
+        {
+            var reportToUpdate = _ctx.reports.FirstOrDefault(r => r.report_id == id);
+
+            if (reportToUpdate != null)
+            {
+                reportToUpdate.people_id = updatedReport.people_id;
+                reportToUpdate.author = updatedReport.author;
+                reportToUpdate.car_id = updatedReport.car_id;
+                reportToUpdate.people_id = updatedReport.people_id;
+                reportToUpdate.offence_id = updatedReport.offence_id;
+                reportToUpdate.fine_issued = updatedReport.fine_issued;
+                reportToUpdate.points_issued = updatedReport.points_issued;
+                reportToUpdate.report_date = updatedReport.report_date;
+                reportToUpdate.details = updatedReport.details;
+                // Update other properties as needed
+
+                _ctx.reports.Update(reportToUpdate);
+                await _ctx.SaveChangesAsync();
+                return Ok();
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
     }
 }

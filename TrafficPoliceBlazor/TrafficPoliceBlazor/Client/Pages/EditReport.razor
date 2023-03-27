@@ -1,0 +1,70 @@
+﻿@page "/EditReport"
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<div>
+    <h3>Edit Report</h3>
+    <h1>@TEST</h1>
+
+    <EditForm Model="@updateReport" OnValidSubmit="@UpdateReport">
+        <DataAnnotationsValidator />
+        <div>
+            <ValidationSummary />
+        </div>
+
+        <div>
+            <div>
+                <label for="fines">New Fine:</label>
+                <InputText id="fines" @bind-Value="@updateReport.fineIssued" MaxLength="20" placeholder="@fine_issued"/>
+
+                <label for="points">New Points:</label>
+                <InputText id="points" @bind-Value="@updateReport.pointsIssued" MaxLength="20" placeholder="@points_issued" />
+            </div>
+            <div>
+                <label for="date">New Date:</label>
+                <InputDate id="date" @bind-Value="@updateReport.report_date" format="yyyy-MM-dd" placeholder="Select a date" />
+
+                <label for="detail">New Details:</label>
+                <InputText id="detail" @bind-Value="@updateReport.details" MaxLength="130" placeholder="@details" />
+            </div>
+        </div>
+
+        <div>
+            <label for="offence">Offence:</label>
+            <select id="offence" name="offence" @bind="SelectedOffence">
+                <option value="@offenceValueDefault">@offenceSelectorDefault</option>
+                @foreach (var offence in offences)
+                {
+                    <option value="@offence.Offence_ID">Offence ID - @offence.Offence_ID    @offence.description</option>
+                }
+            </select>
+
+            <label for="car">Car:</label>
+            <select id="car" name="car" @bind="SelectedCar">
+                <option value="@carValueDefault">@carSelectorDefault</option>
+                @foreach (var car in car)
+                {
+                    <option value="@car.number_plate">@car.brand @car.model    Number Plate - @car.number_plate   </option>
+                }
+            </select>
+
+            <label for="person">Person:</label>
+            <select id="person" name="person" @bind="SelectedPeople">
+                <option value="@peopleValueDefault">@peopleSelectorDefault</option>
+                @foreach (var person in peoples)
+                {
+                    <option value="@person.people_id">Person ID - @person.people_id    @person.first_name @person.last_name</option>
+                }
+            </select>
+        </div>
+
+        <div>
+            <button type="submit">Submit Changes</button>
+             <button @onclick="Goback">Go Back</button>
+        </div>
+    </EditForm>
+
+
+</div>
+
+
