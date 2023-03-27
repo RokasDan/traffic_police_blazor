@@ -8,10 +8,12 @@ namespace TrafficPoliceBlazor.Client.Pages
 {
     public  partial class MakeReport : ComponentBase
     {
+        private string testy { get; set; }
 
         private offence[] offences = Array.Empty<offence>();
         private cars[] car = Array.Empty<cars>();
         private people[] peoples = Array.Empty<people>();
+        private reports newReport = new reports();
 
         // We create a Model class for the Edit form object.
         private LoginModel makeReport = new LoginModel();
@@ -54,10 +56,32 @@ namespace TrafficPoliceBlazor.Client.Pages
             NavigationManager.NavigateTo("javascript:history.back()");
         }
 
-        private void AddReport()
+        private async Task AddReport()
         {
+            //Preparing new report to be sent
+            // Quering our Navigation link for a report search string.
+            var uri = new Uri(NavigationManager.Uri);
+            var queryParams = System.Web.HttpUtility.ParseQueryString(uri.Query);
+            var author = queryParams["id"];
 
-            
+            newReport.author = author;
+            newReport.fine_issued = makeReport.fineIssued;
+            newReport.points_issued = makeReport.pointsIssued;
+            newReport.details = makeReport.details;
+            newReport.report_date = makeReport.report_date;
+            newReport.offence_id = makeReport.SelectedOffence;
+            newReport.car_id = makeReport.SelectedCar;
+            newReport.people_id = makeReport.SelectedPeople;
+
+            var test = await Http.PostAsJsonAsync<reports>("/api/reports", newReport);
+
+            if(test.IsSuccessStatusCode)
+            {
+                testy = "Yeees";
+            } else
+            {
+                testy = "Noooo";
+            }
         }
 
     }
