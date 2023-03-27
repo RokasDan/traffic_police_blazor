@@ -77,10 +77,11 @@ namespace TrafficPoliceBlazor.Client.Pages
 
             if(test.IsSuccessStatusCode)
             {
-                testy = "Yeees";
-            } else
+                NavigationManager.NavigateTo("javascript:history.back()");
+            }
+            else
             {
-                testy = "Noooo";
+                testy = "Connection to the database is lost!";
             }
         }
 
