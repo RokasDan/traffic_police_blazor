@@ -12,6 +12,7 @@ namespace TrafficPoliceBlazor.Client.Pages
     public partial class EditReport : ComponentBase
     {
         private string TEST { get; set; }
+
         //Default offence values
         private string offenceSelectorDefault { get; set; }
         private long offenceValueDefault { get; set; }
@@ -189,12 +190,12 @@ namespace TrafficPoliceBlazor.Client.Pages
             if (response.IsSuccessStatusCode)
             {
                 // Report updated successfully
-                TEST = "YEEESSSS";
+                NavigationManager.NavigateTo("javascript:history.back()");
             }
             else
             {
                 // Error updating report
-                TEST = "NOOOOPE";
+                TEST = "Could Not Submit your change!";
             }
         }
 

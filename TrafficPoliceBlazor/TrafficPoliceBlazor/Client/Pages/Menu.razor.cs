@@ -45,5 +45,10 @@ namespace TrafficPoliceBlazor.Client.Pages
         {
             NavigationManager.NavigateTo("/ReportSearch");
         }
+
+        private void MakeReport()
+        {
+            NavigationManager.NavigateTo($"/MakeReport?id={officerId}");
+        }
     }
 }

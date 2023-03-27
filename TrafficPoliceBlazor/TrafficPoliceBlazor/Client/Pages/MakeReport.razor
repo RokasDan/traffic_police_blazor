@@ -1,0 +1,34 @@
+﻿@page "/MakeReport"
+
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+
+<div>
+    <h1>MakeReport</h1>
+
+    <EditForm Model="@makeReport" OnValidSubmit="@AddReport">
+
+        <div>
+            <label for="fines">Add Fine:</label>
+            <InputText id="fines" @bind-Value="@makeReport.fineIssued" MaxLength="20" placeholder="Enter Fine" />
+
+            <label for="points">Add Points:</label>
+            <InputText id="points" @bind-Value="@makeReport.pointsIssued" MaxLength="20" placeholder="Enter Penalty Points" />
+        </div>
+        <div>
+            <label for="date">Add Date:</label>
+            <InputDate id="date" @bind-Value="@makeReport.report_date" format="yyyy-MM-dd" placeholder="Select a date" />
+
+            <label for="detail">Add Details:</label>
+            <InputText id="detail" @bind-Value="@makeReport.details" MaxLength="130" placeholder="Enter Details Of Incident" />
+        </div>
+
+        <div>
+            <button type="submit">Make Report</button>
+            <button @onclick="Goback">Go Back</button>
+        </div>
+
+    </EditForm>
+</div>
+
