@@ -24,18 +24,18 @@
                     <ValidationMessage For="@(() => loginModel.officerId)" />
                 </div>
 
-                <div>
+                <div class="loginText">
                     <label for="name">Officer ID:</label>
-                    <InputText id="name" @bind-Value="@loginModel.officerId" MaxLength="15" />
+                <InputText id="name" @bind-Value="@loginModel.officerId" MaxLength="15" class="loginText"/>
                 </div>
 
                 <div class="loginErrorHeader">
                     <ValidationMessage For="@(() => loginModel.password)" />
                 </div>
 
-                <div>
+                <div class="loginText">
                     <label for="password">Password:</label>
-                    <InputText id="password" type="password" @bind-Value="@loginModel.password" MaxLength="15" />
+                <InputText id="password" type="password" @bind-Value="@loginModel.password" MaxLength="15" class="loginText" />
                 </div>
 
                 <div class="loginButton">

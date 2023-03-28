@@ -1,22 +1,38 @@
 ﻿@page "/Menu"
 @inject NavigationManager NavigationManager
 
-<div>
-    <h1>Menu</h1>
-    <h2>Logged In As @officerName</h2>
+<div class="centerMenu">
+    <h1 class="MenuHeader">Menu</h1>
+    
+    <div class="MenuBox">
 
-    <div>
-        <button @onclick="OffenceList">Offence List</button>
-        <button @onclick="PeopleSearch">People Search</button>
-        <button @onclick="VehicleSearch">Vehicle Search</button>
-        <button @onclick="ReportSearch">Report Search</button>
-        <button @onclick="AddPerson">Add Offender</button>
-        <button @onclick="AddVehicle">Add Vehicle</button>
-        <button @onclick="MakeReport">Make Report</button>
-        <button @onclick="changePassword">Change Password</button>
-    </div>
-    <div>
-        <button @onclick="Logout">Logout</button>
+        <div>
+            <h4 class="UserStatus">Logged In As @officerName</h4>
+        </div>
+        
+        <div class="ButtonGroup">
+            <button class="button2" @onclick="OffenceList">Offence List</button>
+            <button class="button2" @onclick="PeopleSearch">People Search</button>
+        </div>
+        
+        <div class="ButtonGroup">
+            <button class="button2" @onclick="VehicleSearch">Vehicle Search</button>
+            <button class="button2" @onclick="ReportSearch">Report Search</button>
+        </div>
+        
+        <div class="ButtonGroup">
+            <button class="button2" @onclick="AddPerson">Add Offender</button>
+            <button class="button2" @onclick="AddVehicle">Add Vehicle</button>
+        </div>
+        
+        <div class="ButtonGroup">
+            <button class="button2" @onclick="MakeReport">Make Report</button>
+            <button class="button2" @onclick="changePassword">Change Password</button>
+        </div>
+
+        <div>
+            <button class="button1" @onclick="Logout">Logout</button>
+        </div>
     </div>
 
 </div>

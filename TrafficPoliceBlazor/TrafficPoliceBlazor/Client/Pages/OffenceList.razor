@@ -2,29 +2,29 @@
 @inject NavigationManager NavigationManager
 @inject HttpClient Http
 
-<div>
-    <h1>OffenceList</h1>
+<div class="SuroundList">
+    <h1>Offence List</h1>
 
-    <div>
+    <div class="SuroundBorder">
         <div style="display:flex; flex-direction:row;">
-            <div>Offence ID</div>
-            <div>Description</div>
-            <div>MaxFine</div>
-            <div>MaxPoints</div>
+            <div class="OffenceId">Offence ID</div>
+            <div class="Description">Description</div>
+            <div class="MaxFine">MaxFine</div>
+            <div class="MaxPoints">MaxPoints</div>
         </div>
         @foreach (var row in offences)
         {
             <div style="display:flex; flex-direction:row;">
-                @foreach (var prop in row.GetType().GetProperties())
-                {
-                    <div>@(prop.GetValue(row) ?? "N/A")</div>
-                }
+                <div class="OffenceId">@row.Offence_ID</div>
+                <div class="Description">@row.description</div>
+                <div class="MaxFine">@row.maxFine</div>
+                <div class="MaxPoints">@row.maxPoints</div>
             </div>
         }
     </div>
 
-    <div>
-        <button @onclick="Goback">Go Back</button>
+    <div class="OffenceListButton">
+        <button class="button1" @onclick="Goback">Go Back</button>
     </div>
 </div>
 

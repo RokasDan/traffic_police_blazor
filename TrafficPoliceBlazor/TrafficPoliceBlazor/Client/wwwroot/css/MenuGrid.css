@@ -1,4 +1,4 @@
-﻿.centerLoginSubmit {
+﻿.centerMenu {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -6,7 +6,6 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 50%;
-    min-height: 50%;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -15,31 +14,24 @@
     margin: 0px;
 }
 
-.loginBoxSubmit {
-    background-color: #b99566;
-    border: 5px solid black;
-    border-radius: 10px;
-    width: 500px;
-    height: 380px;
-}
-
-.loginHeader {
+.MenuHeader {
     text-align: center;
     color: red;
 }
 
-.LoginStatus {
-    height: 20px;
+.MenuBox {
+    background-color: #b99566;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 670px;
+    height: 500px;
+}
+
+.ButtonGroup {
+    padding-bottom: 15px;
+}
+
+.UserStatus {
     padding-top: 5%;
     color: green;
-}
-
-.loginErrorHeader{
-    height: 50px;
-    padding-top: 5%;
-}
-
-.loginButton {
-    padding-top: 5%;
-    padding-bottom: 5%;
 }
