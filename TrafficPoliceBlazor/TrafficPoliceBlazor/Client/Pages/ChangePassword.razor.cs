@@ -18,9 +18,11 @@ namespace TrafficPoliceBlazor.Client.Pages
             [Required(ErrorMessage = "This field can't be empty!")]
             public string CurrentPassword { get; set; }
 
+            [RegularExpression(@"^\S+$", ErrorMessage = "New password can contain only white space characters.")]
             [Required(ErrorMessage = "This field can't be empty!")]
             public string NewPassword { get; set; }
 
+            [RegularExpression(@"^\S+$", ErrorMessage = "Confirm password can contain only white space characters.")]
             [Required(ErrorMessage = "This field can't be empty!")]
             public string ConfirmPassword { get; set; }
         }

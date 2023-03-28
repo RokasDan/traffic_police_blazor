@@ -54,10 +54,13 @@ namespace TrafficPoliceBlazor.Client.Pages
         // We create a Model class for the Edit form object.
         public class LoginModel
         {
+            [Required(ErrorMessage = "Fine cannot be empty.")]
             public string fineIssued { get; set; }
 
+            [Required(ErrorMessage = "Points cannot be empty.")]
             public string pointsIssued { get; set; }
 
+            [Required(ErrorMessage = "Details cannot be empty.")]
             public string details { get; set; }
 
             public DateTime report_date { get; set; }

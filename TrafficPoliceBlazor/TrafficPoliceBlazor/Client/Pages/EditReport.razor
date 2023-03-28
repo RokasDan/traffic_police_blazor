@@ -8,24 +8,25 @@
 
     <EditForm Model="@updateReport" OnValidSubmit="@UpdateReport">
         <DataAnnotationsValidator />
-        <div>
-            <ValidationSummary />
-        </div>
 
         <div>
             <div>
                 <label for="fines">New Fine:</label>
                 <InputText id="fines" @bind-Value="@updateReport.fineIssued" MaxLength="20" placeholder="@fine_issued"/>
+                <ValidationMessage For="@(() => updateReport.fineIssued)" />
 
                 <label for="points">New Points:</label>
                 <InputText id="points" @bind-Value="@updateReport.pointsIssued" MaxLength="20" placeholder="@points_issued" />
+                <ValidationMessage For="@(() => updateReport.pointsIssued)" />
             </div>
             <div>
                 <label for="date">New Date:</label>
                 <InputDate id="date" @bind-Value="@updateReport.report_date" format="yyyy-MM-dd" placeholder="Select a date" />
+                <ValidationMessage For="@(() => updateReport.report_date)" />
 
                 <label for="detail">New Details:</label>
                 <InputText id="detail" @bind-Value="@updateReport.details" MaxLength="130" placeholder="@details" />
+                <ValidationMessage For="@(() => updateReport.details)" />
             </div>
         </div>
 

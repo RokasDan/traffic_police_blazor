@@ -28,7 +28,7 @@
             <ValidationMessage For="@(() => add.colour)" />
 
             <div>
-                <label for="person">Choose Person:</label>
+                <label for="person">Choose Owner:</label>
                 <select id="person" name="person" @bind="add.owner">
                     <option value=0>-- Choose A Person --</option>
                     @foreach (var person in peoples)
@@ -40,7 +40,7 @@
             </div>
 
         <div>
-            <button type="submit">Add Person</button>
+            <button type="submit">Add Vehicle</button>
             <button @onclick="Goback">Go Back</button>
         </div>
         </EditForm>

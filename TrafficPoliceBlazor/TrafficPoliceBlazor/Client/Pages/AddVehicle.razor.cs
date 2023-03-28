@@ -16,6 +16,7 @@ namespace TrafficPoliceBlazor.Client.Pages
 
         public class LoginModel
         {
+            [RegularExpression(@"^\S+$", ErrorMessage = "Number plate can contain only white space characters.")]
             [Required(ErrorMessage = "Number plate can't be empty!")]
             public string numberPlate { get; set; }
 

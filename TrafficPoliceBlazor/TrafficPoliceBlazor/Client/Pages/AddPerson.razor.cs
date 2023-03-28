@@ -14,9 +14,11 @@ namespace TrafficPoliceBlazor.Client.Pages
 
         public class LoginModel
         {
+            [RegularExpression(@"^\S+$", ErrorMessage = "Name can contain only white space characters.")]
             [Required(ErrorMessage = "Name can't be empty!")]
             public string firstName { get; set; }
 
+            [RegularExpression(@"^\S+$", ErrorMessage = "Surname can contain only white space characters.")]
             [Required(ErrorMessage = "Surname can't be empty!")]
             public string lastName { get; set; }
 
@@ -26,6 +28,7 @@ namespace TrafficPoliceBlazor.Client.Pages
             [Required(ErrorMessage = "Date Of Birth can't be empty!")]
             public DateTime date_of_birth { get; set; }
 
+            [RegularExpression(@"^\S+$", ErrorMessage = "License Number can contain only white space characters.")]
             [Required(ErrorMessage = "License Number can't be empty!")]
             public string licenseNumber { get; set; }
         }
