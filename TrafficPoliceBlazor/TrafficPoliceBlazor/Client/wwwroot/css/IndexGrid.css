@@ -1,0 +1,39 @@
+﻿.centerLogin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 50%;
+    min-height: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+}
+
+.loginBox {
+    background-color: #b99566;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 50%;
+    height: 35%;
+
+}
+
+.indexHeader {
+    text-align: center;
+    color: red
+}
+
+.welcomeHeader {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.welcomeButton {
+    padding-bottom: 5%;
+}

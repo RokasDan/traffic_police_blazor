@@ -13,6 +13,26 @@
       "PackagePath": "staticwebassets\\TrafficPoliceBlazor.Client.styles.css"
     },
     {
+      "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\Buttons.css",
+      "PackagePath": "staticwebassets\\css\\Buttons.css"
+    },
+    {
+      "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\CustomFonts.css",
+      "PackagePath": "staticwebassets\\css\\CustomFonts.css"
+    },
+    {
+      "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\Fonts\\PressStart2P-Regular.ttf",
+      "PackagePath": "staticwebassets\\css\\Fonts\\PressStart2P-Regular.ttf"
+    },
+    {
+      "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\Images\\background.png",
+      "PackagePath": "staticwebassets\\css\\Images\\background.png"
+    },
+    {
+      "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\IndexGrid.css",
+      "PackagePath": "staticwebassets\\css\\IndexGrid.css"
+    },
+    {
       "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },

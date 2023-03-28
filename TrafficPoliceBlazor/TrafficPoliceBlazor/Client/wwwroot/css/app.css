@@ -1,7 +1,18 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
+@font-face {
+    font-family: "Mainfont";
+    src: url("./Fonts/PressStart2P-Regular.ttf")
+}
+
 html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-image: url('./Images/background.png');
+    height: 100%;
+    margin: 0;
+    font-family: 'Mainfont', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1:focus {
