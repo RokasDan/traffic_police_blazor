@@ -1,18 +1,18 @@
-﻿.OffenceId {
+﻿.NumberPlate {
     background-color: darkgoldenrod;
     border-left: 2px solid black;
     border-right: 2px solid black;
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     border-top: 1px solid rgba(0, 0, 0, 0.5);
     width: 200px;
-    text-align:center;
+    text-align: center;
 }
 
-.SuroundBorder {
+.PersonCarBorder {
     border: 5px solid black;
 }
 
-.SuroundList {
+.PersonCarList {
     background-color: #b99566;
     border: 5px solid black;
     border-radius: 10px;
@@ -20,7 +20,7 @@
 }
 
 
-.Description {
+.PeopleBrand {
     background-color: darkgoldenrod;
     border-left: 2px solid black;
     border-right: 2px solid black;
@@ -30,7 +30,18 @@
     text-align: center;
 }
 
-.MaxFine {
+.PeopleModel {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 180px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.PeopleColor {
     background-color: darkgoldenrod;
     border-left: 2px solid black;
     border-right: 2px solid black;
@@ -40,7 +51,7 @@
     text-align: center;
 }
 
-.MaxPoints {
+.OwnerId {
     background-color: darkgoldenrod;
     border-left: 2px solid black;
     border-right: 2px solid black;
@@ -50,7 +61,7 @@
     text-align: center;
 }
 
-.OffenceListButton {
+.PeopleCarListButton {
     display: flex;
     justify-content: center;
     align-items: center;

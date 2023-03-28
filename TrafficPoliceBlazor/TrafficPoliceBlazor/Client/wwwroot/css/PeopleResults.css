@@ -1,18 +1,18 @@
-﻿.OffenceId {
+﻿.PersonId{
     background-color: darkgoldenrod;
     border-left: 2px solid black;
     border-right: 2px solid black;
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     border-top: 1px solid rgba(0, 0, 0, 0.5);
     width: 200px;
-    text-align:center;
+    text-align: center;
 }
 
-.SuroundBorder {
+.PeopleSuroundBorder {
     border: 5px solid black;
 }
 
-.SuroundList {
+.PeopleSuroundList {
     background-color: #b99566;
     border: 5px solid black;
     border-radius: 10px;
@@ -20,7 +20,7 @@
 }
 
 
-.Description {
+.Address {
     background-color: darkgoldenrod;
     border-left: 2px solid black;
     border-right: 2px solid black;
@@ -30,7 +30,18 @@
     text-align: center;
 }
 
-.MaxFine {
+.DOB {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 180px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.fistName {
     background-color: darkgoldenrod;
     border-left: 2px solid black;
     border-right: 2px solid black;
@@ -40,7 +51,28 @@
     text-align: center;
 }
 
-.MaxPoints {
+.lastName {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 150px;
+    text-align: center;
+}
+
+.license {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 200px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.ownedVehicles {
     background-color: darkgoldenrod;
     border-left: 2px solid black;
     border-right: 2px solid black;

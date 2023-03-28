@@ -1,0 +1,33 @@
+﻿.PoepleSeachBox {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+    background-color: #b99566;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 600px;
+    height: 250px;
+}
+
+.PeopleSearchHeader {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: red;
+}
+
+.PeopleSearchError {
+    padding-top: 8px;
+    height: 40px;
+    color:red;
+}
+
+.PeopleSearchButtons{
+    padding-top: 10px;
+    padding-bottom: 5px;
+}

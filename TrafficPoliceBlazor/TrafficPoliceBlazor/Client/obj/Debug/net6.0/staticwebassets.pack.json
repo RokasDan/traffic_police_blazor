@@ -45,6 +45,18 @@
       "PackagePath": "staticwebassets\\css\\OffenceListGrid.css"
     },
     {
+      "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\PeopleResults.css",
+      "PackagePath": "staticwebassets\\css\\PeopleResults.css"
+    },
+    {
+      "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\PeopleSearchGrid.css",
+      "PackagePath": "staticwebassets\\css\\PeopleSearchGrid.css"
+    },
+    {
+      "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\PersonCars.css",
+      "PackagePath": "staticwebassets\\css\\PersonCars.css"
+    },
+    {
       "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
