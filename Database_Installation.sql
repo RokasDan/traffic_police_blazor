@@ -67,7 +67,7 @@ CREATE TABLE `cars` (
 
 LOCK TABLES `cars` WRITE;
 /*!40000 ALTER TABLE `cars` DISABLE KEYS */;
-INSERT INTO `cars` VALUES ('12GR32V','BMW','I8','RED',6),('22POOPV','VOLKSWAGEN','POLO','BLUE',3),('32PO74W','VOLKSWAGEN','POLO','GREEN',4),('44PTD67','PEUGEOT','3008','SILVER',3),('49BB32V','VOLVO','XC90','GREEN',2),('796A32V','BMW','X6','BLUE',1),('7HKA38Q','AUDI','Q5','WHITE',1),('87P69PV','OPEL','ASTRA','RED',5),('89HTTTH','CYBERTRUCK','TRUCK','GREY',3),('8WW12QR','MINI','CLUBMAN','RED',7),('DE45DYQ','BMW','X6','SILVER',9),('DFY354R','BATCAR','Pixy','BLACK',10),('DFY393H','VOLKSWAGEN','beetle','YELLOW',11),('DJKY998','BMW','V8','BLACK',6),('DOPOR37','AUDI','TT','SILVER',10),('FGHw93H','Pink Stealth','Stank','PINK',12),('GWE1299','LAMBORGHINI','URUS','YELLOW',7),('PQ4354R','FERRARI','Dream','RED',10),('PQ44DTR','VOLVO','C30','BROWN',8),('PRETR10','AUDI','E_TRON','WHITE',9),('WTEPO69','JEEP','WRANGLER','GREEN',8);
+INSERT INTO `cars` VALUES ('12GR32V','BMW','I8','RED',6),('22POOPV','VOLKSWAGEN','POLO','BLUE',3),('32PO74W','VOLKSWAGEN','POLO','GREEN',4),('44PTD67','PEUGEOT','3008','SILVER',3),('49BB32V','VOLVO','XC90','GREEN',2),('796A32V','BMW','X6','BLUE',1),('7HKA38Q','AUDI','Q5','WHITE',1),('87P69PV','OPEL','ASTRA','RED',5),('89HTTTH','CYBERTRUCK','TRUCK','GREY',3),('8WW12QR','MINI','CLUBMAN','RED',7),('DE45DYQ','BMW','X6','SILVER',9),('DFY354R','BATCAR','Pixy','BLACK',10),('DFY393H','VOLKSWAGEN','beetle','YELLOW',11),('DJKY998','BMW','V8','BLACK',6),('DOPOR37','AUDI','TT','SILVER',10),('FGHw93H','Pink Stealth','Stank','PINK',12),('GWE1299','LAMBORGHINI','URUS','YELLOW',7),('PQ4354R','FERRARI','Dream','RED',10),('PQ44DTR','VOLVO','C30','BROWN',8),('PRETR10','AUDI','E_TRON','WHITE',9),('TH12CA69','Jetta','Box','Shrek Green',15),('WTEPO69','JEEP','WRANGLER','GREEN',8);
 /*!40000 ALTER TABLE `cars` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -140,7 +140,7 @@ CREATE TABLE `people` (
   PRIMARY KEY (`people_id`),
   UNIQUE KEY `people_id` (`people_id`),
   UNIQUE KEY `license_number` (`license_number`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -149,7 +149,7 @@ CREATE TABLE `people` (
 
 LOCK TABLES `people` WRITE;
 /*!40000 ALTER TABLE `people` DISABLE KEYS */;
-INSERT INTO `people` VALUES (1,'Luke','Perkins','32 The Lane - Awesworth','1990-12-21','LUKAS34214687465'),(2,'Gordon','Luce','11  Western Terrace St - Nottingham','1991-07-11','GORDO74212685377'),(3,'James','Bruke','38  Newcastle St - Coventry','1997-04-20','JAMES74210575375'),(4,'James','Torks','65  Balford St - Birmingham','1991-06-18','JAMES74280496385'),(5,'James','Lyko','9  Tennis St - London','1994-12-29','ROBER74977455156'),(6,'Angle','Gille','26  Train St - Crew','1994-03-03','ANGLE74347462337'),(7,'Poopty','Scop','Unkown St - Wakanda','1997-11-26','POOPT74113472877'),(8,'Droopty','Poo','11 Medziotoju St - Alytus','1996-09-23','DOOPT74642579865'),(9,'Gilbert','Doo','32 Laisves Aleja St - Vilnius','1998-03-16','GILBE74642595725'),(10,'Droopty','JamePoo','22 Danger St - Kaunas','1996-09-23','DOOPWW6642579865'),(11,'Gilbert','Poo','13  Main St - Oxford','1998-03-16','GILBE78882595725'),(12,'Pink Guy','The Filthy','69  Man Cave - LA','1999-03-16','PINK71123596575'),(13,'Darius','Dan','13  Secret Spot','1960-03-02','D88PWWASDA2579865'),(14,'Speed','The speed','Time tunnel - Alaska','1980-06-16','D1564WASDAQR79865');
+INSERT INTO `people` VALUES (1,'Luke','Perkins','32 The Lane - Awesworth','1990-12-21','LUKAS34214687465'),(2,'Gordon','Luce','11  Western Terrace St - Nottingham','1991-07-11','GORDO74212685377'),(3,'James','Bruke','38  Newcastle St - Coventry','1997-04-20','JAMES74210575375'),(4,'James','Torks','65  Balford St - Birmingham','1991-06-18','JAMES74280496385'),(5,'James','Lyko','9  Tennis St - London','1994-12-29','ROBER74977455156'),(6,'Angle','Gille','26  Train St - Crew','1994-03-03','ANGLE74347462337'),(7,'Poopty','Scop','Unkown St - Wakanda','1997-11-26','POOPT74113472877'),(8,'Droopty','Poo','11 Medziotoju St - Alytus','1996-09-23','DOOPT74642579865'),(9,'Gilbert','Doo','32 Laisves Aleja St - Vilnius','1998-03-16','GILBE74642595725'),(10,'Droopty','JamePoo','22 Danger St - Kaunas','1996-09-23','DOOPWW6642579865'),(11,'Gilbert','Poo','13  Main St - Oxford','1998-03-16','GILBE78882595725'),(12,'Pink Guy','Filthy','69  Man Cave - LA','1999-03-16','PINK71123596575'),(13,'Darius','Dan','13  Secret Spot','1960-03-02','D88PWWASDA2579865'),(14,'Speed','Fastness','Time tunnel - Alaska','1980-06-16','D1564WASDAQR79865'),(15,'Guy','Man','Bro Aley 420 Street','2000-04-22','SUPREEM1999YO');
 /*!40000 ALTER TABLE `people` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -177,7 +177,7 @@ CREATE TABLE `reports` (
   CONSTRAINT `reports_ibfk_1` FOREIGN KEY (`car_id`) REFERENCES `cars` (`number_plate`),
   CONSTRAINT `reports_ibfk_2` FOREIGN KEY (`people_id`) REFERENCES `people` (`people_id`),
   CONSTRAINT `reports_ibfk_3` FOREIGN KEY (`offence_id`) REFERENCES `offence` (`Offence_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -186,7 +186,7 @@ CREATE TABLE `reports` (
 
 LOCK TABLES `reports` WRITE;
 /*!40000 ALTER TABLE `reports` DISABLE KEYS */;
-INSERT INTO `reports` VALUES (1,'Carter','12GR32V',6,1,'600','2','2018-07-23','Speeded at a local school area going over 80 miles per hour!'),(2,'Carter','12GR32V',1,10,'10','3','2017-12-03','Speeded at on a highway, tailgating ongoing traffic!'),(3,'Carter','32PO74W',4,3,'200','3','2020-03-22','Drive drove without a seat belt on, driver has been issued a warning!'),(4,'Carter','44PTD67',3,4,'100','11','2019-06-12','Parking on a handicaped zone with no permit!'),(5,'Carter','22POOPV',3,2,'1000','3','2017-12-03','Speeded at on a highway, tailgating ongoing traffic!'),(6,'Regan','796A32V',1,6,'250','3','2011-07-02','Driver was stopped on routen check, licence was expiered and non valid!'),(7,'Regan','7HKA38Q',1,7,'400','5','2012-04-01','Driver did not stop on a red light!'),(8,'Regan','87P69PV',5,9,'100','3','2016-02-11','Driver failed to control the veichle on a snow day!'),(9,'Regan','89HTTTH',3,4,'200','3','2020-11-01','Car left in the middle of a tunnel entarance!'),(10,'Regan','DJKY998',6,2,'150','1','0000-00-00','Unknown driver speeding on a highway going way ower 120 miles mark!'),(11,'Regan','87P69PV',13,8,'200','4','0000-00-00','A too young idividual drove his push bike on a road!'),(12,'Carter','DJKY998',14,1,'300','1','2023-03-24','A person by the name of SPEED drives on a road with a BMW going on unbelievable speed taking over all of the cars he encouters!');
+INSERT INTO `reports` VALUES (1,'Carter','12GR32V',6,1,'600','2','2018-07-23','Speeded at a local school area going over 80 miles per hour!'),(2,'Carter','12GR32V',1,10,'10','3','2017-12-03','Speeded at on a highway, tailgating ongoing traffic!'),(3,'Carter','32PO74W',4,3,'200','3','2020-03-22','Drive drove without a seat belt on, driver has been issued a warning!'),(4,'Carter','44PTD67',3,4,'100','11','2019-06-12','Parking on a handicaped zone with no permit!'),(5,'Carter','22POOPV',3,2,'1000','3','2017-12-03','Speeded at on a highway, tailgating ongoing traffic!'),(6,'Regan','796A32V',1,6,'250','3','2011-07-02','Driver was stopped on routen check, licence was expiered and non valid!'),(7,'Regan','7HKA38Q',1,7,'400','5','2012-04-01','Driver did not stop on a red light!'),(8,'Regan','87P69PV',5,9,'100','3','2016-02-11','Driver failed to control the veichle on a snow day!'),(9,'Regan','89HTTTH',3,4,'200','3','2020-11-01','Car left in the middle of a tunnel entarance!'),(10,'Regan','DJKY998',6,2,'150','1','0000-00-00','Unknown driver speeding on a highway going way ower 120 miles mark!'),(11,'Regan','87P69PV',13,8,'200','4','0000-00-00','A too young idividual drove his push bike on a road!'),(12,'Carter','DJKY998',14,1,'300','1','2023-03-24','A person by the name of SPEED drives on a road with a BMW going on unbelievable speed taking over all of the cars he encouters!'),(13,'Rokas','FGHw93H',12,2,'108','108','2023-06-06','Its that Pink Dude Again'),(14,'Rokas','12GR32V',13,1,'10','10','2020-02-01','Data base test');
 /*!40000 ALTER TABLE `reports` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -224,4 +224,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-03-27 13:56:06
+-- Dump completed on 2023-03-28 13:16:01
