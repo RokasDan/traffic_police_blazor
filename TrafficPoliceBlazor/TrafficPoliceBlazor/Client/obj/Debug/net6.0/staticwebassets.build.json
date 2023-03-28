@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7JI00FhQAzFRhuF+U5kC2S2rUBoS4Er7GGT7GLQ6Fkw=",
+  "Hash": "ff3kzQJd+h8mRpXBaYGXvyE/AU6GFBDi7KlBNBaLhrM=",
   "Source": "TrafficPoliceBlazor.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -7138,6 +7138,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\IndexGrid.css"
+    },
+    {
+      "Identity": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\LoginGrid.css",
+      "SourceId": "TrafficPoliceBlazor.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/LoginGrid.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\LoginGrid.css"
     },
     {
       "Identity": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",

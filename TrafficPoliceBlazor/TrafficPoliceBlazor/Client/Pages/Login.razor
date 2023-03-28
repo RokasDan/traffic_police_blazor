@@ -3,25 +3,48 @@
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
 
-<div>
 
-    <h1>Please Login</h1>
 
-    <h1>@test</h1>
 
-    <EditForm Model="@loginModel" OnValidSubmit="@GetLogin">
-        <DataAnnotationsValidator />
-        <div>
-            <ValidationSummary />
-        </div>
+<div class="centerLoginSubmit ">
+            <div>
+                 <h1 class="loginHeader">Please Login</h1>
+            </div>
 
-        <label for="name">Officer ID:</label>
-        <InputText id="name" @bind-Value="@loginModel.officerId" MaxLength="15" />
+    <div class="loginBoxSubmit">
+            <EditForm Model="@loginModel" OnValidSubmit="@GetLogin">
+                <DataAnnotationsValidator />
 
-        <label for="password">Password:</label>
-        <InputText id="password" type="password" @bind-Value="@loginModel.password" MaxLength="15" />
 
-        <button type="submit">Login</button>
-    </EditForm>
+            <div class="LoginStatus">
+                    <h5>@test</h5>
+                </div>
 
+                <div class="loginErrorHeader">
+                    <ValidationMessage For="@(() => loginModel.officerId)" />
+                </div>
+
+                <div>
+                    <label for="name">Officer ID:</label>
+                    <InputText id="name" @bind-Value="@loginModel.officerId" MaxLength="15" />
+                </div>
+
+                <div class="loginErrorHeader">
+                    <ValidationMessage For="@(() => loginModel.password)" />
+                </div>
+
+                <div>
+                    <label for="password">Password:</label>
+                    <InputText id="password" type="password" @bind-Value="@loginModel.password" MaxLength="15" />
+                </div>
+
+                <div class="loginButton">
+                    <button class="button1" type="submit">Login</button>
+                </div>
+            </EditForm>
+    </div>
 </div>
+
+    
+
+

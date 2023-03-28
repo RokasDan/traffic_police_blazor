@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\css\\IndexGrid.css"
     },
     {
+      "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\LoginGrid.css",
+      "PackagePath": "staticwebassets\\css\\LoginGrid.css"
+    },
+    {
       "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },

@@ -1,11 +1,7 @@
 ﻿.button1 {
-    color: #082759;
+    color: #8C5E00;
     white-space: nowrap;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -25%);
-    background: #8C5E00;
+    background: #082759;
     padding: 20px;
 }
 

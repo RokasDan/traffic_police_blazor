@@ -1,4 +1,4 @@
-﻿.centerLogin {
+﻿.centerLoginSubmit {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -15,25 +15,29 @@
     margin: 0px;
 }
 
-.loginBox {
+.loginBoxSubmit {
     background-color: #b99566;
     border: 5px solid black;
     border-radius: 10px;
     width: 50%;
     height: 35%;
-
 }
 
-.LoginHeader {
+.loginHeader {
     text-align: center;
-    color: red
+    color: red;
 }
 
-.welcomeHeader {
+.LoginStatus {
     padding-top: 5%;
-    padding-bottom: 5%;
+    color:green;
 }
 
-.welcomeButton {
+.loginErrorHeader{
+    padding-top: 5%;
+}
+
+.loginButton {
+    padding-top: 5%;
     padding-bottom: 5%;
 }
