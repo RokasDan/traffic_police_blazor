@@ -21,7 +21,7 @@ Traffic Police Blazor is a Blazor WebAssembly project with a separate client and
     "Default": "Server=localhost;Database=police;Uid=root;Pwd=;ConvertZeroDateTime=True"
   }
 }
-
+```
 Once you've done this, you are ready to launch your MySQL server and the project.
 
 ## Login
