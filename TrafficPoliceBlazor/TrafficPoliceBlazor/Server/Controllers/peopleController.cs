@@ -7,6 +7,7 @@ using TrafficPoliceBlazor.Shared;
 
 namespace TrafficPoliceBlazor.Server.Controllers
 {
+    //People controller which handles everything assosiated with people table!
     [ApiController]
     [Route("api/[controller]")]
     public class peopleController : ControllerBase
@@ -21,7 +22,7 @@ namespace TrafficPoliceBlazor.Server.Controllers
         }
 
         // CRUD methods here!
-        //Method to get all people in the database
+        //Method to get all people in the database!
         [HttpGet]
         public async Task<IActionResult> GetOffenses()
         {
@@ -67,7 +68,7 @@ namespace TrafficPoliceBlazor.Server.Controllers
             }
         }
 
-
+        // Method which gets a single perso with his id!
         [HttpGet("Single/{SearchLong}")]
         public async Task<IActionResult> Single(long SearchLong)
         {
@@ -158,6 +159,7 @@ namespace TrafficPoliceBlazor.Server.Controllers
             }
         }
 
+        // A method for adding a new person to the database.
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] people person)
         {

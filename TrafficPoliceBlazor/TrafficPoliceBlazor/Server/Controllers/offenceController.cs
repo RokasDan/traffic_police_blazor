@@ -20,7 +20,7 @@ namespace TrafficPoliceBlazor.Server.Controllers
         }
         // CRUD methods here!
 
-        //Get all the rows from the table.
+        //Get all of the offences.
         [HttpGet]
         public async Task<IActionResult> GetOffenses()
         {

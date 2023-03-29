@@ -21,5 +21,6 @@ namespace TrafficPoliceBlazor.Server.Controllers
         }
 
         // CRUD methods here!
+        // Didnt use the table in project so no crud methods here!
     }
 }

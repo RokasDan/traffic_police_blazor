@@ -6,6 +6,7 @@ using TrafficPoliceBlazor.Shared;
 
 namespace TrafficPoliceBlazor.Server.Controllers
 {
+    // Controller for handeling anything assosiated with admin table
     [ApiController]
     [Route("api/[controller]")]
     public class adminLoginController : ControllerBase
@@ -19,6 +20,7 @@ namespace TrafficPoliceBlazor.Server.Controllers
             _ctx = ctx;
         }
 
+        // Method which checks if the user has entered a correct user name and if his password mached!
         [HttpGet]
         [Route("{Username}/{Password}")]
         public async Task<IActionResult> GetPassword(string Username, string Password)
@@ -46,6 +48,7 @@ namespace TrafficPoliceBlazor.Server.Controllers
             }
         }
 
+        // Method for updating user password!
         [HttpPut]
         [Route("{id}")]
         public async Task<IActionResult> UpdatePassword(string id, admins newPassword)

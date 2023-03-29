@@ -9,6 +9,7 @@ using TrafficPoliceBlazor.Shared;
 
 namespace TrafficPoliceBlazor.Server.Controllers
 {
+    // Controller which handles everything assosiated with the car database table!
     [ApiController]
     [Route("api/[controller]")]
     public class carsController : ControllerBase
@@ -24,7 +25,7 @@ namespace TrafficPoliceBlazor.Server.Controllers
 
         // CRUD methods here !
 
-        // Method to get all car enteries
+        // Method to get all car enteries!
         [HttpGet]
         public async Task<IActionResult> GetAllCars()
         {
@@ -40,7 +41,7 @@ namespace TrafficPoliceBlazor.Server.Controllers
             return Ok(cars);
         }
 
-        //Get cars for a specific person
+        //Get cars which are owned by a specific user!
         [HttpGet("PersonCars/{Searchlong}")]
         public async Task<IActionResult> PersonCars(long SearchLong)
         {
@@ -68,7 +69,7 @@ namespace TrafficPoliceBlazor.Server.Controllers
             }
         }
 
-        //Get car with a specific number plate
+        //Get car with a specific a partial number plate!
         [HttpGet("CarSearch/{SearchString}")]
         public async Task<IActionResult> Search(string SearchString)
         {
@@ -95,7 +96,7 @@ namespace TrafficPoliceBlazor.Server.Controllers
             }
         }
 
-        //Get single car with its ID
+        //Get single car with an exact number plate!
         [HttpGet("GetCarDirect/{SearchString}")]
         public async Task<IActionResult> GetCarDirect(string SearchString)
         {
@@ -120,6 +121,8 @@ namespace TrafficPoliceBlazor.Server.Controllers
                 return BadRequest();
             }
         }
+
+        // Method which takes in a cars class model and updates cars table with a new car!
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] cars newCar)
         {

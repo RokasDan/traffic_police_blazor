@@ -6,6 +6,7 @@ using TrafficPoliceBlazor.Shared;
 
 namespace TrafficPoliceBlazor.Server.Controllers
 {
+    // Controller to handle everything assisiated with repots table!
     [ApiController]
     [Route("api/[controller]")]
     public class reportsController : ControllerBase
@@ -56,7 +57,7 @@ namespace TrafficPoliceBlazor.Server.Controllers
 
         }
 
-        // Method for getting a report on base on report id.
+        // Method for getting a report according to report id.
         [HttpGet("GetDirectReport/{SearchId}")]
         public async Task<IActionResult> GetDirectReport(string SearchId)
         {
@@ -88,6 +89,7 @@ namespace TrafficPoliceBlazor.Server.Controllers
             }
         }
 
+        // Method for editing reports!
         [HttpPut]
         [Route("{id}")]
         public async Task<IActionResult> UpdateReport(long id, reports updatedReport)
@@ -117,6 +119,7 @@ namespace TrafficPoliceBlazor.Server.Controllers
             }
         }
 
+        // Method for adding new reports!
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] reports report)
         {
