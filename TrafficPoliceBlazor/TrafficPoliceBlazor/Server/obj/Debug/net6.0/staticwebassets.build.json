@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Gwq+9xPOQRvXmbVu3eNI4BTLv8iNKtsY20iypwiR1xE=",
+  "Hash": "Y/pdPZQxEi64bdu75QUW5nonIKNiEEcV1oOIBTOTJkk=",
   "Source": "TrafficPoliceBlazor.Server",
   "BasePath": "_content/TrafficPoliceBlazor.Server",
   "Mode": "Default",
@@ -6999,6 +6999,40 @@
       "OriginalItemSpec": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TrafficPoliceBlazor.Client.styles.css"
     },
     {
+      "Identity": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\AddPersonGrid.css",
+      "SourceId": "TrafficPoliceBlazor.Client",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/AddPersonGrid.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\AddPersonGrid.css"
+    },
+    {
+      "Identity": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\AddVehicleGrid.css",
+      "SourceId": "TrafficPoliceBlazor.Client",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/AddVehicleGrid.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\AddVehicleGrid.css"
+    },
+    {
       "Identity": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\app.css",
       "SourceId": "TrafficPoliceBlazor.Client",
       "SourceType": "Project",
@@ -7118,6 +7152,23 @@
       "OriginalItemSpec": "wwwroot\\css\\CarSearchGrid.css"
     },
     {
+      "Identity": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\ChangePasswordGrid.css",
+      "SourceId": "TrafficPoliceBlazor.Client",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/ChangePasswordGrid.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\ChangePasswordGrid.css"
+    },
+    {
       "Identity": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\CustomFonts.css",
       "SourceId": "TrafficPoliceBlazor.Client",
       "SourceType": "Project",
@@ -7218,6 +7269,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\LoginGrid.css"
+    },
+    {
+      "Identity": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\MakeReportGrid.css",
+      "SourceId": "TrafficPoliceBlazor.Client",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/MakeReportGrid.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\MakeReportGrid.css"
     },
     {
       "Identity": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\MenuGrid.css",

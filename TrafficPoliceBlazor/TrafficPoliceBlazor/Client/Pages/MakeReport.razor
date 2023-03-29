@@ -4,75 +4,88 @@
 @inject NavigationManager NavigationManager
 
 
-<div>
-    <h1>MakeReport</h1>
+<div class="centerMakeReportGrid">
+    <h1 class="AddReportHeader">MakeReport</h1>
     <h1>@testy</h1>
 
+    <div class="addNewReportBoarder">
 
     <EditForm Model="@makeReport" OnValidSubmit="@AddReport">
         <DataAnnotationsValidator />
-        <div>
-            <label for="fines">Add Fine:</label>
-            <InputText id="fines" @bind-Value="@makeReport.fineIssued" MaxLength="20" placeholder="Enter Fine" />
-            <ValidationMessage For="@(() => makeReport.fineIssued)" />
 
+        <div class="errorDivForNewReport"><ValidationMessage For="@(() => makeReport.fineIssued)" /></div>
+        <div>
+            <label for="fines">Add Fine &nbsp:</label>
+            <InputText id="fines" @bind-Value="@makeReport.fineIssued" MaxLength="20" placeholder="Enter Fine" />
+        </div>
+
+        <div class="errorDivForNewReport"><ValidationMessage For="@(() => makeReport.pointsIssued)" /></div>
+
+        <div>
             <label for="points">Add Points:</label>
             <InputText id="points" @bind-Value="@makeReport.pointsIssued" MaxLength="20" placeholder="Enter Penalty Points" />
-            <ValidationMessage For="@(() => makeReport.pointsIssued)" />
         </div>
+
+        <div class="errorDivForNewReport"><ValidationMessage For="@(() => makeReport.report_date)" /></div>
+
         <div>
             <label for="date">Add Date:</label>
             <InputDate id="date" @bind-Value="@makeReport.report_date" format="yyyy-MM-dd" placeholder="Select a date" />
-            <ValidationMessage For="@(() => makeReport.report_date)" />
+        </div>
 
+            <div class="errorDivForNewReport"><ValidationMessage For="@(() => makeReport.details)" /></div>
+            <div style="display: flex; align-items: center; justify-content: center;">
             <label for="detail">Add Details:</label>
-            <InputText id="detail" @bind-Value="@makeReport.details" MaxLength="130" placeholder="Enter Details Of Incident" />
-            <ValidationMessage For="@(() => makeReport.details)" />
+                <InputTextArea class="AddNewReportTextInput" id="detail" @bind-Value="@makeReport.details" MaxLength="130" placeholder="Enter Details Of Incident" />
+        </div>
+
+        <div class="errorDivForNewReport">
+            <ValidationMessage For="@(() => makeReport.SelectedOffence)" />
         </div>
 
         <div>
-            <div>
-                <label for="offence">Choose Offence:</label>
-                <select id="offence" name="offence" @bind="makeReport.SelectedOffence">
-                    <option value=0>-- Choose An Offence</option>
-                    @foreach (var offence in offences)
-                    {
-                        <option value="@offence.Offence_ID">Offence ID - @offence.Offence_ID    @offence.description</option>
-                    }
-                </select>
-                <ValidationMessage For="@(() => makeReport.SelectedOffence)" />
-            </div>
-
-            <div>
-                <label for="car">Choose Car:</label>
-                <select id="car" name="car" @bind="makeReport.SelectedCar">
-                    <option value="">-- Choose A Vehicle --</option>
-                    @foreach (var car in car)
-                    {
-                        <option value="@car.number_plate">@car.brand @car.model    Number Plate - @car.number_plate   </option>
-                    }
-                </select>
-                <ValidationMessage For="@(() => makeReport.SelectedCar)" />
-            </div>
-
-            <div>
-                <label for="person">Choose Person:</label>
-                <select id="person" name="person" @bind="makeReport.SelectedPeople">
-                    <option value=0>-- Choose A Person --</option>
-                    @foreach (var person in peoples)
-                    {
-                        <option value="@person.people_id">Person ID - @person.people_id    @person.first_name @person.last_name</option>
-                    }
-                </select>
-                <ValidationMessage For="@(() => makeReport.SelectedPeople)" />
-            </div>
+            <label for="offence">Choose Offence:</label>
+                <select class="AddNewReportSelector" id="offence" name="offence" @bind="makeReport.SelectedOffence">
+                <option value=0>-- Choose An Offence</option>
+                @foreach (var offence in offences)
+                {
+                    <option value="@offence.Offence_ID">Offence ID - @offence.Offence_ID    @offence.description</option>
+                }
+            </select>
         </div>
 
+        <div class="errorDivForNewReport"><ValidationMessage For="@(() => makeReport.SelectedCar)" /></div>
+
+         <div>
+            <label for="car">Choose Car:</label>
+                <select class="AddNewReportSelector" id="car" name="car" @bind="makeReport.SelectedCar">
+                <option value="">-- Choose A Vehicle --</option>
+                @foreach (var car in car)
+                {
+                    <option value="@car.number_plate">@car.brand @car.model    Number Plate - @car.number_plate   </option>
+                }
+            </select>
+         </div>
+
+        <div class="errorDivForNewReport"><ValidationMessage For="@(() => makeReport.SelectedPeople)" /></div>
+
         <div>
-            <button type="submit">Make Report</button>
-            <button @onclick="Goback">Go Back</button>
+            <label for="person">Choose Person:</label>
+                <select class="AddNewReportSelector" id="person" name="person" @bind="makeReport.SelectedPeople">
+                <option value=0>-- Choose A Person --</option>
+                @foreach (var person in peoples)
+                {
+                    <option value="@person.people_id">Person ID - @person.people_id    @person.first_name @person.last_name</option>
+                }
+            </select>
+        </div>
+
+        <div class="addNewReportButtons">
+            <button class="button1" type="submit">Make Report</button>
+            <button class="button1" @onclick="Goback">Go Back</button>
         </div>
 
     </EditForm>
+    </div>
 </div>
 

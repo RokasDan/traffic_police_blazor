@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\TrafficPoliceBlazor.Client.styles.css"
     },
     {
+      "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\AddPersonGrid.css",
+      "PackagePath": "staticwebassets\\css\\AddPersonGrid.css"
+    },
+    {
+      "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\AddVehicleGrid.css",
+      "PackagePath": "staticwebassets\\css\\AddVehicleGrid.css"
+    },
+    {
       "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\Buttons.css",
       "PackagePath": "staticwebassets\\css\\Buttons.css"
     },
@@ -27,6 +35,10 @@
     {
       "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\CarSearchGrid.css",
       "PackagePath": "staticwebassets\\css\\CarSearchGrid.css"
+    },
+    {
+      "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\ChangePasswordGrid.css",
+      "PackagePath": "staticwebassets\\css\\ChangePasswordGrid.css"
     },
     {
       "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\CustomFonts.css",
@@ -51,6 +63,10 @@
     {
       "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\LoginGrid.css",
       "PackagePath": "staticwebassets\\css\\LoginGrid.css"
+    },
+    {
+      "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\MakeReportGrid.css",
+      "PackagePath": "staticwebassets\\css\\MakeReportGrid.css"
     },
     {
       "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\MenuGrid.css",

@@ -1,0 +1,50 @@
+﻿.centerMakeReportGrid {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 50%;
+    min-height: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+    padding-bottom:40px;
+}
+
+.addNewReportBoarder {
+    background-color: #b99566;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 25px;
+    width: 660px;
+    height: 850px;
+}
+
+.AddReportHeader {
+    color: red;
+}
+
+.errorDivForNewReport {
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: red;
+}
+
+.AddNewReportSelector {
+    width: 500px;
+    margin-bottom: 5px;
+}
+
+.AddNewReportTextInput {
+    height:190px;
+}
+
+.addNewReportButtons {
+    padding: 20px;
+}

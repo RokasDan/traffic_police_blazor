@@ -3,45 +3,67 @@
 @inject NavigationManager NavigationManager
 
 
-<div>
-    <h3>AddVehicle</h3>
-    <h1>@testy</h1>
+<div class="centerAddVehicle">
+    <h3 class="AddPersonHeader">AddVehicle</h3>
 
-    <div>
+    <div class="addVehicleBoarder">
         <EditForm Model="@add" OnValidSubmit="@AddingVehicle">
             <DataAnnotationsValidator />
 
-            <label for="plate">Number Plate:</label>
-            <InputText id="plate" @bind-Value="@add.numberPlate" MaxLength="20" placeholder="Enter number plate." />
-            <ValidationMessage For="@(() => add.numberPlate)" />
-
-            <label for="brand">Car Brand:</label>
-            <InputText id="brand" @bind-Value="@add.brand" MaxLength="20" placeholder="Enter car brand." />
-            <ValidationMessage For="@(() => add.brand)" />
-
-            <label for="model">Car Model:</label>
-            <InputText id="model" @bind-Value="@add.model" MaxLength="20" placeholder="Enter car model." />
-            <ValidationMessage For="@(() => add.model)" />
-
-            <label for="colour">Car Colour:</label>
-            <InputText id="colour" @bind-Value="@add.colour" MaxLength="20" placeholder="Enter car colour." />
-            <ValidationMessage For="@(() => add.colour)" />
+            <div class="errorDivForAddCar">
+                <ValidationMessage For="@(() => add.numberPlate)" />
+                <h7>@testy</h7>
+            </div>
 
             <div>
+                <label for="plate">Number Plate:</label>
+                <InputText id="plate" @bind-Value="@add.numberPlate" MaxLength="20" placeholder="Enter number plate." />
+            </div>
+            
+            <div class="errorDivForAddCar">
+                <ValidationMessage For="@(() => add.brand)" />
+            </div>
+
+            <div>
+                <label for="brand">Car Brand:</label>
+                <InputText id="brand" @bind-Value="@add.brand" MaxLength="20" placeholder="Enter car brand." />
+            </div>
+
+            <div class="errorDivForAddCar">
+                <ValidationMessage For="@(() => add.model)" />
+            </div>
+
+            <div>
+                <label for="model">Car Model:</label>
+                <InputText id="model" @bind-Value="@add.model" MaxLength="20" placeholder="Enter car model." />
+            </div>
+
+            <div class="errorDivForAddCar">
+                <ValidationMessage For="@(() => add.colour)" />
+            </div>
+
+            <div>
+                <label for="colour">Car Colour:</label>
+                <InputText id="colour" @bind-Value="@add.colour" MaxLength="20" placeholder="Enter car colour." />
+            </div>
+
+            <div class="errorDivForAddCar">
+                <ValidationMessage For="@(() => add.owner)" />
+            </div>
+            <div>
                 <label for="person">Choose Owner:</label>
-                <select id="person" name="person" @bind="add.owner">
+                <select class="AddCarSelectOwner" id="person" name="person" @bind="add.owner">
                     <option value=0>-- Choose A Person --</option>
                     @foreach (var person in peoples)
                     {
                         <option value="@person.people_id">Person ID - @person.people_id    @person.first_name @person.last_name</option>
                     }
                 </select>
-                <ValidationMessage For="@(() => add.owner)" />
             </div>
 
-        <div>
-            <button type="submit">Add Vehicle</button>
-            <button @onclick="Goback">Go Back</button>
+            <div class="addCarButtons">
+            <button class="button1" type="submit">Add Vehicle</button>
+            <button class="button1" @onclick="Goback">Go Back</button>
         </div>
         </EditForm>
     </div>

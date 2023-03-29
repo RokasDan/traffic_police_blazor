@@ -3,38 +3,62 @@
 @inject NavigationManager NavigationManager
 
 
-<div>
-    <h1>Add Person</h1>
-    <h1>@testy</h1>
+<div class="centerAddPerson">
+    <h1 class="AddPersonHeader">Add Person</h1>
+    <h1 class="AddPersonHeader">@testy</h1>
 
-    <div>
+    <div class="addPersonBorder">
         <EditForm Model="@add" OnValidSubmit="@AddingPerson">
             <DataAnnotationsValidator />
 
-            <label for="name">First Name:</label>
-            <InputText id="name" @bind-Value="@add.firstName" MaxLength="20" placeholder="Enter First Name" />
-            <ValidationMessage For="@(() => add.firstName)" />
-
-            <label for="surname">Surname:</label>
-            <InputText id="surname" @bind-Value="@add.lastName" MaxLength="20" placeholder="Enter Surname" />
-            <ValidationMessage For="@(() => add.lastName)" />
-
-            <label for="address">Address:</label>
-            <InputText id="address" @bind-Value="@add.address" MaxLength="20" placeholder="Enter Address" />
-            <ValidationMessage For="@(() => add.address)" />
-
-            <label for="date">Date Of Birth:</label>
-            <InputDate id="date" @bind-Value="@add.date_of_birth" format="yyyy-MM-dd" placeholder="Enter Date Of Birth" />
-            <ValidationMessage For="@(() => add.date_of_birth)" />
-
-            <label for="license">License Number:</label>
-            <InputText id="license" @bind-Value="@add.licenseNumber" MaxLength="20" placeholder="Enter License Number" />
-            <ValidationMessage For="@(() => add.licenseNumber)" />
-
+            <div class="errorDivForAddPerson">
+                <ValidationMessage For="@(() => add.firstName)" />
+            </div>
 
             <div>
-                <button type="submit">Add Person</button>
-                <button @onclick="Goback">Go Back</button>
+                <label for="name">First Name:</label>
+                <InputText id="name" @bind-Value="@add.firstName" MaxLength="20" placeholder="Enter First Name" />
+            </div>
+            
+            <div class="errorDivForAddPerson">
+                <ValidationMessage For="@(() => add.lastName)" />
+            </div>
+
+            <div>
+                <label for="surname">Surname&nbsp&nbsp&nbsp:</label>
+                <InputText id="surname" @bind-Value="@add.lastName" MaxLength="20" placeholder="Enter Surname" />
+            </div>
+
+            <div class="errorDivForAddPerson">
+                <ValidationMessage For="@(() => add.address)" />
+            </div>
+
+            <div>
+                <label for="address">Address&nbsp&nbsp&nbsp:</label>
+                <InputText id="address" @bind-Value="@add.address" MaxLength="20" placeholder="Enter Address" />
+            </div>
+            
+            <div class="errorDivForAddPerson">
+                <ValidationMessage For="@(() => add.date_of_birth)" />
+            </div>
+
+            <div>
+                <label for="date">Date Of Birth:</label>
+                <InputDate id="date" @bind-Value="@add.date_of_birth" format="yyyy-MM-dd" placeholder="Enter Date Of Birth" />
+            </div>
+            
+            <div class="errorDivForAddPerson">
+                <ValidationMessage For="@(() => add.licenseNumber)" />
+            </div>
+            
+            <div>
+                <label for="license">License Number:</label>
+                <InputText id="license" @bind-Value="@add.licenseNumber" MaxLength="20" placeholder="Enter License Number" />
+            </div>
+           
+            <div class="addPersonButtons">
+                <button class="button1" type="submit">Add Person</button>
+                <button class="button1" @onclick="Goback">Go Back</button>
             </div>
         </EditForm>
     </div>
