@@ -12,16 +12,16 @@ namespace TrafficPoliceBlazor.Shared
     {
         [Key]
         [Column("number_plate")]
-        public string number_plate { get; set; }
+        public string? number_plate { get; set; }
 
         [Column("brand")]
-        public string brand { get; set; }
+        public string? brand { get; set; }
 
         [Column("model")]
-        public string model { get; set; }
+        public string? model { get; set; }
 
         [Column("colour")]
-        public string colour { get; set; }
+        public string? colour { get; set; }
 
         [Column("owner")]
         public long owner { get; set; }
