@@ -203,9 +203,9 @@ namespace TrafficPoliceBlazor.Client.Pages
         }
 
         // Go back one page method.
-        private void Goback()
+        private void NewGoback()
         {
-            NavigationManager.NavigateTo("javascript:history.back()");
+            NavigationManager.NavigateTo($"/ReportDetails?Search={searchId}");
         }
     }
 }
