@@ -9,6 +9,7 @@ namespace TrafficPoliceBlazor.Client.Pages
         private people[] people = Array.Empty<people>();
         private long searchLong { get; set; }
 
+        // Method which gets the owner of the car
         protected override async Task OnInitializedAsync()
         {
             // Quering our Navigation link for an officer id.

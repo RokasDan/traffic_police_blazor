@@ -10,6 +10,7 @@ namespace TrafficPoliceBlazor.Client.Pages
     {
         private string testy { get; set; }
 
+        // Creating arrays for getting data for select option.
         private offence[] offences = Array.Empty<offence>();
         private cars[] car = Array.Empty<cars>();
         private people[] peoples = Array.Empty<people>();
@@ -41,6 +42,7 @@ namespace TrafficPoliceBlazor.Client.Pages
             public int SelectedPeople { get; set; }
         }
 
+        // Getting data for select options.
         protected override async Task OnInitializedAsync()
         {
             offences = await Http.GetFromJsonAsync<offence[]>("/api/offence");
@@ -51,7 +53,8 @@ namespace TrafficPoliceBlazor.Client.Pages
 
         }
 
-            private void Goback()
+        // Go back method
+        private void Goback()
         {
             NavigationManager.NavigateTo("javascript:history.back()");
         }
@@ -64,6 +67,7 @@ namespace TrafficPoliceBlazor.Client.Pages
             var queryParams = System.Web.HttpUtility.ParseQueryString(uri.Query);
             var author = queryParams["id"];
 
+            // Create report object for post updating.
             newReport.author = author;
             newReport.fine_issued = makeReport.fineIssued;
             newReport.points_issued = makeReport.pointsIssued;
@@ -73,6 +77,7 @@ namespace TrafficPoliceBlazor.Client.Pages
             newReport.car_id = makeReport.SelectedCar;
             newReport.people_id = makeReport.SelectedPeople;
 
+            // Adding the report.
             var test = await Http.PostAsJsonAsync<reports>("/api/reports", newReport);
 
             if(test.IsSuccessStatusCode)

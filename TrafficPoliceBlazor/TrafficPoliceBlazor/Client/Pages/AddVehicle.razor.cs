@@ -33,16 +33,19 @@ namespace TrafficPoliceBlazor.Client.Pages
             public long owner { get; set; }
         }
 
+        // Getting all of the people options for the car owner choice.
         protected override async Task OnInitializedAsync()
         {
             peoples = await Http.GetFromJsonAsync<people[]>("/api/people");
         }
 
+        // Go back button method.
         private void Goback()
         {
             NavigationManager.NavigateTo("javascript:history.back()");
         }
 
+        // Add vehicle method.
         private async Task AddingVehicle()
         {
             // Checking if a car user wants to add already exists.
@@ -54,7 +57,7 @@ namespace TrafficPoliceBlazor.Client.Pages
             }
   
 
-
+            // Create the car object for adding a new car.
             newCars.number_plate = add.numberPlate;
             newCars.brand = add.brand;
             newCars.model = add.model;

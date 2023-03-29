@@ -10,7 +10,7 @@ namespace TrafficPoliceBlazor.Client.Pages
 {
     public partial class OffenceList : ComponentBase
     {
-
+        // array for offences.
         private offence[] offences = Array.Empty<offence>();
 
         protected override async Task OnInitializedAsync()

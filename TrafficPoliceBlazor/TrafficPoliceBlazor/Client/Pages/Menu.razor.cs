@@ -36,36 +36,43 @@ namespace TrafficPoliceBlazor.Client.Pages
             NavigationManager.NavigateTo("/offenceList");
         }
 
+        // Go to vehicle search
         private void VehicleSearch()
         {
             NavigationManager.NavigateTo("/CarSearch");
         }
 
+        // Go to report search
         private void ReportSearch()
         {
             NavigationManager.NavigateTo("/ReportSearch");
         }
 
+        // Go to make report
         private void MakeReport()
         {
             NavigationManager.NavigateTo($"/MakeReport?id={officerId}");
         }
 
+        // Go to Add person.
         private void AddPerson()
         {
             NavigationManager.NavigateTo($"/AddPerson");
         }
 
+        // Go to add vehicle
         private void AddVehicle()
         {
             NavigationManager.NavigateTo($"/AddVehicle");
         }
 
+        // Go to change password
         private void changePassword()
         {
             NavigationManager.NavigateTo($"/ChangePassword?id={officerId}");
         }
 
+        // Log out.
         private void Logout()
         {
             NavigationManager.NavigateTo("/");

@@ -10,8 +10,6 @@ namespace TrafficPoliceBlazor.Client.Pages
 {
     public partial class Login : ComponentBase
     {
-        // Array for our results from our data base.
-        // public admins[] login = new admins[0];
 
         // Instaciating Model class for Edit form object
         private LoginModel loginModel = new LoginModel();

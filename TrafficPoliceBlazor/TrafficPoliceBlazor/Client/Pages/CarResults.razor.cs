@@ -34,7 +34,7 @@ namespace TrafficPoliceBlazor.Client.Pages
             }
         }
 
-        //Method which goes to goes to owner and shows owner of the car. 
+        //Method which goes to details of the car owner. 
         private void OwnerDetails(long ownerId)
         {
             NavigationManager.NavigateTo($"/CarOwner?id={ownerId}");

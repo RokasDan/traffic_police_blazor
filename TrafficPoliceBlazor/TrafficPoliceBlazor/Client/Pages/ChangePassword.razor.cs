@@ -27,20 +27,26 @@ namespace TrafficPoliceBlazor.Client.Pages
             public string ConfirmPassword { get; set; }
         }
 
+        // Method for changing the password.
         private async Task changePassword()
         {
+            // Quiering our navigation link for the id of the officer.
             var uri = new Uri(NavigationManager.Uri);
             var queryParams = System.Web.HttpUtility.ParseQueryString(uri.Query);
             var officer = queryParams["id"];
 
+            // We check if person entered his current password correctly
             var response = await Http.GetAsync($"api/adminLogin/{officer}/{newPass.CurrentPassword}");
             if (response.IsSuccessStatusCode)
             {
+                // New password matched
                 if(newPass.NewPassword == newPass.ConfirmPassword)
                 {
+                    // Creating new password object
                     passwordString.Username = officer;
                     passwordString.Password = newPass.NewPassword;
 
+                    //Update password.
                     var update = await Http.PutAsJsonAsync($"api/adminLogin/{officer}", passwordString);
                     if (update.IsSuccessStatusCode)
                     {

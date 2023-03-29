@@ -33,11 +33,14 @@ namespace TrafficPoliceBlazor.Client.Pages
             public string licenseNumber { get; set; }
         }
 
+        // Create back method for back button
         private void Goback()
         {
             NavigationManager.NavigateTo("javascript:history.back()");
         }
 
+
+        // Adding person to data base.
         private async Task AddingPerson()
         {
             // Creating the new person object

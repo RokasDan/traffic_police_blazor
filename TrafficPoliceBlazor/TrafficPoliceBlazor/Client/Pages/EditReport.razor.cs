@@ -80,9 +80,10 @@ namespace TrafficPoliceBlazor.Client.Pages
 
             var content = await result.Content.ReadAsStringAsync();
 
-            // Setting general report entities
+            // Setting general report entities with made values 
             report = Newtonsoft.Json.JsonConvert.DeserializeObject(content);
 
+            //Savinng them in this class values. (probably could just inject them straight to set values)
             report_id = report.report_id;
             author = report.author;
             car_id = report.car_id;
@@ -93,6 +94,7 @@ namespace TrafficPoliceBlazor.Client.Pages
             report_date = report.report_date;
             details = report.details;
 
+            // If no car is envolved then we put in table no car was involved
             if (car_id == "No Car Involved")
             {
                 carSelectorDefault = "No Car Involved";
@@ -146,7 +148,7 @@ namespace TrafficPoliceBlazor.Client.Pages
             SelectedPeople = peopleValueDefault;
             SelectedCar = carValueDefault;
        
-
+            // Getting car, offence and people options for select options.
             offences = await Http.GetFromJsonAsync<offence[]>("/api/offence");
 
             car = await Http.GetFromJsonAsync<cars[]>("/api/cars");
@@ -178,7 +180,7 @@ namespace TrafficPoliceBlazor.Client.Pages
             }
 
            
-            // Preparing repot object
+            // Preparing report object for updating.
             updatedReport.report_id = report.report_id;
             updatedReport.author = report.author;
             updatedReport.car_id = SelectedCar;
