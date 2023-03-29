@@ -1,0 +1,44 @@
+﻿.centerCarSearch {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 50%;
+    min-height: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+}
+
+.CarSearchBox {
+    background-color: #b99566;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+}
+
+.CarSearchHeader {
+    text-align: center;
+    color: red;
+}
+
+.CarSearchStatus {
+    height: 80px;
+    color: green;
+}
+
+.CarSearchErrorHeader {
+    height: 50px;
+    padding-top: 5%;
+}
+
+.CarSearchButton {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}

@@ -1,0 +1,91 @@
+﻿.CarOwnerId {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 200px;
+    text-align: center;
+}
+
+.CarOwnerSuroundBorder {
+    border: 5px solid black;
+}
+
+.CarOwnerSuroundList {
+    background-color: #b99566;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+
+.CarOwnerAddress {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.CarOwnerDOB {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 180px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.CarOwnerfistName {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 150px;
+    text-align: center;
+}
+
+.CarOwnerlastName {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 150px;
+    text-align: center;
+}
+
+.CarOwnerlicense {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 200px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.CarOwnerOwnedVehicles {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 150px;
+    text-align: center;
+}
+
+.CarOwnerListButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}

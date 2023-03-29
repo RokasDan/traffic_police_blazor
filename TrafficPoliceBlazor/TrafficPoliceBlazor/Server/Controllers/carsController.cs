@@ -79,7 +79,7 @@ namespace TrafficPoliceBlazor.Server.Controllers
                                         number_plate = c.number_plate ?? "N/A",
                                         brand = c.brand ?? "N/A",
                                         model = c.model ?? "N/A",
-                                        color = c.colour ?? "N/A",
+                                        colour = c.colour ?? "N/A",
                                         owner = c.owner
                                     })
                                     .ToListAsync();

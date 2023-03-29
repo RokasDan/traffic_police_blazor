@@ -17,6 +17,18 @@
       "PackagePath": "staticwebassets\\css\\Buttons.css"
     },
     {
+      "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\CarOwnerGrid.css",
+      "PackagePath": "staticwebassets\\css\\CarOwnerGrid.css"
+    },
+    {
+      "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\CarResultsGrid.css",
+      "PackagePath": "staticwebassets\\css\\CarResultsGrid.css"
+    },
+    {
+      "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\CarSearchGrid.css",
+      "PackagePath": "staticwebassets\\css\\CarSearchGrid.css"
+    },
+    {
       "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\CustomFonts.css",
       "PackagePath": "staticwebassets\\css\\CustomFonts.css"
     },

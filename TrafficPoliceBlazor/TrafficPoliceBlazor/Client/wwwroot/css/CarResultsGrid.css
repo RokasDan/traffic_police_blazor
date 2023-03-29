@@ -1,0 +1,78 @@
+﻿.ResultNumberPlate {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 200px;
+    text-align: center;
+}
+
+.SuroundCarResultsBorder {
+    border: 5px solid black;
+}
+
+.SuroundCarResultsList {
+    background-color: #b99566;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+
+.ResultBrand {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 200px;
+    text-align: center;
+}
+
+.ResultModel {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 200px;
+    text-align: center;
+}
+
+.ResultColor {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 150px;
+    text-align: center;
+}
+
+.ResultOwner {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 150px;
+    text-align: center;
+}
+
+.ResultLink {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 150px;
+    text-align: center;
+}
+
+.CarResultsListButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}

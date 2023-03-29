@@ -3,15 +3,16 @@
 @inject NavigationManager NavigationManager
 
 
-<div>
+<div class="SuroundCarResultsList">
     <h3>CarResults</h3>
-    <div> 
-            <div style="display:flex; flex-direction:row;">
-                <div>Number Plate</div>
-                <div>Brand</div>
-                <div>Model</div>
-                <div>Color</div>
-                <div>Owner ID</div>
+    <div class="SuroundCarResultsBorder">
+        <div style="display:flex; flex-direction:row;">
+            <div class="ResultNumberPlate">Number Plate</div>
+            <div class="ResultBrand">Brand</div>
+            <div class="ResultModel">Model</div>
+            <div class="ResultColor">Color</div>
+            <div class="ResultOwner">Owner ID</div>
+            <div class="ResultLink">Link</div>
             </div>
         
 
@@ -19,18 +20,19 @@
             @foreach (var row in cars)
             {
                 <div style="display:flex; flex-direction:row;">
-                    @foreach (var prop in row.GetType().GetProperties())
-                    {
-                        <div>@(prop.GetValue(row) ?? "N/A")</div>
-                    }
-                <button @onclick="@(() =>  OwnerDetails(row.owner))">See Owner</button>
+                <div class="ResultNumberPlate">@row.number_plate</div>
+                <div class="ResultBrand">@row.brand</div>
+                <div class="ResultModel">@row.model</div>
+                <div class="ResultColor">@row.colour</div>
+                <div class="ResultOwner"> @row.owner</div>
+                <div class="ResultLink"><button @onclick="@(() =>  OwnerDetails(row.owner))">See Owner</button></div>
                 </div>
             }
 
     </div>
 
-    <div>
-        <button @onclick="Goback">Go Back</button>
+    <div class="CarResultsListButton">
+        <button class="button1" @onclick="Goback">Go Back</button>
     </div>
 </div>
 

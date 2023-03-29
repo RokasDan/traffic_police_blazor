@@ -2,47 +2,36 @@
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
 
-<div>
-    <h1>CarOwner</h1>
-    <div>
+<div class="CarOwnerSuroundList">
+    <h1>Car's Owner</h1>
+    <div class="CarOwnerSuroundBorder">
 
     
     <div style="display:flex; flex-direction:row;">
-        <div>Person ID</div>
-        <div>Address</div>
-        <div>Date Of Birth</div>
-        <div>First Name</div>
-        <div>Last Name</div>
-        <div>License Number</div>
-        <div>Person's Vehicles</div>
+        <div class="CarOwnerId">Person ID</div>
+        <div class="CarOwnerAddress">Address</div>
+        <div class="CarOwnerDOB">Date Of Birth</div>
+        <div class="CarOwnerfistName">First Name</div>
+        <div class="CarOwnerlastName">Last Name</div>
+        <div class="CarOwnerlicense">License Number</div>
+        <div class="CarOwnerOwnedVehicles">Person's Vehicles</div>
     </div>
 
     @foreach (var row in people)
     {
         <div style="display:flex; flex-direction:row;">
-            @foreach (var prop in row.GetType().GetProperties())
-            {
-                <div>
-                    @if (prop.Name == "date_of_birth")
-                    {
-                        DateTime dob = (DateTime)prop.GetValue(row);
-                        <span>@dob.ToString("MM/dd/yyyy")</span>
-                    }
-                    else
-                    {
-                        <span>@(prop.GetValue(row) ?? "N/A")</span>
-                    }
-                </div>
-            }
-            <div>
-                <button @onclick="@(() => PersonDetails(row.people_id))">See Vehicles</button>
-            </div>
-
+                <div class="CarOwnerId">@row.people_id</div>
+                <div class="CarOwnerAddress">@row.address</div>
+                <div class="CarOwnerDOB">@row.date_of_birth.ToString("MM/dd/yyyy")</div>
+                <div class="CarOwnerfistName">@row.first_name</div>
+                <div class="CarOwnerlastName">@row.last_name</div>
+                <div class="CarOwnerlicense">@row.license_number</div>
+                <div class="CarOwnerOwnedVehicles"><button @onclick="@(() => PersonDetails(row.people_id))">See Vehicles</button></div>
         </div>
-    }
+    }     
     </div>
-    <div>
-        <button @onclick="Goback">Go Back</button>
+    <div class="CarOwnerListButton">
+        <button class="button1" @onclick="Goback">Go Back</button>
     </div>
 </div>
 
