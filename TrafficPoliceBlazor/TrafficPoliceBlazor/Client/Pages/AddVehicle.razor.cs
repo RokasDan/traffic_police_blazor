@@ -45,6 +45,16 @@ namespace TrafficPoliceBlazor.Client.Pages
 
         private async Task AddingVehicle()
         {
+            // Checking if a car user wants to add already exists.
+            var plateCheck = await Http.GetAsync($"api/cars/GetCarDirect/{add.numberPlate}");
+            if (plateCheck.IsSuccessStatusCode)
+            {
+                testy = "Car with this plate number already exists!";
+                return;
+            }
+  
+
+
             newCars.number_plate = add.numberPlate;
             newCars.brand = add.brand;
             newCars.model = add.model;

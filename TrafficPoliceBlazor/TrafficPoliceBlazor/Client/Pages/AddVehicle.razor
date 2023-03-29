@@ -4,15 +4,15 @@
 
 
 <div class="centerAddVehicle">
-    <h3 class="AddPersonHeader">AddVehicle</h3>
+    <h3 class="AddPersonHeader">Add Vehicle</h3>
 
     <div class="addVehicleBoarder">
         <EditForm Model="@add" OnValidSubmit="@AddingVehicle">
             <DataAnnotationsValidator />
 
-            <div class="errorDivForAddCar">
+            <div class="errorTopDivForAddCar">
                 <ValidationMessage For="@(() => add.numberPlate)" />
-                <h7>@testy</h7>
+                <h7 stlye="color:red;">@testy</h7>
             </div>
 
             <div>
@@ -25,7 +25,7 @@
             </div>
 
             <div>
-                <label for="brand">Car Brand:</label>
+                <label for="brand">Car Brand &nbsp&nbsp:</label>
                 <InputText id="brand" @bind-Value="@add.brand" MaxLength="20" placeholder="Enter car brand." />
             </div>
 
@@ -34,7 +34,7 @@
             </div>
 
             <div>
-                <label for="model">Car Model:</label>
+                <label for="model">Car Model &nbsp&nbsp:</label>
                 <InputText id="model" @bind-Value="@add.model" MaxLength="20" placeholder="Enter car model." />
             </div>
 
@@ -43,7 +43,7 @@
             </div>
 
             <div>
-                <label for="colour">Car Colour:</label>
+                <label for="colour">Car Colour&nbsp&nbsp:</label>
                 <InputText id="colour" @bind-Value="@add.colour" MaxLength="20" placeholder="Enter car colour." />
             </div>
 
