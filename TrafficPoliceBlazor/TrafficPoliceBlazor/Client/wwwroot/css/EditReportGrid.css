@@ -1,0 +1,74 @@
+﻿.centerEditReport {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 50%;
+    min-height: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+}
+
+.editReportHeader{
+    color:red;
+}
+
+.editReportBorder {
+    background-color: #b99566;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 25px;
+    width: 850px;
+    height: 600px;
+}
+
+.detailsEditInput {
+    width: 500px;
+    height: 100px;
+    resize: none;
+    box-sizing: border-box;
+    margin-bottom:20px;
+}
+
+.editFine {
+    width: 500px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.editPoints {
+    width: 500px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.errorDivForEdit{
+    height:40px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.editDate {
+    width: 500px;
+
+    resize: none;
+    box-sizing: border-box;
+}
+
+.editSelects {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 500px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.editReportButtons {
+    padding:20px;
+}

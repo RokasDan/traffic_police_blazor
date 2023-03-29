@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\css\\CustomFonts.css"
     },
     {
+      "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\EditReportGrid.css",
+      "PackagePath": "staticwebassets\\css\\EditReportGrid.css"
+    },
+    {
       "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\Fonts\\PressStart2P-Regular.ttf",
       "PackagePath": "staticwebassets\\css\\Fonts\\PressStart2P-Regular.ttf"
     },
@@ -67,6 +71,18 @@
     {
       "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\PersonCars.css",
       "PackagePath": "staticwebassets\\css\\PersonCars.css"
+    },
+    {
+      "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\ReportDetailsGrid.css",
+      "PackagePath": "staticwebassets\\css\\ReportDetailsGrid.css"
+    },
+    {
+      "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\ReportResultsGrid.css",
+      "PackagePath": "staticwebassets\\css\\ReportResultsGrid.css"
+    },
+    {
+      "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\ReportSearchGrid.css",
+      "PackagePath": "staticwebassets\\css\\ReportSearchGrid.css"
     },
     {
       "Id": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\wwwroot\\css\\app.css",

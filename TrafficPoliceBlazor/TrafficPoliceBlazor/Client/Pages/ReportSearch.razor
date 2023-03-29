@@ -3,25 +3,31 @@
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
 
-<div>
-    <h3>ReportSearch</h3>
-    <h4>Enter an exact vehicle plate or offenders full name or his Id.</h4>
-    <h4>@test</h4>
+<div class="centerReportSearch">
+    <h3 class="ReportSearchHeader">ReportSearch</h3>
 
-    <div>
+    <div class="ReportSearchBox">
         <EditForm Model="@searchModel" OnValidSubmit="@HandleSeach">
             <DataAnnotationsValidator />
-            <div>
-                <ValidationSummary />
+            
+            <div class="ReportSearchInfo">
+                <h7>Enter an exact vehicle plate or offenders full name or his Id.</h7>
             </div>
 
-            <label for="name"></label>
-            <InputText id="name" @bind-Value="@searchModel.searchString" MaxLength="50" />
-
+            <div class="ReportSearchStatus">
+                <ValidationMessage For="@(() => searchModel.searchString)" />
+                <h7>@test</h7>
+            </div>
 
             <div>
-                <button type="submit">Search</button>
-                <button @onclick="Goback">Go Back</button>
+                <label for="name"></label>
+                <InputText id="name" @bind-Value="@searchModel.searchString" MaxLength="50" />
+            </div>
+            
+
+            <div class="ReportSearchButton">
+                <button class="button1" type="submit">Search</button>
+                <button class="button1" @onclick="Goback">Go Back</button>
             </div>
         </EditForm>
     </div>

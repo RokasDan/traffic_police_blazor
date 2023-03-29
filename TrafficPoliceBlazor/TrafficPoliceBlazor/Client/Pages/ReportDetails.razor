@@ -2,62 +2,53 @@
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
 
-<div>
-    <h3>Report Details</h3>
-    <div>
-        <div>
+<div class="centerReportDetails">
+    <h3 class="ReportDetailsTopHeader">Report Details</h3>
+    <div class="ReportDetailsFoundBox">
+        <div class="ReportDetailsPenaltiesBox">
             <div>
-                <h5>Penalties</h5>
+        
                 <div>
-                    Offence - @description
-                    Day of incident - @report_date.ToString("d")
-                    Max Fine - @maxFine
-                    Issued Fine - @fine_issued
-                    Max Points - @maxPoints
-                    Issued Points - @points_issued
-                </div>
-            </div>
-            <div>
-                <h5>Event Description</h5>
-                <div>@details</div>
-            </div>
-        </div>
-        <div>
-            <div>
-                <h5>Person Involved</h5>
-                <div>
-                    First Name - @first_name
-                    Last Name - @last_name
-                    Date Of Birth - @date_of_birth.ToString("d")
-                </div>
-            </div>
-            <div>
-                <h5>Adress</h5>
-                <div>
-                    @address
-                </div>
-            </div>
-            <div>
-                <h5>License Number</h5>
-                <div>
-                    @license_number
+                    <h5 class="ReportDetailsHeader">Penalties</h5>
+                    <div class="offenceDiv">Offence - @description</div>
+                    <div class="offenceDiv">Day of incident - @report_date.ToString("d")</div>
+                    <div class="offenceDiv">Max Fine - @maxFine</div>
+                    <div class="offenceDiv">Issued Fine - @fine_issued</div>
+                    <div class="offenceDiv">Offence - @description</div>
+                    <div class="offenceDiv">Max Points - @maxPoints</div>
+                    <div class="offenceDiv">Issued Points - @points_issued</div>
+                    <h5 class="ReportDetailsHeader">Event Description</h5>
+                    <div class="bottomDiv">@details</div>
                 </div>
             </div>
         </div>
-        <div>
-            <h5>Vehicle Involved</h5>
-            <h5>@carTest</h5>
+        <div class="ReportDetailsPersonInvolvedBox">
             <div>
-                Number Plate - @number_plate
-                Vehicle Brand - @brand
-                Vehicle Colour - @colour
-                Vehicle Model - @Model 
+                <h5 class="ReportDetailsHeader">Person Involved</h5>
+                
+                <div class="offenceDiv">First Name - @first_name</div>
+                <div class="offenceDiv">Last Name - @last_name</div>
+                <div class="offenceDiv">Date Of Birth - @date_of_birth.ToString("d")</div>
+                <h5 class="ReportDetailsHeader">Adress</h5>
+                <div class="offenceDiv">@address</div>
+                <h5 class="ReportDetailsHeader">License Number</h5>
+                <div class="bottomDiv">@license_number</div>
             </div>
         </div>
-    </div>
-    
-    <div>
-        <button @onclick="EditReport">Edit Report</button>
-        <button @onclick="Goback">Go Back</button>
+        <div>
+
+        </div>
+        <div class="ReportDetailsVehicleBox">
+            <h5 class="ReportDetailsHeader">Vehicle Involved</h5>
+            <div class="offenceDiv">Number Plate - @number_plate</div>
+            <div class="offenceDiv">Car Brand - @brand</div>
+            <div class="offenceDiv">Car Color - @colour</div>
+            <div class="bottomDiv">Car Model - @Model</div>
+
+            <div class="ReportDetailsButtonDiv">
+                <div><button class="button1" @onclick="EditReport">Edit Report</button></div>
+                <div class="ReportDetailsButtonDiv2"><button class="button1" @onclick="Goback">Go Back</button></div>
+            </div>
+        </div>
     </div>
 </div>

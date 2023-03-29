@@ -1,0 +1,93 @@
+﻿.centerReportDetails {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 50%;
+    min-height: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+}
+
+.ReportDetailsHeader {
+    color: darkblue;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.ReportDetailsTopHeader {
+    color:red;
+}
+
+.offenceDiv {
+    border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+    width: 100%;
+    word-wrap: break-word;
+    text-align: center;
+    text-align:left;
+    padding-bottom: 20px;
+}
+
+.bottomDiv {
+    width: 100%;
+    word-wrap: break-word;
+    text-align: center;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.ReportDetailsFoundBox {
+    background-color: #b99566;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 1200px;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+}
+
+.ReportDetailsPenaltiesBox {
+    background-color: darkgoldenrod;
+    border: 5px solid black;
+    border-radius: 3px;
+    width: 800px;
+    height: 700px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.ReportDetailsPersonInvolvedBox {
+    background-color: darkgoldenrod;
+    border: 5px solid black;
+    border-radius: 3px;
+    width: 600px;
+    height: 700px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.ReportDetailsButtonDiv{
+    padding-top: 200px;
+}
+
+.ReportDetailsButtonDiv2 {
+    padding-top: 20px;
+}
+
+.ReportDetailsVehicleBox {
+    background-color: darkgoldenrod;
+    border: 5px solid black;
+    border-radius: 3px;
+    width: 600px;
+    height: 450px;
+    margin: 50px;
+}

@@ -2,55 +2,77 @@
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
 
-<div>
-    <h3>Edit Report</h3>
-    <h1>@TEST</h1>
+<div class="centerEditReport">
+    <h3 class="editReportHeader">Edit Report</h3>
+    <h1 class="editReportHeader">@TEST</h1>
 
+    <div class="editReportBorder">
+
+    
     <EditForm Model="@updateReport" OnValidSubmit="@UpdateReport">
         <DataAnnotationsValidator />
 
-        <div>
-            <div>
-                <label for="fines">New Fine:</label>
-                <InputText id="fines" @bind-Value="@updateReport.fineIssued" MaxLength="20" placeholder="@fine_issued"/>
+            <div class="errorDivForEdit">
                 <ValidationMessage For="@(() => updateReport.fineIssued)" />
-
-                <label for="points">New Points:</label>
-                <InputText id="points" @bind-Value="@updateReport.pointsIssued" MaxLength="20" placeholder="@points_issued" />
-                <ValidationMessage For="@(() => updateReport.pointsIssued)" />
-            </div>
-            <div>
-                <label for="date">New Date:</label>
-                <InputDate id="date" @bind-Value="@updateReport.report_date" format="yyyy-MM-dd" placeholder="Select a date" />
-                <ValidationMessage For="@(() => updateReport.report_date)" />
-
-                <label for="detail">New Details:</label>
-                <InputText id="detail" @bind-Value="@updateReport.details" MaxLength="130" placeholder="@details" />
-                <ValidationMessage For="@(() => updateReport.details)" />
-            </div>
         </div>
 
         <div>
-            <label for="offence">Offence:</label>
-            <select id="offence" name="offence" @bind="SelectedOffence">
-                <option value="@offenceValueDefault">@offenceSelectorDefault</option>
-                @foreach (var offence in offences)
-                {
-                    <option value="@offence.Offence_ID">Offence ID - @offence.Offence_ID    @offence.description</option>
-                }
-            </select>
+                <label for="fines">New Fine&nbsp&nbsp:  </label>
+                <InputText class="editFine" id="fines" @bind-Value="@updateReport.fineIssued" MaxLength="20" placeholder="@fine_issued" />
+        </div>
 
-            <label for="car">Car:</label>
-            <select id="car" name="car" @bind="SelectedCar">
-                <option value="@carValueDefault">@carSelectorDefault</option>
-                @foreach (var car in car)
-                {
-                    <option value="@car.number_plate">@car.brand @car.model    Number Plate - @car.number_plate   </option>
-                }
-            </select>
+            <div class="errorDivForEdit">
+                <ValidationMessage For="@(() => updateReport.pointsIssued)" />
+        </div>
 
-            <label for="person">Person:</label>
-            <select id="person" name="person" @bind="SelectedPeople">
+        <div>
+                <label for="points">New Points:</label>
+                <InputText class="editPoints" id="points" @bind-Value="@updateReport.pointsIssued" MaxLength="20" placeholder="@points_issued" />
+        </div>
+
+        <div class="errorDivForEdit">
+                <ValidationMessage For="@(() => updateReport.report_date)" />
+        </div>
+
+        <div>
+                <label for="date">New Date&nbsp&nbsp:</label>
+                <InputDate class="editDate" id="date" @bind-Value="@updateReport.report_date" format="yyyy-MM-dd" placeholder="Select a date" />
+        </div>
+
+            <div class="errorDivForEdit">
+                <ValidationMessage For="@(() => updateReport.details)" />
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: center;">
+                <label for="detail">New Details:</label>
+                <InputTextArea class="detailsEditInput" id="detail" @bind-Value="@updateReport.details" MaxLength="130" placeholder="@details" />
+        </div>
+
+        <div>
+                <label for="offence">Offence&nbsp&nbsp&nbsp:</label>
+                <select class="editSelects" id="offence" name="offence" @bind="SelectedOffence">
+                    <option value="@offenceValueDefault">@offenceSelectorDefault</option>
+                    @foreach (var offence in offences)
+                    {
+                        <option value="@offence.Offence_ID">Offence ID - @offence.Offence_ID    @offence.description</option>
+                    }
+                </select>
+        </div>
+            
+        <div>
+                <label for="car">Car&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+                <select class="editSelects" id="car" name="car" @bind="SelectedCar">
+                    <option value="@carValueDefault">@carSelectorDefault</option>
+                    @foreach (var car in car)
+                    {
+                        <option value="@car.number_plate">@car.brand @car.model    Number Plate - @car.number_plate   </option>
+                    }
+                </select>
+        </div>
+
+        <div>
+                <label for="person">Person&nbsp&nbsp&nbsp&nbsp:</label>
+                <select class="editSelects" id="person" name="person" @bind="SelectedPeople">
                 <option value="@peopleValueDefault">@peopleSelectorDefault</option>
                 @foreach (var person in peoples)
                 {
@@ -59,11 +81,12 @@
             </select>
         </div>
 
-        <div>
-            <button type="submit">Submit Changes</button>
-             <button @onclick="Goback">Go Back</button>
+        <div class="editReportButtons">
+            <button class="button1" type="submit">Submit Changes</button>
+             <button class="button1" @onclick="Goback">Go Back</button>
         </div>
     </EditForm>
+    </div>
 </div>
 
 

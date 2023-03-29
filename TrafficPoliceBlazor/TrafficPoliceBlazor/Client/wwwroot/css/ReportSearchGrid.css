@@ -1,4 +1,4 @@
-﻿.centerCarSearch {
+﻿.centerReportSearch {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -15,34 +15,34 @@
     margin: 0px;
 }
 
-.CarSearchBox {
+.ReportSearchBox {
     background-color: #b99566;
     border: 5px solid black;
     border-radius: 10px;
-    width: 500px;
-    height: 270px;
+    width: 650px;
+    height: 300px;
 }
 
-.CarSearchHeader {
+.ReportSearchHeader {
     text-align: center;
     color: red;
 }
 
-.CarSearchStatus {
+.ReportSearchStatus {
     height: 80px;
     color: red;
 }
 
-.CarSearchInfo {
+.ReportSearchInfo {
     padding-top: 15px;
 }
 
-.CarSearchErrorHeader {
+.ReportSearchErrorHeader {
     height: 50px;
     padding-top: 5%;
 }
 
-.CarSearchButton {
+.ReportSearchButton {
     padding-top: 5%;
     padding-bottom: 5%;
 }

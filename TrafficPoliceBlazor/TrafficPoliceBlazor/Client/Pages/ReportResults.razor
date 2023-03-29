@@ -2,20 +2,17 @@
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
 
-<div>
+<div class="SuroundReportResultsList">
     <h3>Report Results</h3>
-    <div>
+    <div class="SuroundReportResults">
         <div style="display:flex; flex-direction:row;">
-            <div>Report ID</div>
-            <div>Author</div>
-            <div>Vehicle ID</div>
-            <div>Offenders ID</div>
-            <div>Offence ID</div>
-            <div>Fine Issued</div>
-            <div>Points Issued</div>
-            <div>Report Date</div>
-            <div>Report Details</div>
-            <div>More Info</div>
+            <div class="ReportId">Report ID</div>
+            <div class="ReportAuthor">Author</div>
+            <div class="ReportVehicleId">Vehicle ID</div>
+            <div class="ReportOffenderId">Offenders ID</div>
+            <div class="ReportOffenceId">Offence ID</div>
+            <div class="ReportMadeDate">Report Date</div>
+            <div class="ViewReportInfo">More Info</div>
         </div>
 
 
@@ -23,28 +20,20 @@
         @foreach (var row in reports)
         {
             <div style="display:flex; flex-direction:row;">
-                @foreach (var prop in row.GetType().GetProperties())
-                {
-                    <div>
-                        @if (prop.Name == "report_date")
-                        {
-                            DateTime dob = (DateTime)prop.GetValue(row);
-                            <span>@dob.ToString("MM/dd/yyyy")</span>
-                        }
-                        else
-                        {
-                            <span>@(prop.GetValue(row) ?? "N/A")</span>
-                        }
-                    </div>
-                }
-                <button @onclick="@(() =>  ReportDetails(row.report_id))">See Report</button>
+
+                <div class="ReportId">@row.report_id</div>
+                <div class="ReportAuthor">@row.author</div>
+                <div class="ReportVehicleId">@row.car_id</div>
+                <div class="ReportOffenderId">@row.people_id</div>
+                <div class="ReportOffenceId">@row.offence_id</div>
+                <div class="ReportMadeDate">@row.report_date.ToString("MM/dd/yyyy")</div>
+                <div class="ViewReportInfo"><button @onclick="@(() =>  ReportDetails(row.report_id))">See Report</button></div>
+
             </div>
         }
-
     </div>
 
-    <div>
-        <button @onclick="Goback">Go Back</button>
+    <div class="CarResultsListButton">
+        <button class="button1" onclick="Goback">Go Back</button>
     </div>
-
 </div>

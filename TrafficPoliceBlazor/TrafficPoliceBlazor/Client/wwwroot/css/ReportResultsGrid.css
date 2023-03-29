@@ -1,0 +1,118 @@
+﻿.ReportId {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 160px;
+    text-align: center;
+}
+
+.SuroundReportResults {
+    border: 5px solid black;
+}
+
+.SuroundReportResultsList {
+    background-color: #b99566;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+
+.ReportAuthor {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 160px;
+    text-align: center;
+}
+
+.ReportVehicleId {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 200px;
+    text-align: center;
+}
+
+.ReportOffenderId {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 150px;
+    text-align: center;
+}
+
+.ReportOffenceId {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 150px;
+    text-align: center;
+}
+
+.ReportFineIssued {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 150px;
+    text-align: center;
+}
+
+.ReportPointsIssued {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 150px;
+    text-align: center;
+}
+
+.ReportMadeDate {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 190px;
+    text-align: center;
+}
+
+.ReportIssuedDetails {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 150px;
+    text-align: center;
+}
+
+.ViewReportInfo {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 150px;
+    text-align: center;
+}
+
+.CarResultsListButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
