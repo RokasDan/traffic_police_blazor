@@ -11,7 +11,7 @@
         <EditForm Model="@add" OnValidSubmit="@AddingPerson">
             <DataAnnotationsValidator />
 
-            <div class="errorDivForAddPerson">
+            <div class="errorDivForAddPerson2">
                 <ValidationMessage For="@(() => add.firstName)" />
             </div>
 
@@ -20,7 +20,7 @@
                 <InputText id="name" @bind-Value="@add.firstName" MaxLength="20" placeholder="Enter First Name" />
             </div>
             
-            <div class="errorDivForAddPerson">
+            <div class="errorDivForAddPerson2">
                 <ValidationMessage For="@(() => add.lastName)" />
             </div>
 
@@ -47,7 +47,7 @@
                 <InputDate id="date" @bind-Value="@add.date_of_birth" format="yyyy-MM-dd" placeholder="Enter Date Of Birth" />
             </div>
             
-            <div class="errorDivForAddPerson">
+            <div class="errorDivForAddPerson2">
                 <ValidationMessage For="@(() => add.licenseNumber)" />
             </div>
             

@@ -18,14 +18,14 @@ namespace TrafficPoliceBlazor.Client.Pages
         public class LoginModel
         {
             [Required(ErrorMessage = "Please enter your officer ID")]
-            public string officerId { get; set; }
+            public string? officerId { get; set; }
 
             [Required(ErrorMessage = "Please enter your Password")]
-            public string password { get; set; }
+            public string? password { get; set; }
         }
 
         // String for error messages
-        private string test;
+        private string? test;
 
         // Handeling login.
         private async Task GetLogin()

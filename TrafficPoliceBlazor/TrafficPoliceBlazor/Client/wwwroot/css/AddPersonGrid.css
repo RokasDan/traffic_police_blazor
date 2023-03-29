@@ -21,7 +21,7 @@
     border-radius: 10px;
     padding: 25px;
     width: 730px;
-    height: 510px;
+    height: 540px;
 }
 
 .AddPersonHeader {
@@ -30,6 +30,12 @@
 
 .errorDivForAddPerson {
     height: 40px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.errorDivForAddPerson2 {
+    height: 60px;
     padding-top: 10px;
     padding-bottom: 5px;
 }

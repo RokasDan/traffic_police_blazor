@@ -11,20 +11,20 @@ namespace TrafficPoliceBlazor.Client.Pages
         // We create a Model class for the Edit form object.
         private LoginModel newPass = new LoginModel();
         private admins passwordString = new admins();
-        private string test { get; set; }
+        private string? test { get; set; }
 
         public class LoginModel
         {
             [Required(ErrorMessage = "This field can't be empty!")]
-            public string CurrentPassword { get; set; }
+            public string? CurrentPassword { get; set; }
 
             [RegularExpression(@"^\S+$", ErrorMessage = "New password can contain only white space characters.")]
             [Required(ErrorMessage = "This field can't be empty!")]
-            public string NewPassword { get; set; }
+            public string? NewPassword { get; set; }
 
             [RegularExpression(@"^\S+$", ErrorMessage = "Confirm password can contain only white space characters.")]
             [Required(ErrorMessage = "This field can't be empty!")]
-            public string ConfirmPassword { get; set; }
+            public string? ConfirmPassword { get; set; }
         }
 
         // Method for changing the password.

@@ -8,7 +8,7 @@ namespace TrafficPoliceBlazor.Client.Pages
 {
     public partial class PeopleSearch : ComponentBase
     {
-        private string test { get; set; } 
+        private string? test { get; set; } 
 
         // Instaciating Model class for Edit form object
         private SearchModel searchModel = new SearchModel();
@@ -17,7 +17,7 @@ namespace TrafficPoliceBlazor.Client.Pages
         public class SearchModel
         {
             [Required(ErrorMessage = "Please enter your officer ID")]
-            public string searchString { get; set; }
+            public string? searchString { get; set; }
         }
 
         // Handeling seach

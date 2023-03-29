@@ -10,30 +10,30 @@ namespace TrafficPoliceBlazor.Client.Pages
     {
         private LoginModel add = new LoginModel();
         private people newPerson = new people();
-        private string testy { get; set; }
+        private string? testy { get; set; }
 
         public class LoginModel
         {
             [RegularExpression(@"^\S+$", ErrorMessage = "Name can contain only white space characters.")]
             [Required(ErrorMessage = "Name can't be empty!")]
-            public string firstName { get; set; }
+            public string? firstName { get; set; }
 
             [RegularExpression(@"^\S+$", ErrorMessage = "Surname can contain only white space characters.")]
             [Required(ErrorMessage = "Surname can't be empty!")]
-            public string lastName { get; set; }
+            public string? lastName { get; set; }
 
             [Required(ErrorMessage = "Address can't be empty!")]
-            public string address { get; set; }
+            public string? address { get; set; }
 
             [Required(ErrorMessage = "Date Of Birth can't be empty!")]
             public DateTime date_of_birth { get; set; }
 
             [RegularExpression(@"^\S+$", ErrorMessage = "License Number can contain only white space characters.")]
             [Required(ErrorMessage = "License Number can't be empty!")]
-            public string licenseNumber { get; set; }
+            public string? licenseNumber { get; set; }
         }
 
-        // Create back method for back button
+        // Create back method for back button.
         private void Goback()
         {
             NavigationManager.NavigateTo("javascript:history.back()");

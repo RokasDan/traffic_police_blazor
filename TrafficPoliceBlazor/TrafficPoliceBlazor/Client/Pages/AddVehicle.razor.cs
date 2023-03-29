@@ -12,22 +12,22 @@ namespace TrafficPoliceBlazor.Client.Pages
         private LoginModel add = new LoginModel();
         private cars newCars = new cars();
         private people[] peoples = Array.Empty<people>();
-        private string testy { get; set; }
+        private string? testy { get; set; }
 
         public class LoginModel
         {
             [RegularExpression(@"^\S+$", ErrorMessage = "Number plate can contain only white space characters.")]
             [Required(ErrorMessage = "Number plate can't be empty!")]
-            public string numberPlate { get; set; }
+            public string? numberPlate { get; set; }
 
             [Required(ErrorMessage = "Brand can't be empty!")]
-            public string brand { get; set; }
+            public string? brand { get; set; }
 
             [Required(ErrorMessage = "Model can't be empty!")]
-            public string model { get; set; }
+            public string? model { get; set; }
 
             [Required(ErrorMessage = "Colour can't be empty!")]
-            public string colour { get; set; }
+            public string? colour { get; set; }
 
             [Range(1, long.MaxValue, ErrorMessage = "Please select a person.")]
             public long owner { get; set; }

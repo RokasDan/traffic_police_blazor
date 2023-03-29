@@ -12,7 +12,7 @@ namespace TrafficPoliceBlazor.Client.Pages
     {
         private long searchLong { get; set; }
         private cars[] cars { get; set; } = Array.Empty<cars>();
-        private string error { get; set; }
+        private string? error { get; set; }
 
         protected override async Task OnInitializedAsync()
         {

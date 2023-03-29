@@ -4,8 +4,8 @@ namespace TrafficPoliceBlazor.Client.Pages
 {
     public partial class Menu : ComponentBase
     {
-        private string officerId { get; set; }
-        private string officerName { get; set; }
+        private string? officerId { get; set; }
+        private string? officerName { get; set; }
 
 
 

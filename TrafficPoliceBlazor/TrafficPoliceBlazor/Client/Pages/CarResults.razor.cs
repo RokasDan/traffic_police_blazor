@@ -10,8 +10,8 @@ namespace TrafficPoliceBlazor.Client.Pages
 {
     public partial class CarResults : ComponentBase
     {
-        private string error { get; set; }
-        private string searchString { get; set; }
+        private string? error { get; set; }
+        private string? searchString { get; set; }
         private cars[] cars { get; set; } = Array.Empty<cars>();
 
         // Getting our previusly info from the querry we used for search.

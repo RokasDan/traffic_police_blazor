@@ -8,7 +8,7 @@ namespace TrafficPoliceBlazor.Client.Pages
 {
     public  partial class MakeReport : ComponentBase
     {
-        private string testy { get; set; }
+        private string? testy { get; set; }
 
         // Creating arrays for getting data for select option.
         private offence[] offences = Array.Empty<offence>();
@@ -21,13 +21,13 @@ namespace TrafficPoliceBlazor.Client.Pages
         public class LoginModel
         {
             [Required(ErrorMessage = "Fine cant be empty!")]
-            public string fineIssued { get; set; }
+            public string? fineIssued { get; set; }
 
             [Required(ErrorMessage = "Points cant be empty!")]
-            public string pointsIssued { get; set; }
+            public string? pointsIssued { get; set; }
 
             [Required(ErrorMessage = "Enter Details of event!")]
-            public string details { get; set; }
+            public string? details { get; set; }
 
             [Required(ErrorMessage = "Enter Date of event!")]
             public DateTime report_date { get; set; }
@@ -36,7 +36,7 @@ namespace TrafficPoliceBlazor.Client.Pages
             public int SelectedOffence { get; set; }
 
             [Required(ErrorMessage = "Please select a car.")]
-            public string SelectedCar { get; set; }
+            public string? SelectedCar { get; set; }
 
             [Range(1, long.MaxValue, ErrorMessage = "Please select a person.")]
             public int SelectedPeople { get; set; }

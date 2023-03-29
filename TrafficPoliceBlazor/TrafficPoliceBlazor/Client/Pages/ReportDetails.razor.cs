@@ -9,43 +9,43 @@ namespace TrafficPoliceBlazor.Client.Pages
     public partial class ReportDetails : ComponentBase
     {
         //Offence detail entities
-        private dynamic offenceSearch { get; set; }
+        private dynamic? offenceSearch { get; set; }
         private long Offence_ID { get; set; }
-        private string description { get; set; }
-        private string maxFine { get; set; }
-        private string maxPoints { get; set; }
+        private string? description { get; set; }
+        private string? maxFine { get; set; }
+        private string? maxPoints { get; set; }
 
         //People invloved in the report entities
-        private dynamic peopleSearch { get; set; }
+        private dynamic? peopleSearch { get; set; }
         private long offenderId { get; set; }
-        private string first_name { get; set; }
-        private string last_name { get; set; }
-        private string address { get; set; }
+        private string? first_name { get; set; }
+        private string? last_name { get; set; }
+        private string? address { get; set; }
         private DateTime date_of_birth { get; set; }
-        private string license_number { get; set; }
+        private string? license_number { get; set; }
 
 
         //Car invloved in the report entities
-        public string carTest { get; set; }
-        private dynamic vehicleSearch { get; set; }
-        private string number_plate { get; set; }
-        private string brand { get; set; }
-        private string Model { get; set; }
-        private string colour { get; set; }
+        public string? carTest { get; set; }
+        private dynamic? vehicleSearch { get; set; }
+        private string? number_plate { get; set; }
+        private string? brand { get; set; }
+        private string? Model { get; set; }
+        private string? colour { get; set; }
         private long owner { get;  set; }
 
         //General report entities
-        private string searchId { get; set; }
-        private dynamic report { get; set; }
+        private string? searchId { get; set; }
+        private dynamic? report { get; set; }
         private long report_id { get; set; }
-        private string author { get; set; }
-        private string car_id { get; set; }
+        private string? author { get; set; }
+        private string? car_id { get; set; }
         private long people_id { get; set; }
         private long offence_id { get; set; }
-        private string fine_issued { get; set; }
-        private string points_issued { get; set; }
+        private string? fine_issued { get; set; }
+        private string? points_issued { get; set; }
         private DateTime report_date { get; set; }
-        private string details { get; set; }
+        private string? details { get; set; }
 
 
         protected override async Task OnInitializedAsync()

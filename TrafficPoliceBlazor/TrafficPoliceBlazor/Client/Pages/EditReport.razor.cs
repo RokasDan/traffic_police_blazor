@@ -11,36 +11,36 @@ namespace TrafficPoliceBlazor.Client.Pages
 {
     public partial class EditReport : ComponentBase
     {
-        private string TEST { get; set; }
+        private string? TEST { get; set; }
 
         //Default offence values
-        private string offenceSelectorDefault { get; set; }
+        private string? offenceSelectorDefault { get; set; }
         private long offenceValueDefault { get; set; }
         private long SelectedOffence { get; set; }
 
         //Default people values
-        private string peopleSelectorDefault { get; set; }
+        private string? peopleSelectorDefault { get; set; }
         private long peopleValueDefault { get; set; }
         private long SelectedPeople { get; set; } 
 
         //Default car values
-        private string carSelectorDefault { get; set; }
-        private string carValueDefault { get; set; }
-        private string SelectedCar { get; set; }
+        private string? carSelectorDefault { get; set; }
+        private string? carValueDefault { get; set; }
+        private string? SelectedCar { get; set; }
 
         //General report entities for editing
         private reports updatedReport = new reports();
-        private string searchId { get; set; }
-        private dynamic report { get; set; }
+        private string? searchId { get; set; }
+        private dynamic? report { get; set; }
         private long report_id { get; set; }
-        private string author { get; set; }
-        private string car_id { get; set; }
+        private string? author { get; set; }
+        private string? car_id { get; set; }
         private long people_id { get; set; }
         private long offence_id { get; set; }
-        private string fine_issued { get; set; }
-        private string points_issued { get; set; }
+        private string? fine_issued { get; set; }
+        private string? points_issued { get; set; }
         private DateTime report_date { get; set; }
-        private string details { get; set; }
+        private string? details { get; set; }
 
 
         // Instaciating Model class for Edit form object
@@ -55,13 +55,13 @@ namespace TrafficPoliceBlazor.Client.Pages
         public class LoginModel
         {
             [Required(ErrorMessage = "Fine cannot be empty.")]
-            public string fineIssued { get; set; }
+            public string? fineIssued { get; set; }
 
             [Required(ErrorMessage = "Points cannot be empty.")]
-            public string pointsIssued { get; set; }
+            public string? pointsIssued { get; set; }
 
             [Required(ErrorMessage = "Details cannot be empty.")]
-            public string details { get; set; }
+            public string? details { get; set; }
 
             public DateTime report_date { get; set; }
 

@@ -12,7 +12,7 @@ namespace TrafficPoliceBlazor.Client.Pages
     {
 
         private people[] people = Array.Empty<people>();
-        private string searchString { get; set; }
+        private string? searchString { get; set; }
 
 
         // Getting our previusly info from the querry we used for search.
