@@ -1,37 +1,13 @@
 ﻿@page "/PersonCars"
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
+@using TrafficPoliceBlazor.Client.Components
 
 <div class="PersonCarList">
     <h3>Person's Cars</h3>
 
-    <div class="PersonCarBorder">
-        <!-- rendering headers for person car table if he does have cars -->
-        @if (cars.Length > 0)
-        {
-            <div style="display:flex; flex-direction:row;">
-                <div class="NumberPlate">Number Plate</div>
-                <div class="PeopleBrand">Brand</div>
-                <div class="PeopleModel">Model</div>
-                <div class="PeopleColor">Color</div>
-                <div class="OwnerId">Owner ID</div>
-            </div>
-        }
+    <SearchResultsTable tableContent="@cars"/>
 
-        <!-- reiterating through the cars array and displaying it on page in a table -->
-        @foreach (var row in cars)
-        {
-            <div style="display:flex; flex-direction:row;">
-
-                <div class="NumberPlate ">@row.number_plate</div>
-                <div class="PeopleBrand">@row.brand</div>
-                <div class="PeopleModel">@row.model</div>
-                <div class="PeopleColor">@row.colour</div>
-                <div class="OwnerId">@row.owner</div>
-
-            </div>
-        }
-    </div>
     <h1>@error</h1>
 
     <div class="PeopleCarListButton">
