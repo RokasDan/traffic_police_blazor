@@ -1,35 +1,13 @@
 ﻿@page "/CarOwner"
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
+@using TrafficPoliceBlazor.Client.Components
 
 <div class="CarOwnerSuroundList">
     <h1>Car's Owner</h1>
-    <div class="CarOwnerSuroundBorder">
 
-    
-    <div style="display:flex; flex-direction:row;">
-        <div class="CarOwnerId">Person ID</div>
-        <div class="CarOwnerAddress">Address</div>
-        <div class="CarOwnerDOB">Date Of Birth</div>
-        <div class="CarOwnerfistName">First Name</div>
-        <div class="CarOwnerlastName">Last Name</div>
-        <div class="CarOwnerlicense">License Number</div>
-        <div class="CarOwnerOwnedVehicles">Person's Vehicles</div>
-    </div>
+     <SearchResultsTableLink tableContent="@people" columnsToDisplay='new string[]{"people_id", "address", "date_of_birth", "first_name", "last_name", "license_number"}' LinkPrefix="/PersonCars?id=" SearchColumn="people_id" />
 
-    @foreach (var row in people)
-    {
-        <div style="display:flex; flex-direction:row;">
-                <div class="CarOwnerId">@row.people_id</div>
-                <div class="CarOwnerAddress">@row.address</div>
-                <div class="CarOwnerDOB">@row.date_of_birth.ToString("MM/dd/yyyy")</div>
-                <div class="CarOwnerfistName">@row.first_name</div>
-                <div class="CarOwnerlastName">@row.last_name</div>
-                <div class="CarOwnerlicense">@row.license_number</div>
-                <div class="CarOwnerOwnedVehicles"><button @onclick="@(() => PersonDetails(row.people_id))">See Vehicles</button></div>
-        </div>
-    }     
-    </div>
     <div class="CarOwnerListButton">
         <button class="button1" @onclick="Goback">Go Back</button>
     </div>

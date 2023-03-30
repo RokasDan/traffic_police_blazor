@@ -25,13 +25,13 @@ namespace TrafficPoliceBlazor.Client.Components
         public void HandleButtonClick(object row)
         {
             
-            var searchValue = row.GetType().GetProperty(SearchColumn)?.GetValue(row);
+            var searchValue = row.GetType().GetProperty(SearchColumn)?.GetValue(row)?.ToString();
             Console.WriteLine(SearchColumn);
             Console.WriteLine(searchValue);
             if (searchValue != null)
             {
                 
-                //GoToLink(LinkPrefix, searchValue);
+                GoToLink(LinkPrefix, searchValue);
             }
         }
 

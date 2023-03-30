@@ -5,39 +5,7 @@
 
 <div class="PeopleSuroundList">
     <h3>People Results</h3>
-
-   @* <div class="PeopleSuroundBorder">
-        <div style="display:flex; flex-direction:row;">
-            <div class="PersonId">Person ID</div>
-            <div class="Address">Address</div>
-            <div class="DOB">Date Of Birth</div>
-            <div class="fistName">First Name</div>
-            <div class="lastName">Last Name</div>
-            <div class="license">License Number</div>
-            <div class="ownedVehicles">Person Vehicles</div>
-        </div>
-        
-
-        @foreach (var row in people)
-        {
-                <div style="display:flex; flex-direction:row;">
-
-                <div class="PersonId">@row.people_id</div>
-                <div class="Address">@row.address</div>
-                <div class="DOB">@row.date_of_birth.ToString("MM/dd/yyyy")</div>
-                <div class="fistName">@row.first_name</div>
-                <div class="lastName">@row.last_name</div>
-                <div class="license">@row.license_number;</div>
-                <div class="ownedVehicles"><button @onclick="@(() => PersonDetails(row.people_id))">See Vehicles</button></div>
-
-                </div>
-        }
-
-        
-    </div>*@
-
-    <SearchResultsTableLink tableContent="@people" columnsToDisplay='new string[]{"people_id", "address", "date_of_birth", "first_name", "last_name", "license_number"}' LinkPrefix="/PersonCars?id=" SearchColumn="address" />
-
+    <SearchResultsTableLink tableContent="@people" columnsToDisplay='new string[]{"people_id", "address", "date_of_birth", "first_name", "last_name", "license_number"}' LinkPrefix="/PersonCars?id=" SearchColumn="people_id" />
     <div class="OffenceListButton">
         <button class="button1" @onclick="Goback">Go Back</button>
     </div>

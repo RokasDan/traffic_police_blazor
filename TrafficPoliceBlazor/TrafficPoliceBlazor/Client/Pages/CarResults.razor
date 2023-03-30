@@ -1,35 +1,12 @@
 ﻿@page "/CarResults"
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
-
+@using TrafficPoliceBlazor.Client.Components
 
 <div class="SuroundCarResultsList">
-    <h3>CarResults</h3>
-    <div class="SuroundCarResultsBorder">
-        <div style="display:flex; flex-direction:row;">
-            <div class="ResultNumberPlate">Number Plate</div>
-            <div class="ResultBrand">Brand</div>
-            <div class="ResultModel">Model</div>
-            <div class="ResultColor">Color</div>
-            <div class="ResultOwner">Owner ID</div>
-            <div class="ResultLink">Link</div>
-            </div>
-        
-
+    <h3>CarResults</h3>     
             <!-- reiterating through the cars array and displaying it on page in a table -->
-            @foreach (var row in cars)
-            {
-                <div style="display:flex; flex-direction:row;">
-                <div class="ResultNumberPlate">@row.number_plate</div>
-                <div class="ResultBrand">@row.brand</div>
-                <div class="ResultModel">@row.model</div>
-                <div class="ResultColor">@row.colour</div>
-                <div class="ResultOwner"> @row.owner</div>
-                <div class="ResultLink"><button @onclick="@(() =>  OwnerDetails(row.owner))">See Owner</button></div>
-                </div>
-            }
-
-    </div>
+    <SearchResultsTableLink tableContent="@cars" columnsToDisplay='new string[]{"number_plate", "brand", "model", "colour", "owner"}' LinkPrefix="/CarOwner?id=" SearchColumn="owner" />
 
     <div class="CarResultsListButton">
         <button class="button1" @onclick="Goback">Go Back</button>
