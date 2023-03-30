@@ -837,3 +837,4 @@ D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\T
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll.gz
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\build-gz\anClz0g0.gz
+D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\scopedcss\Components\SearchResultsTable.razor.rz.scp.css

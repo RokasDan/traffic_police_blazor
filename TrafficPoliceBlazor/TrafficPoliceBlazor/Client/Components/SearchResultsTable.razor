@@ -1,29 +1,35 @@
-﻿<div class="SuroundCarResultsBorder">
+﻿<div class="SuroundTableResults">
     <div style="display:flex; flex-direction:row;">
-        <!-- Getting names for each column -->
         @if (tableContent != null)
         {
-            var propertyNames = tableContent.GetType().GetProperties().Select(p => p.Name);
-            foreach (var name in propertyNames)
+            var firstElement = ((IEnumerable<object>)tableContent).FirstOrDefault();
+            if (firstElement != null)
             {
-                <div>@name</div>
+                var propertyNames = firstElement.GetType().GetProperties().Select(p => p.Name);
+                <div style="display:flex; flex-direction:row;">
+                    <!-- Getting names for each column -->
+                    @foreach (var name in propertyNames)
+                    {
+                        <div class="FieldBorder">@name</div>
+                    }
+                </div>
             }
         }
     </div>
 
-    <div style="display:flex; flex-direction:row;">
-        <!-- reiterating through the array and displaying it on page in a table -->
-        @if (tableContent != null)
+    @if (tableContent != null)
+    {
+        foreach (var row in (IEnumerable<object>)tableContent)
         {
-            foreach (var row in (IEnumerable<object>)tableContent)
-            {
-                var properties = row.GetType().GetProperties();
-                foreach (var prop in properties)
+            <div style="display:flex; flex-direction:row;">
+
+                @foreach (var prop in row.GetType().GetProperties())
                 {
                     var value = prop.GetValue(row);
-                    <div>@value</div>
+                    <div class="FieldBorder">@value</div>
                 }
-            }
+
+            </div>
         }
-    </div>
+    }
 </div>

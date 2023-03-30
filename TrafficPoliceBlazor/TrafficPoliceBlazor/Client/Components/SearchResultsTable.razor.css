@@ -1,0 +1,13 @@
+﻿.SuroundTableResults {
+    border: 5px solid black;
+}
+
+.FieldBorder {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 200px;
+    text-align: center;
+}
