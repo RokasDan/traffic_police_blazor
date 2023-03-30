@@ -100,6 +100,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTZWFyY2hSZXN1bHRzVGFibGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-i2881fosdw
 
+[D:/Website_Dev/traffic_police_blazor/traffic_police_blazor/TrafficPoliceBlazor/TrafficPoliceBlazor/Client/Components/SearchResultsTableLink.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTZWFyY2hSZXN1bHRzVGFibGVMaW5rLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-cn5c5s57r1
+
 [D:/Website_Dev/traffic_police_blazor/traffic_police_blazor/TrafficPoliceBlazor/TrafficPoliceBlazor/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-16oopcf61s

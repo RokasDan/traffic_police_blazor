@@ -13,6 +13,7 @@ D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\T
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Web.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Components.WebAssembly.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Metadata.dll
+D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.WebUtilities.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.CSharp.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.Configuration.Abstractions.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.Configuration.Binder.dll
@@ -30,12 +31,14 @@ D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\T
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.Primitives.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.JSInterop.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.JSInterop.WebAssembly.dll
+D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Net.Http.Headers.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.VisualBasic.Core.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.VisualBasic.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Win32.Primitives.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Win32.Registry.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\mscorlib.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\netstandard.dll
+D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.AppContext.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Buffers.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Collections.Concurrent.dll
@@ -249,6 +252,7 @@ D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\T
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Diagnostics.TextWriterTraceListener.dll.gz
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.NameResolution.dll.gz
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Threading.Tasks.Parallel.dll.gz
+D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll.gz
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.IO.FileSystem.dll.gz
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.WebClient.dll.gz
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Reflection.TypeExtensions.dll.gz
@@ -258,6 +262,7 @@ D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\T
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Security.SecureString.dll.gz
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.WebSockets.Client.dll.gz
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.CSharp.dll.gz
+D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Net.Http.Headers.dll.gz
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.Http.dll.gz
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Threading.Timer.dll.gz
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Security.Principal.Windows.dll.gz
@@ -343,6 +348,7 @@ D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\T
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.Intrinsics.dll.gz
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.Requests.dll.gz
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Text.Encoding.CodePages.dll.gz
+D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.WebUtilities.dll.gz
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Reflection.dll.gz
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Core.dll.gz
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\System.Linq.Queryable.dll.gz
@@ -410,6 +416,7 @@ D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\T
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Web.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\Microsoft.AspNetCore.Components.WebAssembly.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
+D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\Microsoft.AspNetCore.WebUtilities.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll
@@ -426,6 +433,8 @@ D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\T
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\Microsoft.JSInterop.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\Microsoft.JSInterop.WebAssembly.dll
+D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\Microsoft.Net.Http.Headers.dll
+D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\System.IO.Pipelines.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\Microsoft.CSharp.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\Microsoft.VisualBasic.Core.dll
@@ -614,6 +623,7 @@ D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\T
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\build-gz\QcfryW5+.gz
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\build-gz\+Y8BGPhW.gz
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\build-gz\SzuIGzsz.gz
+D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\build-gz\qvnDtgfH.gz
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\build-gz\4D8H87sl.gz
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\build-gz\0MRmVs39.gz
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\build-gz\ZXwfcVWi.gz
@@ -630,6 +640,8 @@ D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\T
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\build-gz\bgD45D9O.gz
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\build-gz\sZ3thAZs.gz
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\build-gz\E+840FGi.gz
+D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\build-gz\df7bZ6fU.gz
+D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\build-gz\anClz0g0.gz
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\build-gz\6jOsmxTk.gz
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\build-gz\cZyhADAB.gz
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\build-gz\zHgm0JqQ.gz
@@ -817,6 +829,8 @@ D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\T
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\staticwebassets.pack.json
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\staticwebassets.build.json
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\staticwebassets.development.json
+D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\scopedcss\Components\SearchResultsTable.razor.rz.scp.css
+D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\scopedcss\Components\SearchResultsTableLink.razor.rz.scp.css
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\scopedcss\bundle\TrafficPoliceBlazor.Client.styles.css
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\scopedcss\projectbundle\TrafficPoliceBlazor.Client.bundle.scp.css
@@ -825,16 +839,3 @@ D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\T
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\refint\TrafficPoliceBlazor.Client.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\TrafficPoliceBlazor.Client.pdb
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\ref\TrafficPoliceBlazor.Client.dll
-D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.WebUtilities.dll
-D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Net.Http.Headers.dll
-D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Net.Http.Headers.dll.gz
-D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.WebUtilities.dll.gz
-D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\Microsoft.AspNetCore.WebUtilities.dll
-D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\Microsoft.Net.Http.Headers.dll
-D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\build-gz\qvnDtgfH.gz
-D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\build-gz\df7bZ6fU.gz
-D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll
-D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll.gz
-D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\Newtonsoft.Json.dll
-D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\build-gz\anClz0g0.gz
-D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\scopedcss\Components\SearchResultsTable.razor.rz.scp.css

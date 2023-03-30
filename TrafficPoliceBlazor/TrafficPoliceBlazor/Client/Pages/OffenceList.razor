@@ -6,24 +6,6 @@
 <div class="SuroundList">
     <h1>Offence List</h1>
 
-    @*<div class="SuroundBorder">
-        <div style="display:flex; flex-direction:row;">
-            <div class="OffenceId">Offence ID</div>
-            <div class="Description">Description</div>
-            <div class="MaxFine">MaxFine</div>
-            <div class="MaxPoints">MaxPoints</div>
-        </div>
-        @foreach (var row in offences)
-        {
-            <div style="display:flex; flex-direction:row;">
-                <div class="OffenceId">@row.Offence_ID</div>
-                <div class="Description">@row.description</div>
-                <div class="MaxFine">@row.maxFine</div>
-                <div class="MaxPoints">@row.maxPoints</div>
-            </div>
-        }
-    </div>*@
-
     <SearchResultsTable tableContent="@offences" />
 
     <div class="OffenceListButton">

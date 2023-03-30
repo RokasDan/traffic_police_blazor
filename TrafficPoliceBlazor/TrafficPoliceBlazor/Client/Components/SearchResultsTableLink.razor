@@ -1,0 +1,56 @@
+﻿@inject NavigationManager Navigation
+
+<div class="SuroundTableResultsLink">
+    <div style="display:flex; flex-direction:row;">
+        @if (tableContent != null)
+        {
+            var firstElement = ((IEnumerable<object>)tableContent).FirstOrDefault();
+            if (firstElement != null)
+            {
+                <div style="display:flex; flex-direction:row;">
+                    <!-- Getting names for each column -->
+                    @foreach (var column in columnsToDisplay)
+                    {
+                        <div class="FieldBorderLink">@column</div>
+                    }
+                </div>
+                <div class="FieldBorderLink">More Details</div>
+            }
+        
+        }
+    </div>
+
+    @if (tableContent != null)
+    {
+        foreach (var row in (IEnumerable<object>)tableContent)
+        {
+            <div style="display:flex; flex-direction:row;">
+
+                @foreach (var column in columnsToDisplay)
+                {
+                    var property = row.GetType().GetProperty(column);
+                    if (property != null)
+                    {
+                        var value = property.GetValue(row);
+                        if (value != null)
+                        {
+                            if (property.PropertyType == typeof(DateTime))
+                            {
+                                value = ((DateTime)value).ToString("MM/dd/yyyy");
+                            }
+                            <div class="FieldBorderLink">@value</div>
+                        }
+                    }
+                }
+
+                <div class="FieldBorderLink">
+                    <button style="width: 100%; height: 100%;" @onclick="() => HandleButtonClick(row)">
+                        Link
+                    </button>
+                </div>
+                
+
+            </div>
+        }
+    }
+</div>

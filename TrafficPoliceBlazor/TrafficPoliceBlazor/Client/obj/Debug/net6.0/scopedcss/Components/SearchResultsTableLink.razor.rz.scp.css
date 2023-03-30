@@ -1,0 +1,15 @@
+.SuroundTableResultsLink[b-cn5c5s57r1] {
+    border: 5px solid black;
+}
+
+.FieldBorderLink[b-cn5c5s57r1] {
+    background-color: darkgoldenrod;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 200px;
+    text-align: center;
+    overflow: auto;
+    word-wrap: break-word;
+}
