@@ -1,5 +1,29 @@
-﻿<h3>SearchResultsTable</h3>
+﻿<div class="SuroundCarResultsBorder">
+    <div style="display:flex; flex-direction:row;">
+        <!-- Getting names for each column -->
+        @if (tableContent != null)
+        {
+            var propertyNames = tableContent.GetType().GetProperties().Select(p => p.Name);
+            foreach (var name in propertyNames)
+            {
+                <div>@name</div>
+            }
+        }
+    </div>
 
-@code {
-
-}
+    <div style="display:flex; flex-direction:row;">
+        <!-- reiterating through the array and displaying it on page in a table -->
+        @if (tableContent != null)
+        {
+            foreach (var row in (IEnumerable<object>)tableContent)
+            {
+                var properties = row.GetType().GetProperties();
+                foreach (var prop in properties)
+                {
+                    var value = prop.GetValue(row);
+                    <div>@value</div>
+                }
+            }
+        }
+    </div>
+</div>

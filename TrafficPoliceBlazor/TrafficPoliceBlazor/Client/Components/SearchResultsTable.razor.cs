@@ -1,6 +1,10 @@
-﻿namespace TrafficPoliceBlazor.Client.Components
+﻿using Microsoft.AspNetCore.Components;
+
+namespace TrafficPoliceBlazor.Client.Components
 {
-    public class SearchResultsTable
+    public partial class SearchResultsTable : ComponentBase
     {
+        [Parameter]
+        public object tableContent { get; set; }
     }
 }
