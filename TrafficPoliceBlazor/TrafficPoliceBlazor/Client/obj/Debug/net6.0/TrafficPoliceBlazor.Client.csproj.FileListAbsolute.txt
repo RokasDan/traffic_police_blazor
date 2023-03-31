@@ -839,3 +839,7 @@ D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\T
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\refint\TrafficPoliceBlazor.Client.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\TrafficPoliceBlazor.Client.pdb
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\ref\TrafficPoliceBlazor.Client.dll
+D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Blazored.LocalStorage.dll
+D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Blazored.LocalStorage.dll.gz
+D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\Blazored.LocalStorage.dll
+D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\build-gz\21aHY5vo.gz

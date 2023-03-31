@@ -38,7 +38,8 @@ namespace TrafficPoliceBlazor.Client.Pages
             {
                 var Id = loginModel.officerId;
 
-
+                // Setting the user name to local storage
+                await localStorage.SetItemAsync<string>("username", Id);
 
                 //Moving to main menu.
                 NavigationManager.NavigateTo($"/Menu?id={Id}");

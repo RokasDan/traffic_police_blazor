@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lSY1yOPwV3E+Ui1ytaxNppf6UXrake9mJtJwVzKlDR4OR0Rh7cL7tkRn/58ox5tyjJPUryc9bCfuIl4m1avZ7g==",
+  "dgSpecHash": "0ZHK9CiHYneW1GVZoMMGwnvGiYkTvGFS6LFukF005u19pKFuXju40XqYHQKMYK5UNfH4aA5aCRl/lIueWrtFPQ==",
   "success": true,
   "projectFilePath": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Server\\TrafficPoliceBlazor.Server.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\Rokas\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.14\\microsoft.aspnetcore.authorization.6.0.14.nupkg.sha512",
     "C:\\Users\\Rokas\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.14\\microsoft.aspnetcore.components.6.0.14.nupkg.sha512",
     "C:\\Users\\Rokas\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\6.0.14\\microsoft.aspnetcore.components.analyzers.6.0.14.nupkg.sha512",
+    "C:\\Users\\Rokas\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\6.0.0\\microsoft.aspnetcore.components.authorization.6.0.0.nupkg.sha512",
     "C:\\Users\\Rokas\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\6.0.14\\microsoft.aspnetcore.components.forms.6.0.14.nupkg.sha512",
     "C:\\Users\\Rokas\\.nuget\\packages\\microsoft.aspnetcore.components.web\\6.0.14\\microsoft.aspnetcore.components.web.6.0.14.nupkg.sha512",
     "C:\\Users\\Rokas\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.14\\microsoft.aspnetcore.components.webassembly.6.0.14.nupkg.sha512",

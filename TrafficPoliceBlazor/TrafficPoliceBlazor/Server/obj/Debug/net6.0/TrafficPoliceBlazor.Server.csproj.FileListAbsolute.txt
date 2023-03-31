@@ -107,3 +107,4 @@ D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\T
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Server\obj\Debug\net6.0\TrafficPoliceBlazor.Server.pdb
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Server\obj\Debug\net6.0\TrafficPoliceBlazor.Server.genruntimeconfig.cache
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Server\obj\Debug\net6.0\ref\TrafficPoliceBlazor.Server.dll
+D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Server\bin\Debug\net6.0\Blazored.LocalStorage.dll
