@@ -122,7 +122,7 @@
           "Microsoft.AspNetCore.Components": "6.0.14",
           "Microsoft.AspNetCore.Components.Forms": "6.0.14",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
-          "Microsoft.JSInterop": "6.0.14",
+          "Microsoft.JSInterop": "6.0.15",
           "System.IO.Pipelines": "6.0.3"
         },
         "runtime": {
@@ -555,17 +555,17 @@
           }
         }
       },
-      "Microsoft.JSInterop/6.0.14": {
+      "Microsoft.JSInterop/6.0.15": {
         "runtime": {
           "lib/net6.0/Microsoft.JSInterop.dll": {
             "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.1423.7403"
+            "fileVersion": "6.0.1523.12404"
           }
         }
       },
       "Microsoft.JSInterop.WebAssembly/6.0.14": {
         "dependencies": {
-          "Microsoft.JSInterop": "6.0.14"
+          "Microsoft.JSInterop": "6.0.15"
         },
         "runtime": {
           "lib/net6.0/Microsoft.JSInterop.WebAssembly.dll": {
@@ -919,6 +919,7 @@
           "Microsoft.AspNetCore.Components.Authorization": "6.0.0",
           "Microsoft.AspNetCore.Components.WebAssembly": "6.0.14",
           "Microsoft.AspNetCore.WebUtilities": "2.2.0",
+          "Microsoft.JSInterop": "6.0.15",
           "Newtonsoft.Json": "13.0.3",
           "TrafficPoliceBlazor.Shared": "1.0.0"
         },
@@ -1292,12 +1293,12 @@
       "path": "microsoft.identitymodel.tokens/6.21.0",
       "hashPath": "microsoft.identitymodel.tokens.6.21.0.nupkg.sha512"
     },
-    "Microsoft.JSInterop/6.0.14": {
+    "Microsoft.JSInterop/6.0.15": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-k1DAQqTVYaQGzh4uBJo318oSWa3OLdgJN+ZrKBzRn3Y+iG1VNxIBCBKNW9OgyEVv55fw81+yfHkv1f0e5RXOBg==",
-      "path": "microsoft.jsinterop/6.0.14",
-      "hashPath": "microsoft.jsinterop.6.0.14.nupkg.sha512"
+      "sha512": "sha512-0pGIlgMfwFKOsaxCdGNIlftIUbWW8FdF5EYiewYfENgArmlHfwWHF629M14Hv6+6KsOnnKjulN8/VxdTov27Eg==",
+      "path": "microsoft.jsinterop/6.0.15",
+      "hashPath": "microsoft.jsinterop.6.0.15.nupkg.sha512"
     },
     "Microsoft.JSInterop.WebAssembly/6.0.14": {
       "type": "package",

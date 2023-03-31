@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0ZHK9CiHYneW1GVZoMMGwnvGiYkTvGFS6LFukF005u19pKFuXju40XqYHQKMYK5UNfH4aA5aCRl/lIueWrtFPQ==",
+  "dgSpecHash": "0vieg4a+I4hxKtbZGktUJFUjLmW4ja+wKL8vG9qT4JwTpnMzo2G/Nii9md0iJT+yp1GndKy7gR9yT1KiyEuKxA==",
   "success": true,
   "projectFilePath": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Server\\TrafficPoliceBlazor.Server.csproj",
   "expectedPackageFiles": [
@@ -54,7 +54,7 @@
     "C:\\Users\\Rokas\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.21.0\\microsoft.identitymodel.protocols.6.21.0.nupkg.sha512",
     "C:\\Users\\Rokas\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.21.0\\microsoft.identitymodel.protocols.openidconnect.6.21.0.nupkg.sha512",
     "C:\\Users\\Rokas\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.21.0\\microsoft.identitymodel.tokens.6.21.0.nupkg.sha512",
-    "C:\\Users\\Rokas\\.nuget\\packages\\microsoft.jsinterop\\6.0.14\\microsoft.jsinterop.6.0.14.nupkg.sha512",
+    "C:\\Users\\Rokas\\.nuget\\packages\\microsoft.jsinterop\\6.0.15\\microsoft.jsinterop.6.0.15.nupkg.sha512",
     "C:\\Users\\Rokas\\.nuget\\packages\\microsoft.jsinterop.webassembly\\6.0.14\\microsoft.jsinterop.webassembly.6.0.14.nupkg.sha512",
     "C:\\Users\\Rokas\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "C:\\Users\\Rokas\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",

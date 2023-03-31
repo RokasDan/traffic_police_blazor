@@ -65,6 +65,10 @@
               "target": "Package",
               "version": "[2.2.0, )"
             },
+            "Microsoft.JSInterop": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"

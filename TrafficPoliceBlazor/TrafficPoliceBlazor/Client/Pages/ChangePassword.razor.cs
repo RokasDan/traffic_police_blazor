@@ -50,6 +50,8 @@ namespace TrafficPoliceBlazor.Client.Pages
                     var update = await Http.PutAsJsonAsync($"api/adminLogin/{officer}", passwordString);
                     if (update.IsSuccessStatusCode)
                     {
+                        // Remove local storage for new login
+                        await localStorage.RemoveItemAsync("username");
                         // Report updated successfully
                         NavigationManager.NavigateTo("/Login");
                     }
