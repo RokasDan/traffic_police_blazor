@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "fX/v352lwusdjOKGCTn8wbf6KMa102ZO4YpHzn7JbAPUx2WbyRthoATaLjDcvoNYxy7A2fDaVZEbuXcK8KyU9A==",
+  "dgSpecHash": "lSY1yOPwV3E+Ui1ytaxNppf6UXrake9mJtJwVzKlDR4OR0Rh7cL7tkRn/58ox5tyjJPUryc9bCfuIl4m1avZ7g==",
   "success": true,
   "projectFilePath": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Server\\TrafficPoliceBlazor.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rokas\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Rokas\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\Rokas\\.nuget\\packages\\blazored.localstorage\\4.3.0\\blazored.localstorage.4.3.0.nupkg.sha512",
     "C:\\Users\\Rokas\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Rokas\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.14\\microsoft.aspnetcore.authorization.6.0.14.nupkg.sha512",
     "C:\\Users\\Rokas\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.14\\microsoft.aspnetcore.components.6.0.14.nupkg.sha512",

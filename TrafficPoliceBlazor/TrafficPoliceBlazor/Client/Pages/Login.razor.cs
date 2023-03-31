@@ -6,6 +6,7 @@ using System.Net.Http.Json;
 using System.Text.Json;
 using TrafficPoliceBlazor.Shared;
 
+
 namespace TrafficPoliceBlazor.Client.Pages
 {
     public partial class Login : ComponentBase
@@ -36,6 +37,8 @@ namespace TrafficPoliceBlazor.Client.Pages
             if (response.IsSuccessStatusCode)
             {
                 var Id = loginModel.officerId;
+
+
 
                 //Moving to main menu.
                 NavigationManager.NavigateTo($"/Menu?id={Id}");

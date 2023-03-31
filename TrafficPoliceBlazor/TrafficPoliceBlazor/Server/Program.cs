@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Pomelo.EntityFrameworkCore.MySql;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
+using Blazored.LocalStorage;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -35,6 +36,8 @@ builder.Services.AddDbContext<reportsDbContext>(options =>
 
 builder.Services.AddDbContext<unknownDbContext>(options =>
     options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 23)), mySqlOptions => { }));
+
+builder.Services.AddBlazoredLocalStorage();
 
 
 // Adding logging middleware

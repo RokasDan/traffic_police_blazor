@@ -46,6 +46,18 @@
           }
         }
       },
+      "Blazored.LocalStorage/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Blazored.LocalStorage.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Blazored.LocalStorage.dll": {}
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -1543,6 +1555,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Blazored.LocalStorage": "4.3.0",
           "Microsoft.AspNetCore.Components.WebAssembly": "6.0.14",
           "Microsoft.AspNetCore.WebUtilities": "2.2.0",
           "Newtonsoft.Json": "13.0.3",
@@ -1607,6 +1620,20 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "Blazored.LocalStorage/4.3.0": {
+      "sha512": "CfHp9SWN45cM/TM8uw4pELQBfCRtMssCMSOjsEXVWibeYBn36TLpzw+J1vsC2Su2BEQ3Et19A5+GqK1S3kHbTQ==",
+      "type": "package",
+      "path": "blazored.localstorage/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "blazored.localstorage.4.3.0.nupkg.sha512",
+        "blazored.localstorage.nuspec",
+        "icon.png",
+        "lib/net6.0/Blazored.LocalStorage.dll",
+        "lib/net7.0/Blazored.LocalStorage.dll"
       ]
     },
     "Humanizer.Core/2.14.1": {

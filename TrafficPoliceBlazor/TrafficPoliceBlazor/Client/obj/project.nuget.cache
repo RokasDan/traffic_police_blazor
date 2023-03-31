@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Z88li7fbx4Ua9d5SUM3HZFALNnwCYAdky0TTrtTaUHhVpK3TifmgxBktXmMO/8Tm1+oRcwG7RgxGqEuhGE+fYA==",
+  "dgSpecHash": "gtQOwNzuWv6Ak6sPZ7k1xJp/mfB5fuqHZJkp0qrH/dZmT2B8A4jTbznaaUqT9NNKlyDW8drCW6XBSey59C01CA==",
   "success": true,
   "projectFilePath": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\TrafficPoliceBlazor.Client.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Rokas\\.nuget\\packages\\blazored.localstorage\\4.3.0\\blazored.localstorage.4.3.0.nupkg.sha512",
     "C:\\Users\\Rokas\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.14\\microsoft.aspnetcore.authorization.6.0.14.nupkg.sha512",
     "C:\\Users\\Rokas\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.14\\microsoft.aspnetcore.components.6.0.14.nupkg.sha512",
     "C:\\Users\\Rokas\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\6.0.14\\microsoft.aspnetcore.components.analyzers.6.0.14.nupkg.sha512",
