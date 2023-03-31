@@ -1,39 +1,53 @@
 ﻿@page "/Menu"
 @inject NavigationManager NavigationManager
+@using TrafficPoliceBlazor.Client.Components
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
 
-<div class="centerMenu">
-    <h1 class="MenuHeader">Menu</h1>
+<AuthorizeView>
+
+    <NotAuthorized>
+        <CriminalScum />
+    </NotAuthorized>
+
+
+    <Authorized>
+        <div class="centerMenu">
+            <h1 class="MenuHeader">Menu</h1>
+
+            <div class="MenuBox">
+
+                <div>
+                    <h4 class="UserStatus">Logged In As @officerName</h4>
+                </div>
+
+                <div class="ButtonGroup">
+                    <button class="button2" @onclick="OffenceList">Offence List</button>
+                    <button class="button2" @onclick="PeopleSearch">People Search</button>
+                </div>
+
+                <div class="ButtonGroup">
+                    <button class="button2" @onclick="VehicleSearch">Vehicle Search</button>
+                    <button class="button2" @onclick="ReportSearch">Report Search</button>
+                </div>
+
+                <div class="ButtonGroup">
+                    <button class="button2" @onclick="AddPerson">Add Offender</button>
+                    <button class="button2" @onclick="AddVehicle">Add Vehicle</button>
+                </div>
+
+                <div class="ButtonGroup">
+                    <button class="button2" @onclick="MakeReport">Make Report</button>
+                    <button class="button2" @onclick="changePassword">Change Password</button>
+                </div>
+
+                <div>
+                    <button class="button1" @onclick="Logout">Logout</button>
+                </div>
+            </div>
+
+        </div>
+    </Authorized>
     
-    <div class="MenuBox">
+</AuthorizeView>
 
-        <div>
-            <h4 class="UserStatus">Logged In As @officerName</h4>
-        </div>
-        
-        <div class="ButtonGroup">
-            <button class="button2" @onclick="OffenceList">Offence List</button>
-            <button class="button2" @onclick="PeopleSearch">People Search</button>
-        </div>
-        
-        <div class="ButtonGroup">
-            <button class="button2" @onclick="VehicleSearch">Vehicle Search</button>
-            <button class="button2" @onclick="ReportSearch">Report Search</button>
-        </div>
-        
-        <div class="ButtonGroup">
-            <button class="button2" @onclick="AddPerson">Add Offender</button>
-            <button class="button2" @onclick="AddVehicle">Add Vehicle</button>
-        </div>
-        
-        <div class="ButtonGroup">
-            <button class="button2" @onclick="MakeReport">Make Report</button>
-            <button class="button2" @onclick="changePassword">Change Password</button>
-        </div>
-
-        <div>
-            <button class="button1" @onclick="Logout">Logout</button>
-        </div>
-    </div>
-
-</div>
 

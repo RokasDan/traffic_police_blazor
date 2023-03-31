@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JvIHSJz13PeuAT6rA7yf4Ak1T2goFg8lfmU0pJ6RD5k=",
+  "Hash": "4dbZVIziGacfuasDnV8wgIRXY3/1OC3Nh6qAF3WzhhU=",
   "Source": "TrafficPoliceBlazor.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -202,6 +202,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Rokas\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.14\\lib\\net6.0\\Microsoft.AspNetCore.Authorization.dll"
+    },
+    {
+      "Identity": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "SourceId": "TrafficPoliceBlazor.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Rokas\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\6.0.0\\lib\\net6.0\\Microsoft.AspNetCore.Components.Authorization.dll"
     },
     {
       "Identity": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
@@ -4860,6 +4877,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Resources.Reader.dll"
+    },
+    {
+      "Identity": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\obj\\Debug\\net6.0\\build-gz\\fuGy8OrX.gz",
+      "SourceId": "TrafficPoliceBlazor.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll"
     },
     {
       "Identity": "D:\\Website_Dev\\traffic_police_blazor\\traffic_police_blazor\\TrafficPoliceBlazor\\TrafficPoliceBlazor\\Client\\obj\\Debug\\net6.0\\build-gz\\g+aJS6+x.gz",

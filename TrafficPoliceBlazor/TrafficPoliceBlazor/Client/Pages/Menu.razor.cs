@@ -75,6 +75,7 @@ namespace TrafficPoliceBlazor.Client.Pages
         // Log out.
         private void Logout()
         {
+            localStorage.RemoveItemAsync("username");
             NavigationManager.NavigateTo("/");
         }
     }

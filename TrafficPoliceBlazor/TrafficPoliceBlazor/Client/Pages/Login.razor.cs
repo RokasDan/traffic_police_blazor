@@ -41,6 +41,9 @@ namespace TrafficPoliceBlazor.Client.Pages
                 // Setting the user name to local storage
                 await localStorage.SetItemAsync<string>("username", Id);
 
+                // Authenticating user
+                await AuthStateProvider.GetAuthenticationStateAsync();
+
                 //Moving to main menu.
                 NavigationManager.NavigateTo($"/Menu?id={Id}");
 

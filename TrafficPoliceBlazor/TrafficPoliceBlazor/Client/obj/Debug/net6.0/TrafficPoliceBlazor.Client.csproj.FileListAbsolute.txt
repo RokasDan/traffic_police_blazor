@@ -843,3 +843,8 @@ D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\T
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Blazored.LocalStorage.dll.gz
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\Blazored.LocalStorage.dll
 D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\build-gz\21aHY5vo.gz
+D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Authorization.dll
+D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Authorization.dll.gz
+D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Authorization.dll
+D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\build-gz\fuGy8OrX.gz
+D:\Website_Dev\traffic_police_blazor\traffic_police_blazor\TrafficPoliceBlazor\TrafficPoliceBlazor\Client\obj\Debug\net6.0\scopedcss\Components\CriminalScum.razor.rz.scp.css

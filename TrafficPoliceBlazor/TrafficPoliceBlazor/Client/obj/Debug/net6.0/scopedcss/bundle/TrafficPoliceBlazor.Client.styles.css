@@ -1,3 +1,40 @@
+/* /Components/CriminalScum.razor.rz.scp.css */
+.centerCriminal[b-a3ci0vmfmf] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 50%;
+    min-height: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+}
+
+.CriminalBox[b-a3ci0vmfmf] {
+    background-color: #b99566;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 670px;
+    height: 500px;
+    padding: 40px;
+}
+
+.CriminalHeader[b-a3ci0vmfmf] {
+    text-align: center;
+    color: red;
+}
+
+
+.criminalButton[b-a3ci0vmfmf] {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
 /* /Components/SearchResultsTable.razor.rz.scp.css */
 .SuroundTableResults[b-i2881fosdw] {
     border: 5px solid black;
