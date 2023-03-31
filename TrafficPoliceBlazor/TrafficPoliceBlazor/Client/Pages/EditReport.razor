@@ -1,8 +1,18 @@
 ﻿@page "/EditReport"
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
+@using TrafficPoliceBlazor.Client.Components
 
-<div class="centerEditReport">
+
+
+<AuthorizeView>
+
+    <NotAuthorized>
+        <CriminalScum />
+    </NotAuthorized>
+
+    <Authorized>
+        <div class="centerEditReport">
     <h3 class="editReportHeader">Edit Report</h3>
     <h1 class="editReportHeader">@TEST</h1>
 
@@ -87,5 +97,9 @@
     </EditForm>
     </div>
 </div>
+    </Authorized>
+</AuthorizeView>
+
+
 
 

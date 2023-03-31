@@ -1,9 +1,16 @@
 ﻿@page "/PeopleSearch"
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
+@using TrafficPoliceBlazor.Client.Components
 
+<AuthorizeView>
+    
+    <NotAuthorized>
+        <CriminalScum />
+    </NotAuthorized>
 
-<div>
+    <Authorized>
+        <div>
     <div class="PeopleSearchHeader">
         <h1>People Search</h1>
     </div>
@@ -33,4 +40,7 @@
     </div>
    
 </div>
+
+    </Authorized>
+</AuthorizeView>
 

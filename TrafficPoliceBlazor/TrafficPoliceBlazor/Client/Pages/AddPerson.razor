@@ -1,9 +1,16 @@
 ﻿@page "/AddPerson"
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
+@using TrafficPoliceBlazor.Client.Components
 
+<AuthorizeView>
 
-<div class="centerAddPerson">
+    <NotAuthorized>
+        <CriminalScum />
+    </NotAuthorized>
+
+    <Authorized>
+        <div class="centerAddPerson">
     <h1 class="AddPersonHeader">Add Person</h1>
     <h1 class="AddPersonHeader">@testy</h1>
 
@@ -63,4 +70,7 @@
         </EditForm>
     </div>
 </div>
+
+    </Authorized>
+</AuthorizeView>
 

@@ -2,8 +2,16 @@
 
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
+@using TrafficPoliceBlazor.Client.Components
 
-<div class="centerCarSearch">
+<AuthorizeView>
+
+    <NotAuthorized>
+        <CriminalScum />
+    </NotAuthorized>
+
+    <Authorized>
+        <div class="centerCarSearch">
     <h1 class="CarSearchHeader">Car Search</h1>
 
 
@@ -32,5 +40,10 @@
         </EditForm>
     </div>
 </div>
+    </Authorized>
+
+</AuthorizeView>
+
+
 
 
